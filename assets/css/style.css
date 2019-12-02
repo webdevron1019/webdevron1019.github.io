@@ -1,13 +1,13 @@
 @charset "UTF-8";
-/* @font-face {
+@font-face {
   font-family: "Marcellus-v6-latin";
-  src: url("../assets/font/marcellus-v6-latin-regular.eot");
-  src: url("./font/marcellus-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../font/marcellus-v6-latin-regular.woff") format("woff"), url("../font/marcellus-v6-latin-regular.woff2") format("woff2"), url("../font/marcellus-v6-latin-regular.ttf") format("truetype"), url("../font/marcellus-v6-latin-regular.svg#Marcellus") format("svg");
+  src: url("../font/marcellus-v6-latin-regular.eot");
+  src: url("../font/marcellus-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../font/marcellus-v6-latin-regular.woff") format("woff"), url("../font/marcellus-v6-latin-regular.woff2") format("woff2"), url("../font/marcellus-v6-latin-regular.ttf") format("truetype"), url("../font/marcellus-v6-latin-regular.svg#Marcellus") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: marcellus-v6-latin-regular;
-  src: url(../font/marcellus-v6-latin-regular.ttf); } */
+  src: url(../font/marcellus-v6-latin-regular.ttf); }
 * {
   font-family: "Marcellus-v6-latin"; }
 
@@ -170,9 +170,9 @@ select {
 * {
   font-family: "Marcellus-v6-latin"; }
 
-/* @font-face {
+@font-face {
   font-family: hiraminpro;
-  src: url(../font/copyfonts.com_hiraminpro-w3-opentype.otf); } */
+  src: url(../font/copyfonts.com_hiraminpro-w3-opentype.otf); }
 html,
 body {
   width: 100%;
@@ -186,7 +186,7 @@ body {
   .site__header__bg-container {
     width: 100%;
     height: 700px;
-    background-image: url("assets/css/img/home_kv_A.png");
+    background-image: url("img/home_kv_A.png");
     background-size: cover;
     background-repeat: no-repeat; }
   .site__header__title span:nth-child(1) {
@@ -366,16 +366,16 @@ body {
     align-items: center;
     text-align: center; }
   .site-section__item:nth-child(1) {
-    background: url(assets/css/img/shop-pc.png) no-repeat;
+    background: url(img/shop-pc.png) no-repeat;
     background-size: cover;
     flex: 0 1 100%;
     margin-bottom: 10px; }
   .site-section__item:nth-child(2) {
-    background: url(assets/css/img/company-pc.png) no-repeat;
+    background: url(img/company-pc.png) no-repeat;
     width: 485px;
     position: relative; }
   .site-section__item:nth-child(3) {
-    background: url(assets/css/img/recruit-pc.png) no-repeat;
+    background: url(img/recruit-pc.png) no-repeat;
     width: 485px;
     position: relative; }
   .site-section__wrapper {
@@ -456,7 +456,7 @@ body {
     flex-direction: column; }
     .site__header__bg-container {
       height: 96vw;
-      background-image: url("assets/css/img/colorstudio.jpg");
+      background-image: url("img/colorstudio.jpg");
       background-size: cover;
       background-repeat: no-repeat; }
     .site__header__caption-wrapper {
@@ -534,11 +534,11 @@ body {
       text-align: center;
       display: flex; }
     .site-section__item:nth-child(1) {
-      background: url(assets/css/img/shop-bg.png) no-repeat; }
+      background: url(img/shop-bg.png) no-repeat; }
     .site-section__item:nth-child(2) {
-      background: url(assets/css/img/company-bg.png) no-repeat; }
+      background: url(img/company-bg.png) no-repeat; }
     .site-section__item:nth-child(3) {
-      background: url(assets/css/img/recruit-bg.png) no-repeat; }
+      background: url(img/recruit-bg.png) no-repeat; }
     .site-section__wrapper {
       margin: auto;
       display: flex;
@@ -1319,7 +1319,7 @@ body {
     height: 111px; }
 
   .company-wrapper > .banner {
-    background-image: url("assets/css/img/company_kv.png"); }
+    background-image: url("img/company_kv.png"); }
 
   .company-wrapper {
     background-color: #f5f5ed; }
@@ -1405,7 +1405,7 @@ body {
       width: 980px; } }
 @media screen and (max-width: 768px) {
   .company-wrapper > .banner {
-    background-image: url("assets/css/img/company_kv-mobile.png"); }
+    background-image: url("img/company_kv-mobile.png"); }
 
   .company-wrapper {
     background-color: #f5f5ed; }
@@ -1509,7 +1509,7 @@ body {
     min-width: 1000px; }
 
   .recruit__wrapper > .banner {
-    background-image: url("assets/css/img/recruit_kv.png"); }
+    background-image: url("img/recruit_kv.png"); }
 
   .shop-area > .category-subtitle {
     height: 111px; }
@@ -1731,7 +1731,7 @@ body {
           right: 0; } }
 @media screen and (max-width: 768px) {
   .recruit__wrapper > .banner {
-    background-image: url("assets/css/img/recruit_kv-mobile.png"); }
+    background-image: url("img/recruit_kv-mobile.png"); }
 
   .recruit__wrapper {
     background-color: #f5f5ed; }
@@ -1972,7 +1972,7 @@ body {
     min-width: 1000px; }
 
   .wrapper-point > .banner {
-    background-image: url("assets/css/img/point_kv.png"); }
+    background-image: url("img/point_kv.png"); }
 
   .wrapper-point {
     background-color: #f5f5ed; }
@@ -2081,7 +2081,7 @@ body {
     margin: 25px auto; } }
 @media screen and (max-width: 768px) {
   .wrapper-point > .banner {
-    background-image: url("assets/css/img/point_kv-mobile.png"); }
+    background-image: url("img/point_kv-mobile.png"); }
 
   .wrapper-point {
     background-color: #f5f5ed; }
@@ -2198,7 +2198,7 @@ body {
 
 @media (min-width: 769px) {
   .site-map > .banner {
-    background-image: url("assets/css/img/sitemap_kv.png"); }
+    background-image: url("img/sitemap_kv.png"); }
 
   .site-map__header-wrap {
     display: flex;
@@ -2260,7 +2260,7 @@ body {
       padding: 0 8px 0 0; } }
 @media (max-width: 768px) {
   .site-map > .banner {
-    background-image: url("assets/css/img/sitemap_kv-mobile.png"); }
+    background-image: url("img/sitemap_kv-mobile.png"); }
 
   .site-map__header-wrap {
     display: flex;
@@ -2775,7 +2775,7 @@ body {
       letter-spacing: 4px; }
 
   .shop-list > .banner {
-    background-image: url("assets/css/img/shoplist_kv.png"); }
+    background-image: url("img/shoplist_kv.png"); }
 
   .shop-summary-info__heading-wrapper {
     height: 239px; }
@@ -2846,7 +2846,7 @@ body {
       font-size: 3vw; }
 
   .shop-list > .banner {
-    background-image: url("assets/css/img/shoplist_kv_sp.png"); }
+    background-image: url("img/shoplist_kv_sp.png"); }
 
   .shop-summary-info__heading-wrapper {
     margin-bottom: 7vw;
@@ -3023,7 +3023,7 @@ body {
       right: 21px; }
 
   .shop-detail > .banner {
-    background-image: url("assets/css/img/shopdetail_kv_itibangai.png"); } }
+    background-image: url("img/shopdetail_kv_itibangai.png"); } }
 @media screen and (max-width: 768px) {
   .brand__item {
     flex: 1 0 33.33%;
@@ -3072,7 +3072,7 @@ body {
       right: 6vw; }
 
   .shop-detail > .banner {
-    background-image: url("assets/css/img/shopdetail_kv_itibangai-sp.png"); } }
+    background-image: url("img/shopdetail_kv_itibangai-sp.png"); } }
 .entry__form-wrapper {
   display: flex;
   justify-content: center; }
@@ -3115,7 +3115,7 @@ body {
 
 @media screen and (min-width: 769px) {
   .entry > .banner {
-    background-image: url("assets/css/img/entry_kv.png"); }
+    background-image: url("img/entry_kv.png"); }
 
   .entry__form {
     padding: 69px 85px 79px 85px; }
@@ -3172,7 +3172,7 @@ body {
     margin-bottom: 9px; } }
 @media screen and (max-width: 768px) {
   .entry > .banner {
-    background-image: url("assets/css/img/entry_kv-sp.png"); }
+    background-image: url("img/entry_kv-sp.png"); }
 
   .entry__form {
     padding: 17vw 5.5vw 16vw 5.5vw; }

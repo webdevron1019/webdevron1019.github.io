@@ -1,59 +1,111 @@
 <!DOCTYPE html>
 <html>
 
-<?php include '_includes/head.php';?>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>title</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="/assets/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/header.js"></script>
+  </head>
 
 <body class="common">
 
-<?php include '_includes/common/header.php';?>
+<header id="header" role="banner" class="site-header">
+    <div class="site-header__outer-wrapper">
+        <div class="site-header__inner-wrapper">
+            <div class="site-header__container">
+                <h1 class="site-header__heading">
+                    <a href="" class="site-header__heading-link">
+                        <img src="assets/img/page-logo.png" alt="" class="site-header__logo">
+                    </a>
+                </h1>
+                <div class="site-header__lead-title">MASAYA</div>
+            </div>
+            <nav class="site-header__navigation">
+                <h2 class="site-header__navigation-heading">SITE NAVIGATION</h2>
+                <button class="site-header__hamburger-btn" id="hamburger-btn">
+                    <span class="site-header__hamburger-line"></span>
+                    <span class="site-header__hamburger-line"></span>
+                    <span class="site-header__hamburger-line"></span>
+                </button>
+                <ul class="site-header__navigation-list" id="dropdown">
+                    <li class="site-header__navigation-item">
+                        <a class="site-header__navigation-link" id="menu-home" href="index.html">HOME</a>
+                    </li>
+                    <li class="site-header__navigation-item">
+                        <a class="site-header__navigation-link" id="menu-shop-list" href="shop-list.html">SHOP LIST</a>
+                    </li>
+                    <li class="site-header__navigation-item">
+                        <a class="site-header__navigation-link" id="menu-company" href="company.html">COMPANY</a>
+                    </li>
+                    <li class="site-header__navigation-item">
+                        <a class="site-header__navigation-link" id="menu-recruit" href="recruit.html">RECRUIT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="site-header__outer-wrapper">
+        <nav class="site-header__breadcrumbs">
+            <h2 class="site-header__breadcrumbs-heading">BREADCRUMBS NAVIGATION</h2>
+            <ul class="site-header__breadcrumbs-list">
+                <li class="site-header__breadcrumbs-item">
+                    <a href="index.html" class="site-header__breadcrumbs-link">HOME</a>
+                </li>
+                
+                <li class="site-header__breadcrumbs-item">
+                    <a href="recruit.html" class="site-header__breadcrumbs-link">RECRUIT</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header><!-- #header -->
 
 <main id="site-content">
-    <section class="shop-list">
-        <div class="banner">
-            <h2 class="banner__heading">SHOP LIST</h2>
-            <p class="banner__lead-title">ショップ一覧</p>
-        </div>
-        <section class="search">
-            <div class="category-subtitle">
-                <h3 class="category-subtitle__heading">SEARCH</h3>
-                <span class="category-subtitle__translation">お店を探す</span>
+    <section class="recruit">
+        <div class="recruit__wrapper">
+            <div class="banner">
+                <h2 class="banner__heading">RECRUIT</h2>
+                <p class="banner__lead-title">採用ショップ一覧</p>
             </div>
-            <ul class="search__tab-wrapper">
-                <li class="search__tab-item">
-                    <section class="search__tab">
-                        <div class="search__tab-btn-wrapper">
-                            <button class="search__tab-btn search__tab-btn--active" id="search-by-region">
-                                <h4 class="search__tab-heading">地域から探す</h4>
-                            </button>
-                        </div>
-                        <ul class="search__region-list">
-                            <li class="search__region-item"><button class="search__region-btn">北海道</button></li>
-                            <li class="search__region-item"><button class="search__region-btn">東北</button></li>
-                            <li class="search__region-item"><button class="search__region-btn">関東</button></li>
-                            <li class="search__region-item"><button class="search__region-btn">中部</button></li>
-                            <li class="search__region-item"><button class="search__region-btn">近畿</button></li>
-                            <li class="search__region-item"><button class="search__region-btn">中国</button></li>
-                            <li class="search__region-item"><button class="search__region-btn">四国</button></li>
-                            <li class="search__region-item"><button class="search__region-btn">九州</button></li>
-                        </ul>
-                    </section>
-                </li>
-                <li class="search__tab-item">
-                    <section class="search__tab">
-                        <div class="search__tab-btn-wrapper">
-                            <button class="search__tab-btn" id="search-by-brand">
-                                <h4 class="search__tab-heading">ブランドから探す</h4>
-                            </button>
-                        </div>
-                    </section>
-                </li>
+            <section class="shop-area">
+                <div class="category-subtitle">
+                    <h3 class="category-subtitle__heading">SHOP AREA</h3>
+                    <span class="category-subtitle__translation">エリアから探す</span>
+                </div>
+                <ul class="shop-area__list">
+                    <li class="shop-area__item">北海道</li>
+                    <li class="shop-area__item">東北</li>
+                    <li class="shop-area__item">関東</li>
+                    <li class="shop-area__item">中部</li>
+                    <li class="shop-area__item">近畿</li>
+                    <li class="shop-area__item">中国</li>
+                    <li class="shop-area__item">四国</li>
+                    <li class="shop-area__item">九州</li>
+                </ul>
+            </section>
+        </div>
+        <section class="shop-link">
+            <h3 class="shop-link__title--hidden">links</h3>
+            <!--hidden-->
+            <ul class="shop-link__list">
+                <li class="shop-link__item">中途採用</li>
+                <li class="shop-link__item">パート採用</li>
             </ul>
         </section>
-        <section class="shop-summary-info">
-            <div class="shop-summary-info__heading-wrapper">
-                <h3 class="shop-summary-info__heading">CPボーテ 取扱店</h3>
-                <h3 class="shop-summary-info__heading">資生堂 クレドポークレドポーボ<br>ーテ資生堂 クレドポークレドポーボーテ</h3>
-            </div>
+
+        <section class="shop-overview">
+            <h3 class="shop-overview__title">関東</h3>
+            <div class="underline"></div>
             <div id="load-common">
                 <div id="common-container">
     <div class="site-recruit">
@@ -109,7 +161,7 @@
                                 <figure class="info-link__figure"><img src="assets/img/shoppic.png"></figure>
                             </div>
                             
-                            <div class="info-link__store-details"><a href="shop-detail.php">店舗詳細はこちら</a></div>
+                            <div class="info-link__store-details"><a href="shop-detail.html">店舗詳細はこちら</a></div>
                             
                         </section>
                     </li>
@@ -165,7 +217,7 @@
                                 <figure class="info-link__figure"><img src="assets/img/shoppic.png"></figure>
                             </div>
                             
-                            <div class="info-link__store-details"><a href="shop-detail.php">店舗詳細はこちら</a></div>
+                            <div class="info-link__store-details"><a href="shop-detail.html">店舗詳細はこちら</a></div>
                             
                         </section>
                     </li>
@@ -221,7 +273,7 @@
                                 <figure class="info-link__figure"><img src="assets/img/shoppic.png"></figure>
                             </div>
                             
-                            <div class="info-link__store-details"><a href="shop-detail.php">店舗詳細はこちら</a></div>
+                            <div class="info-link__store-details"><a href="shop-detail.html">店舗詳細はこちら</a></div>
                             
                         </section>
                     </li>
@@ -277,7 +329,7 @@
                                 <figure class="info-link__figure"><img src="assets/img/shoppic.png"></figure>
                             </div>
                             
-                            <div class="info-link__store-details"><a href="shop-detail.php">店舗詳細はこちら</a></div>
+                            <div class="info-link__store-details"><a href="shop-detail.html">店舗詳細はこちら</a></div>
                             
                         </section>
                     </li>
@@ -291,8 +343,8 @@
             </div>
         </section>
     </section>
-    <!-- Shared style with recruit and shop-detail goes here. We didn't include it right now because we thought that it will be included through jekyll. -->
 </main>
+
 
 <footer id="site-footer" role="contentinfo">
         <div class="site-footer">
@@ -301,24 +353,24 @@
                     <h2 class="site-footer__navigation-title title--hidden">footer nav</h2>
                     <ul class="site-footer__navigation-list">
                         <li class="site-footer__navigation-item">
-                            <a href="index.php">HOME</a>
+                            <a href="index.html">HOME</a>
                         </li>
                         <li class="site-footer__navigation-item">
-                            <a href="shop-list.php">SHOP LIST</a>
+                            <a href="shop-list.html">SHOP LIST</a>
                         </li>
                         <li class="site-footer__navigation-item">
-                            <a href="company.php">COMPANY</a>
+                            <a href="company.html">COMPANY</a>
                         </li>
                         <li class="site-footer__navigation-item">
-                            <a href="recruit.php">RECRUIT</a>
+                            <a href="recruit.html">RECRUIT</a>
                         </li>
                         <li class="site-footer__navigation-item">
-                            <a href="pointcard.php">POINT CARD</a>
+                            <a href="pointcard.html">POINT CARD</a>
                         </li>
                     </ul>
                     <ul class="site-footer__navigation-list2">
                         <li class="site-footer__navigation-item2">
-                            <a href="system.php">推奨環境</a>
+                            <a href="system.html">推奨環境</a>
                         </li>
                         <li class="site-footer__navigation-item2">
                             <a>お問合せ</a>

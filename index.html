@@ -1,10 +1,65 @@
 <!DOCTYPE html>
 <html>
     
-<?php include '_includes/head.php';?>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>title</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="/assets/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/header.js"></script>
+  </head>
+
 <body id="mainIndex">
 
-<?php include '_includes/top/header.php';?>
+<header id="header" role="banner" class="site__header">
+    <div class="site-header__outer-wrapper">
+            <div class="site-header__inner-wrapper">
+                <div class="site-header__container">
+                    <h1 class="site-header__heading">
+                        <a href="" class="site-header__heading-link">
+                            <img src="assets/img/page-logo.png" alt="" class="site-header__logo">
+                        </a>
+                    </h1>
+                    <div class="site-header__lead-title">MASAYA</div>
+                </div>
+                <nav class="site-header__navigation">
+                    <h2 class="site-header__navigation-heading">SITE NAVIGATION</h2>
+                    <button class="site-header__hamburger-btn" id="hamburger-btn">
+                        <span class="site-header__hamburger-line"></span>
+                        <span class="site-header__hamburger-line"></span>
+                        <span class="site-header__hamburger-line"></span>
+                    </button>
+                    <ul class="site-header__navigation-list" id="dropdown">
+                        <li class="site-header__navigation-item">
+                            <a class="site-header__navigation-link" id="menu-home" href="index.html">HOME</a>
+                        </li>
+                        <li class="site-header__navigation-item">
+                            <a class="site-header__navigation-link" id="menu-shop-list" href="shop-list.html">SHOP LIST</a>
+                        </li>
+                        <li class="site-header__navigation-item">
+                            <a class="site-header__navigation-link" id="menu-company" href="company.html">COMPANY</a>
+                        </li>
+                        <li class="site-header__navigation-item">
+                            <a class="site-header__navigation-link" id="menu-recruit" href="recruit.html">RECRUIT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+    <section class="site__header__bg-container">
+        <div class="site__header__caption-wrapper">
+            <h2 class="site-header__title"><span>キレイを彩る、あなた色</span><span>ラグジュアリーなあなた色</span></h2>
+            <p class="site-header__caption"><span>COLOR STUDIO by MASAYA</span></p>
+        </div>
+    </section>
+</header><!-- #header -->
 
 <div id="content">
     <section class="site-message">
