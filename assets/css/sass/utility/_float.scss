@@ -1,0 +1,13 @@
+// *****************************
+//
+//	 _float.scss
+//
+// *****************************
+
+@mixin float($float, $width: auto) {
+    float: $float;
+    width: $width;
+    @if $support-ie6 {
+        *display: inline;
+    }
+}

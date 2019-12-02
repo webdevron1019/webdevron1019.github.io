@@ -1,0 +1,478 @@
+@mixin shared {
+    @media screen and (min-width: 769px) {
+        body {
+            @include marginpadding();
+            min-width: 1000px;
+        
+        }
+        .site-recruit {
+            @include marginpadding();
+    
+            .shop-overview {
+                @include display-flex(row, center, center);
+                margin: auto;
+                width: 980px;
+                padding-bottom: 40px;
+                // &__title {
+                //     font-size: 24px;
+                //     line-height: 14px;
+                //     font-weight: 600;
+                //     font-family: $ff-YuMincho;
+    
+                // }
+    
+                &__list {
+                    @include listsetup();
+                    @include display-flex(column, null, null);
+                    // margin: 40px auto;
+                    margin: 0 auto 40px auto;
+    
+    
+                }
+    
+                &__item {
+                    @include display-flex(row, space-between, center);
+                    @include marginpadding;
+                    height: 375px;
+                }
+    
+                .info-padding {
+                    padding-top: 30px;
+    
+                }
+    
+                &__item:nth-child(1),
+                &__item:nth-child(3) {
+                    @include profileborder();
+                }
+    
+                &__item:nth-child(4) {
+                    border-bottom: 1px solid #cccccc;
+    
+    
+                }
+    
+    
+                .shop-info {
+                    @include display-flex(column, center, center);
+    
+    
+    
+                    &__list {
+                        margin-left: 60px;
+    
+    
+                    }
+    
+                    &__item {
+    
+                        margin: 5px 0;
+                        font-family: $ff-YuGothic;
+    
+                    }
+    
+    
+                    .shop-wrapper {
+                        @include display-flex(row, null, null);
+    
+    
+    
+                        .info-wrapper {
+                            order: 2;
+                            @include display-flex(column, center, null);
+                            width: 640px;
+    
+    
+    
+                            .shop-info__title {
+                                font-size: 20px;
+                                line-height: 25px;
+                                font-weight: 900;
+                                margin-left: 60px;
+                                font-family: $ff-YuMincho;
+    
+    
+    
+                            }
+    
+                            .shop-contact {
+                                @include display-flex(row, null, center);
+    
+                                .text-bottom {
+                                    margin-top: 25px;
+                                }
+    
+    
+                                &__heading--hidden {
+                                    display: none;
+                                }
+    
+                                &__title {
+                                    color: (red);
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 14px;
+                                    font-weight: 900;
+                                    width: 60px;
+                                    font-family: $ff-YuGothic;
+    
+    
+    
+                                }
+    
+                                &__description {
+                                    font-size: 14px;
+                                    line-height: 27px;
+                                    font-weight: 900;
+                                    margin-left: 20px;
+                                    font-family: $ff-YuGothic;
+    
+    
+                                }
+    
+                            }
+    
+                            .info-link {
+                                margin: 10px 0 20px 60px;
+    
+    
+    
+                                &__title {
+                                    display: none;
+                                }
+    
+                                &__list {
+                                    @include display-flex(row, null, null);
+                                    @include listsetup();
+    
+                                }
+    
+                                &__item {
+                                    @include display-flex(row, center, center);
+                                    width: 90px;
+                                    height: 22px;
+                                    border: 1px solid $accent-color;
+                                    margin-right: 10px;
+                                    border-radius: 2px;
+                                    font-family: $ff-YuGothic;
+                                    font-size: 14px;
+                                    line-height: 14px;
+                                    font-weight: normal;
+    
+    
+    
+                                    & a {
+                                        color: (red);
+                                    }
+                                }
+                            }
+                        }
+    
+                        .info-link__figure {
+    
+                            width: 340px;
+                            height: 215px;
+    
+    
+    
+                            & img {
+                                width: 340px;
+                                height: 215px;
+    
+                            }
+                        }
+                    }
+                }
+    
+                .info-link__store-details {
+                    @include display-flex(row, center, center);
+                    margin: 35px;
+                    width: 300px;
+                    height: 40px;
+                    border-radius: 20px;
+                    background-color: $tertiary-color;
+                    position: relative;
+    
+    
+    
+                    & a {
+                        font-size: 14px;
+                        line-height: 14px;
+                        font-family: $ff-YuGothic;
+                        font-weight: normal;
+                        color: #ffffff;
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        text-align: center;
+                        line-height: 38px;
+    
+    
+                        &::after {
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            content: "\f061 ";
+                            white-space: pre;
+                            margin-right: 15px;
+                            position: absolute;
+                            right: 0;
+    
+                        }
+                    }
+                }
+    
+            }
+    
+            .underline {
+                height: 1px;
+                width: 20px;
+                background-color: red;
+                margin: 25px auto;
+    
+    
+            }
+        }
+        .shop-detail {
+            .shop-overview {
+                padding-bottom: 0;
+            }
+            .shop-overview__list {
+                margin-bottom: 0;
+            }
+            .site-recruit {
+                background-color: $background-highlight-color;
+            }
+    
+            .shop-overview__item {
+                &:first-child {
+                    border: none;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+    
+        .site-recruit {
+            @include marginpadding();
+            min-width: 100vw;
+    
+            .shop-overview {
+                @include display-flex(row, center, center);
+                margin: auto;
+                width: 89.583vw;
+                padding-bottom: 10vw;
+                &__title {
+                    font-weight: 600;
+                    font-size: 5.729vw;
+                    line-height: 4.823vw;
+                    font-family: $ff-YuMincho;
+                }
+    
+                &__list {
+                    @include listsetup();
+                    @include display-flex(column, null, null);
+                    margin: 5.208vw auto;
+                    width: 89.583vw;
+    
+    
+                }
+    
+                &__item {
+                    @include display-flex(row, space-between, center);
+                    @include marginpadding;
+                    height: auto;
+                    width: 89.583vw;
+    
+    
+                }
+    
+                &__item:nth-child(1),
+                &__item:nth-child(3) {
+    
+                    border-bottom: 0.130vw solid #cccccc;
+                    border-top: 0.130vw solid #cccccc;
+                }
+    
+                &__item:nth-child(4) {
+                    border-bottom: 0.130vw solid #cccccc;
+                }
+    
+    
+                .shop-info {
+                    @include display-flex(column, center, center);
+                    margin-top: 6.510vw;
+    
+                    &__list {
+                        margin: 0;
+                    }
+    
+                    &__item {
+                        margin: 5px 0;
+                        font-family: Yu Gothic;
+                    }
+    
+                    .shop-wrapper {
+                        @include display-flex(column, center, flex-start);
+    
+                        .info-wrapper {
+                            order: 2;
+                            @include display-flex(column, center, null);
+                            width: auto;
+                            margin-top: 6.510vw;
+    
+    
+                            .shop-info__title {
+                                font-weight: 900;
+                                font-size: 5.208vw;
+                                line-height: 6.510vw;
+                                margin: 3.906vw 0;
+                                width: 89.583vw;
+                                font-family: $ff-YuMincho;
+    
+                            }
+    
+                            .shop-contact {
+                                @include display-flex(column, null, flex-start);
+    
+                                & br {
+                                    display: none;
+                                }
+    
+    
+                                &__heading--hidden {
+                                    display: none;
+                                }
+    
+                                &__title {
+                                    color: (red);
+                                    font-weight: normal;
+                                    font-weight: 900;
+                                    font-family: $ff-YuGothic;
+                                    font-size: 3.646vw;
+                                    line-height: 1.823vw;
+                                    width: auto;
+                                    margin: 1.953vw 0;
+    
+                                }
+    
+                                &__description {
+                                    font-weight: 900;
+                                    font-family: $ff-YuGothic;
+                                    font-size: 3.646vw;
+                                    line-height: 5.469vw;
+                                    margin: 1.953vw 0;
+                                    width: 89.583vw;
+                                }
+    
+                            }
+    
+                            .info-link {
+                                margin: 1.953vw 0;
+    
+                                &__title {
+                                    display: none;
+                                }
+    
+                                &__list {
+                                    @include display-flex(row, null, null);
+                                    @include listsetup();
+    
+                                }
+    
+                                &__item {
+                                    @include display-flex(row, center, center);
+                                    font-family: $ff-YuGothic;
+                                    font-weight: normal;
+                                    width: 28.125vw;
+                                    height: 5.208vw;
+                                    border: 0.260vw solid $accent-color;
+                                    margin-right: 1.302vw;
+                                    font-size: 3.125vw;
+                                    line-height: 1.823vw;
+                                    border-radius: 0.521vw;
+    
+    
+                                    & a {
+                                        color: (red);
+                                    }
+                                }
+                            }
+                        }
+    
+                        .info-link__figure {
+                            width: 89.583vw;
+                            height: 56.771vw;
+    
+    
+                            & img {
+                                width: 89.583vw;
+                                height: 56.771vw;
+    
+                            }
+                        }
+                    }
+                }
+    
+                .info-link__store-details {
+                    @include display-flex(row, center, center);
+                    background-color: $tertiary-color;
+                    position: relative;
+                    margin: 4.557vw 0;
+                    width: 89.583vw;
+                    height: 13.021vw;
+                    border-radius: 6.510vw;
+    
+    
+                    & a {
+                        font-family: $ff-YuGothic;
+                        font-weight: normal;
+                        color: #ffffff;
+                        font-size: 3.646vw;
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        text-align: center;
+                        line-height: 12.823vw;
+                        &::after {
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 900;
+                            content: "\f061 ";
+                            white-space: pre;
+                            margin-right: 15px;
+                            position: absolute;
+                            right: 0;
+    
+                        }
+                    }
+                }
+    
+            }
+    
+            .underline {
+                height: 0.07524454477050413vh;
+                background-color: red;
+                width: 2.604vw;
+                margin: 3.255vw auto;
+    
+            }
+        }
+        .shop-detail {
+            .shop-overview {
+                // padding-bottom: 0;
+            }
+            .shop-overview__list {
+                margin-bottom: 0;
+            }
+            .site-recruit {
+                background-color: $background-highlight-color;
+            }
+    
+            .shop-overview__item {
+                &:first-child {
+                    border: none;
+                }
+            }
+        }
+    }
+}

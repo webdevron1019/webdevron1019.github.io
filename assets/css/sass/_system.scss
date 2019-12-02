@@ -1,0 +1,117 @@
+@mixin system {
+    @media screen and (min-width: 769px) {
+        .main-system {
+            padding-bottom: 86px;
+        }
+        .system{
+            @include center;
+            padding-top: 99px;
+            padding-bottom: 99px;
+        }
+        .system__title{
+            font-family:$ff-hiragino;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 30px;
+        }
+        .system-pc{
+            margin-top: 60px;
+        }
+        .system-pc__title{
+            font-family:$ff-hiragino;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 30px;
+            margin-left: -2px;
+        }
+        .system-pc__item{
+            font-family:$ff-hiragino;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 30px;
+        }
+        .system-mobile{
+            margin-top: 50px;
+        }
+        .system-mobile__title{
+            font-family:$ff-hiragino;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 30px;
+            margin-left: -2px;
+        }
+        .system-mobile__item{
+            font-family:$ff-hiragino;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 30px;
+        }
+        .system__lead{
+            margin-top: 50px;
+            font-family:$ff-hiragino;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 30px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+    
+        .system{
+            @include center-mobile;
+            margin-left: 5.208vw;
+            padding-top: 19.531vw;
+            padding-bottom: 99px;
+        }
+        .system__title{
+            font-family:$ff-hiragino;
+            font-weight: 500;
+            font-size: 5.208vw;
+            line-height: 3.906vw;
+        }
+        .system-pc{
+            margin-top: 12.109vw;
+        }
+        .system-pc__title{
+            font-family:$ff-hiragino;
+            font-weight: 500;
+            font-size: 4.427vw;
+            line-height: 3.906vw;
+            margin-bottom: 6.510vw;
+            margin-left: -0.474vw;
+        }
+        .system-pc__item{
+            font-family:$ff-hiragino;
+            font-weight: 500;
+            font-size: 3.646vw;
+            line-height: 7.292vw;
+        }
+        .system-mobile{
+            margin-top: 13.021vw;
+        }
+        .system-mobile__title{
+            font-family:$ff-hiragino;
+            font-weight: 500;
+            font-size: 4.427vw;
+            line-height: 6.641vw;
+            margin-bottom: 6.510vw;
+            margin-left: -0.474vw;
+        }
+        .system-mobile__item{
+            font-family:$ff-hiragino;
+            font-weight: 500;
+            font-size: 3.646vw;
+            line-height: 7.292vw;
+        }
+        .system__lead{
+            margin-top: 12.240vw;
+            font-family:$ff-hiragino;
+            font-weight: 500;
+            font-size: 3.125vw;
+            line-height: 6.771vw;
+            letter-spacing: 1.5px;
+        }
+    }
+}

@@ -1,0 +1,631 @@
+@mixin brand-size {
+    width: 165px;
+    height: 70px;
+}
+
+@mixin top {
+    * {
+        font-family: $primary-font-family;
+    }
+    
+    $uppercase-text: uppercase;
+    $transform-text: none;
+    
+    $hiramin-font: hiraminpro;
+    
+    @font-face {
+        font-family: hiraminpro;
+        src: url(../font/copyfonts.com_hiraminpro-w3-opentype.otf);
+    }
+    
+    html,
+    body {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        background-color: $secondary-color;
+    }
+
+    .site__header {
+        display: flex;
+        flex-direction: column-reverse;
+
+        &__bg-container {
+            width: 100%;
+            height: 700px;
+            background-image: url('img/home_kv_A.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+        &__title {
+            span {
+                &:nth-child(1) {
+                    display: block;
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+
+        &__caption-wrapper {
+            margin: 230px auto auto 0;
+            padding-left: 10%;
+            // position: absolute;
+            // top: 13px;
+            // left: -28px;
+
+            h2, p {
+                color: #fff;
+                margin-top: 15px;
+                font-size: 18px;
+                
+                span {
+                    background-color: black;
+                }
+            }
+        }
+    }
+    
+    .title--hidden {
+        display: none;
+    }
+    .site-main{
+        width: 100%;
+        height: auto;
+    }
+    
+    .site-message {
+        background-color: #F5F5ED;
+    }
+    
+    .site-message,
+    .site-brand{
+        text-align: center;
+    }
+    
+    .site-sub-message__title {
+        font-family: $hiramin-font;
+        line-height: 1.7;
+    }
+    
+    .site-sub-message__text {
+        line-height: 2;
+        font-family: $hiramin-font;
+    
+        span {
+            font-family: $hiramin-font;
+        }
+    }
+    
+    .site-sub-brand{
+    
+        &__title {
+            text-transform: $uppercase-text;
+        }
+        &__title--capitalize {
+            text-transform: none;
+        }
+        &__list{
+            @include display-flex(null, null, null);
+        }
+    }
+    
+    .site-handling-brand {
+        
+        &__title {
+            font-family: $hiramin-font;
+    
+            &::before {
+                content: "\21C0";
+            }
+        }
+        &__list {
+            @include display-flex(null, null, null);
+        }
+        &__item {
+            img {
+                margin: auto;
+            }
+            &:nth-child(2) img{
+                border: none;
+    
+            }
+        }
+        &__caption {
+            font-family: $hiramin-font;
+    
+            &::before {
+                content: "\0203B";
+            }
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+    
+        .site-message__wrapper {
+            padding-bottom: 70px;
+            @include display-flex(column, null, center);
+        }
+
+        .site-header {
+            &__title {
+                span {
+                    &:nth-child(1) {
+                        display: inline-block;
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    
+        .site-sub-message__text:last-child{
+            margin-top: 30px auto;
+        }
+    
+        .site-sub-message__title {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-top: 25px;
+            br{
+                display: none;
+            }
+            span::before {
+                content: "\A";
+                white-space: pre;
+            }
+        }
+    
+        .site-sub-message__text {
+            font-size: 14px;
+            margin-top: 30px;
+            br{
+                display: none;
+            }
+            span { 
+                font-family: $hiramin-font;
+                font-size: 14px;
+            }
+            span::before {
+                content: "\A";
+                white-space: pre;
+            }
+        }
+    
+        .site-brand {
+            // margin-top: 60px;
+            @include display-flex(column, null, center);
+            width: 980px; 
+            overflow: hidden;
+            margin: 0 auto 0 auto;
+        }
+    
+        .site-sub-brand__wrapper {
+            @include display-flex(null, center, center);
+        }
+    
+        .site-sub-brand{
+            
+            &__title{
+                font-size: 1.4em;
+                font-weight: bold;
+                margin: 30px;
+                position: relative;
+    
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 2px;
+                    right: -35px;
+                    width: 10px;
+                    height: 318px;
+                    border-right: 2px solid $secondary-border-color;
+                }
+            }
+    
+            &__title--border-none::after{
+                content: "";
+                border-right: none;
+            }
+        
+            &__list{
+                flex-direction: column;
+            }
+        
+            &__item{
+                margin: 10px 50px;
+                line-height: normal;
+            
+                img {
+                    @include brand-size;
+                }
+            }
+        }
+    
+        .site-handling-brand {
+            margin: 60px auto;
+        
+            &__title {
+                font-size: 15px;
+                font-weight: bold;
+            }
+            &__list {
+                width: 980px;
+                flex-wrap: nowrap;
+                margin: 60px auto 40px auto;
+                @include display-flex(null, center, center);
+            }
+            &__item {
+                margin: auto 20px;
+    
+                img {
+                    @include brand-size;
+                }
+                &:last-child {
+                    margin: 0 20px;
+                }
+            }
+            &__caption {
+                margin: 0 auto;
+                font-size: 12px;
+    
+                br{
+                    display: none;
+                }
+            }
+        }
+    
+        .site-section {
+                
+            &__list {
+                width: 980px; 
+                margin: auto;
+                flex-wrap: wrap;
+                @include display-flex(row, space-between, null);
+            }
+    
+            &__list>item {
+                flex: 1 0 50%;
+            }
+    
+            &__item {
+                color: $secondary-color;
+                height: 320px;
+                @include display-flex(null, center, center);
+                text-align: center
+            }
+            &__item:nth-child(1){
+                background: url(img/shop-pc.png) no-repeat;
+                background-size: cover;
+                flex: 0 1 100%;
+                margin-bottom: 10px;
+            }
+            &__item:nth-child(2){
+                background: url(img/company-pc.png) no-repeat;
+                width: 485px;
+                position: relative;
+            }
+            &__item:nth-child(3){
+                background: url(img/recruit-pc.png) no-repeat;
+                width: 485px;
+                position: relative;
+            }
+            &__wrapper {
+                @include display-flex(column, center, null);
+                .category-subtitle {
+                    height: 111px;
+                }
+                .category-subtitle__heading {
+                    font-weight: normal;
+                    margin-top: 0;
+                }
+            }
+    
+            &__title::before {
+                width: 25px; 
+                height: 14px;
+                border-bottom: 1px solid $accent-color;
+            }
+    
+            &__btn-shop {
+                position: relative;
+                top: 30px;
+    
+                a {
+                    color: $secondary-color;
+                    font-size: 14px;
+                    vertical-align: middle;
+                    display: table-cell;
+                    background-color: $accent-color;
+                    width: 300px;
+                    height: 50px;
+                    border-radius: 50px;
+                }
+    
+                &::after {
+                    content: "\f061";
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: $secondary-color;
+                    position: absolute;
+                    top: 18px;
+                    right: 20px;
+                }
+            }
+    
+            &__anchor {
+                background-color: $accent-color;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                    &::before {
+                    content: "\f061";
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 600;
+                    color: $secondary-color;
+                    font-size: 14px;
+                    position: absolute;
+                    top: 34%;
+                    left: 40%;
+                    }
+                    a {
+                        display: block;
+                        height: 100%;
+                    }
+            }
+        }
+    
+        .site-service{
+            margin: 80px auto;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 15px;
+    
+            &__sub-title {
+                font-weight: 600;
+            }
+    
+            &__btn-pointcard {
+                @include display-flex(null, null, null);
+                align-content: center;
+                border: 1px solid black;   
+                width: 470px;
+                height: 60px;
+                margin: 20px auto;
+                a {
+                    margin: auto;
+                    font-weight: 600;
+                    color: black;
+                    font-family: $hiramin-font;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+
+        .site__header {
+            flex-direction: column;
+    
+            &__bg-container {
+                height:96vw;
+                background-image: url('img/colorstudio.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+    
+            &__caption-wrapper {
+                margin: 75% auto auto 10%;;
+                margin-left: 10%;
+                
+                h2, p {
+                    font-size: 5vw;
+                }
+
+            }
+        }
+
+        .site-header {
+            &__title {
+                span {
+                    &:nth-child(2) {
+                        display: inline-block;
+                    }
+                    &:nth-child(1) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    
+        .site-message__wrapper {
+            padding: 15% 0;
+        }
+    
+        .site-sub-message__text:last-child{
+            margin-top: 7%;
+        }
+    
+        .site-sub-message__title {
+            font-size: 6vw;
+            margin-top: 8%;
+            letter-spacing: 4px;
+        }
+    
+        .site-sub-message__text {
+            margin-top: 3%;
+            font-size: 3.5vw;
+            line-height: 2;
+        }
+    
+        .site-brand {
+            padding-top: 12%;
+        }
+    
+        .site-sub-brand{
+    
+            &__title{
+                font-size: 5.5vw;
+                margin: 8% auto 4% auto;
+            }
+        
+            &__list{
+                justify-content: space-between;
+                margin: 0 4vw;
+    
+            }
+            &__item {
+                @include display-flex(null, center, center);
+
+                img {
+                    width: 25.7vw;
+                    height: 11vw;
+                }
+            }
+        }
+    
+        .site-handling-brand {
+            margin: 12% auto;
+        
+            &__title {
+                font-size: 3.5vw;
+                margin: 3% auto;
+            }
+            &__list {
+                width: auto;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin:  0 4vw;
+            }
+            &__item {
+                margin: 3% auto;
+    
+                img {
+                    width: 25.7vw;
+                    height: 11vw;
+                }
+            }
+            &__caption {
+                font-size: 2.6vw;
+                line-height: 1.7;
+                margin: 10%;
+            }
+        }
+    
+        .site-section {
+            margin-top: 20%;
+            
+            &__item {
+                position: relative;
+                margin: 6% auto;
+                width: 87vw;
+                height: 87vw;
+                color: $secondary-color;
+                text-align: center;
+                @include display-flex(null, null, null);
+            }
+            &__item:nth-child(1){
+                background: url(img/shop-bg.png) no-repeat;
+            }
+            &__item:nth-child(2){
+                background: url(img/company-bg.png) no-repeat;
+            }
+            &__item:nth-child(3){
+                background: url(img/recruit-bg.png) no-repeat;
+            }
+            &__wrapper {
+                margin: auto;
+                @include display-flex(column, center, null);
+                align-content: center;
+                .category-subtitle__heading {
+                    font-weight: normal;
+                }
+            }
+    
+            &__title {
+                letter-spacing: 4px;
+            }
+    
+            &__btn-shop {
+                margin-top: 10%;
+                position: relative;
+    
+                a {
+                    color: $secondary-color;
+                    font-size: 3.5vw;
+                    vertical-align: middle;
+                    display: table-cell;
+                    background-color: $accent-color;
+                    width: 65vw;
+                    height: 12vw;
+                    border-radius: 50px;
+                }
+    
+                &::after {
+                    content: "\f061";
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 600;
+                    font-size: 2.5vw;
+                    color: $secondary-color;
+                    position: absolute;
+                    top: 5vw;
+                    right: 5vw;
+                }
+            }
+    
+            &__anchor {
+                background-color: $accent-color;
+                width: 15vw;
+                height: 15vw;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                    &::before {
+                        content: "\f061";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 600;
+                        color: $secondary-color;
+                        font-size: 6vw;
+                        position: absolute;
+                        top: 30%;
+                        left: 34%;
+                    }
+                    a {
+                        display: block;
+                        height: 100%;
+                    }
+            }
+        }
+    
+        .site-service{
+            margin-top: 20%;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 4vw;
+    
+            &__btn-pointcard {
+                margin: 3% 7% 10% 7%;
+                a{
+                    border: 2px solid black;   
+                    width: 87vw;
+                    height: 15vw;
+                    display: table-cell;
+                    vertical-align: middle;
+                    color: black;
+                    top: 30%;
+                    font-family: $hiramin-font;
+                }
+            }
+        }
+    } 
+}
+
+
+

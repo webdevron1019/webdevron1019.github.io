@@ -1,0 +1,302 @@
+@mixin list {
+    list-style: none;
+    padding: 0;
+}
+
+@mixin link {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+@mixin header {
+
+    .site-header {
+        @include display-flex(column, null, center);
+        font-weight: bold;
+        z-index: 100;
+        position: relative;
+
+        &__outer-wrapper {
+            width: 100%;
+            @include display-flex(null, center, null);
+            &:nth-child(2) {
+                background-color: $background-highlight-color;
+            }
+        }
+
+        &__navigation-heading, 
+        &__breadcrumbs-heading {
+            display: none;
+        }
+
+        &__inner-wrapper {
+            @include display-flex(row, null, null);
+            justify-content: space-between;
+            max-width: $content-width-pc;
+        }
+
+        &__container {
+            @include display-flex(row, null, null);
+            overflow-y: hidden;
+        }
+
+        &__heading,
+        &__heading-link,
+        &__lead-title {
+            @include display-flex(null, null,center);
+        }
+
+        &__lead-title {
+            font-weight: bold;
+        }
+        
+        &__breadcrumbs {
+            width: $content-width-pc;
+            &-list {
+                @include list;
+                @include display-flex(row, null, null);
+                height: 100%;
+            }
+
+            &-item {
+                @include display-flex(null, null, center);
+                &:not(:first-child) {
+                    &::before {
+                        content: "\f105";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            &-link {
+                font-weight: bold;
+                @include link;
+                color: $tertiary-color;
+            }
+        }
+
+        &__navigation {
+            &-list {
+                z-index: 90;
+                @include list;
+            }
+            
+            &-item {
+                font-size: 14px;
+                white-space: nowrap;
+                @include display-flex(null, null,center);
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            
+            &-link {
+                @include link;
+                font-weight: bold;
+            }
+        }
+    }
+    @media only screen and (min-width: 769px) {
+        .site-header {
+            height: 131px;
+
+            &__inner-wrapper {
+                height: 81px;
+                width: $content-width-pc;
+            }
+
+            &__container {
+                min-width: 266px;
+            }
+
+            &__heading {
+                margin-top: 8px;
+            }
+
+            &__lead-title {
+                margin: 0 25px;
+                letter-spacing: 2px;
+                font-size: 24px;
+                transform: scale(.8, 1);
+            }
+
+            &__breadcrumbs {
+                height: 50px;
+                
+                &-item {
+                    font-size: 13px;
+                    &:first-child {
+                        margin-right: 10px;
+                    }
+                    &:last-child {
+                        margin-left: 10px;
+                    }
+                    &:not(:first-child) {
+                        &::before {
+                            content: "\f105";
+                            margin-right: 14px;
+                        }
+                    }
+                }
+            }
+
+            &__navigation {
+                &-list {
+                    height: 100%;
+                    @include display-flex(row, null, null);
+                }
+                
+                &-item {
+                    margin: 0 20px;
+                }
+                
+                &-link {
+                    padding: 6px 0;
+                    border-bottom: solid 2px white;
+                    &:hover {
+                        border-bottom: solid 2px $accent-color;
+                    }
+                }
+            }
+            
+            &__hamburger-btn {
+                display: none;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .site-header {
+            height: 18.5vw;
+
+            &__inner-wrapper  {
+                height: 18.5vw;  
+                width: 100%;
+            }
+            
+            &__container {
+                padding-left: 5.5vw;
+                min-width: 1vw;
+            }
+            
+            &__heading {
+                margin-top: 1vw;
+            }
+        
+            &__logo {
+                width: 16vw;
+            }
+        
+            &__lead-title {
+                margin: 0 3vw;
+                letter-spacing: .3vw;
+                font-size: 4vw;
+                transform: scale(.9, 1);
+            }
+        
+            &__breadcrumbs {
+                height: 7.5vw;
+                color: $tertiary-color;
+                background-color: $background-highlight-color;
+
+                &-list {
+                    padding-left: 5.5vw;
+                }
+            
+                &-item {
+                    font-size: 2.7vw;
+                    letter-spacing: 0.5px;
+                    &:not(:first-child) {
+                        &::before {
+                            margin-right: 2.5vw;
+                        }
+                    }
+                    &:first-child {
+                        margin-right: .5vw;
+                    }
+                    &:last-child {
+                        margin-left: 1.5vw;
+                    }
+                }
+            }
+
+            &__navigation {
+                margin: 6.2vw 5vw;
+        
+                &-list  {
+                    height: auto;
+                    position: absolute;
+                    left: 0;
+                    top: 18.5vw;
+                    width: 100%;
+                    background-color: white;
+                    @include display-flex(column, null, null);
+                    display: none;
+                }
+            
+                &-item {
+                    margin: 0;
+                    border-bottom: 2px solid $background-highlight-color;
+                    &:first-child {
+                        border-top: 2px solid $background-highlight-color;
+                    }
+                    &:hover {
+                        border-bottom: 2px solid $accent-color;
+                    }
+                }
+            
+                &-link {
+                    width: 100%;
+                    padding: 6vw 0;
+                    font-size: 3.6vw;
+                    text-align: center;
+                    border-bottom: none;
+                    &:hover {
+                        border-bottom:  none;
+                    }
+                }
+            }
+        
+            &__hamburger-btn {
+                position: relative;
+                display: block;
+                width: 7vw;
+                height: 5.5vw;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                @include display-flex(column, space-between, null);
+                &:active,
+                &:focus {
+                    outline: none;
+                }
+            }
+        
+            &__hamburger-line {
+                width: 7vw;
+                height: .3vw;
+                background-color: $accent-color;
+
+                &--collapsed {
+                    position: absolute;
+                    top: 50%;
+                    &:first-child {
+                        transform: rotate(45deg);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:last-child {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+    

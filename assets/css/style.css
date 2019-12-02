@@ -1,0 +1,3255 @@
+@charset "UTF-8";
+/* @font-face {
+  font-family: "Marcellus-v6-latin";
+  src: url("../assets/font/marcellus-v6-latin-regular.eot");
+  src: url("./font/marcellus-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../font/marcellus-v6-latin-regular.woff") format("woff"), url("../font/marcellus-v6-latin-regular.woff2") format("woff2"), url("../font/marcellus-v6-latin-regular.ttf") format("truetype"), url("../font/marcellus-v6-latin-regular.svg#Marcellus") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: marcellus-v6-latin-regular;
+  src: url(../font/marcellus-v6-latin-regular.ttf); } */
+* {
+  font-family: "Marcellus-v6-latin"; }
+
+#site-footer {
+  position: relative; }
+
+@media screen and (min-width: 769px) {
+  body {
+    min-width: 1000px; } }
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: bottom; }
+
+body {
+  line-height: 1; }
+
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+ul,
+ol,
+dl {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #000;
+  text-decoration: none;
+  vertical-align: baseline;
+  background: transparent;
+  outline: none; }
+
+img {
+  vertical-align: bottom; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input,
+select {
+  vertical-align: middle; }
+
+* {
+  font-family: "Marcellus-v6-latin"; }
+
+/* @font-face {
+  font-family: hiraminpro;
+  src: url(../font/copyfonts.com_hiraminpro-w3-opentype.otf); } */
+html,
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: #ffffff; }
+
+.site__header {
+  display: flex;
+  flex-direction: column-reverse; }
+  .site__header__bg-container {
+    width: 100%;
+    height: 700px;
+    background-image: url("assets/css/img/home_kv_A.png");
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .site__header__title span:nth-child(1) {
+    display: block; }
+  .site__header__title span:nth-child(2) {
+    display: none; }
+  .site__header__caption-wrapper {
+    margin: 230px auto auto 0;
+    padding-left: 10%; }
+    .site__header__caption-wrapper h2, .site__header__caption-wrapper p {
+      color: #fff;
+      margin-top: 15px;
+      font-size: 18px; }
+      .site__header__caption-wrapper h2 span, .site__header__caption-wrapper p span {
+        background-color: black; }
+
+.title--hidden {
+  display: none; }
+
+.site-main {
+  width: 100%;
+  height: auto; }
+
+.site-message {
+  background-color: #F5F5ED; }
+
+.site-message,
+.site-brand {
+  text-align: center; }
+
+.site-sub-message__title {
+  font-family: hiraminpro;
+  line-height: 1.7; }
+
+.site-sub-message__text {
+  line-height: 2;
+  font-family: hiraminpro; }
+  .site-sub-message__text span {
+    font-family: hiraminpro; }
+
+.site-sub-brand__title {
+  text-transform: uppercase; }
+.site-sub-brand__title--capitalize {
+  text-transform: none; }
+.site-sub-brand__list {
+  display: flex; }
+
+.site-handling-brand__title {
+  font-family: hiraminpro; }
+  .site-handling-brand__title::before {
+    content: "\21C0"; }
+.site-handling-brand__list {
+  display: flex; }
+.site-handling-brand__item img {
+  margin: auto; }
+.site-handling-brand__item:nth-child(2) img {
+  border: none; }
+.site-handling-brand__caption {
+  font-family: hiraminpro; }
+  .site-handling-brand__caption::before {
+    content: "\0203B"; }
+
+@media screen and (min-width: 769px) {
+  .site-message__wrapper {
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .site-header__title span:nth-child(1) {
+    display: inline-block; }
+  .site-header__title span:nth-child(2) {
+    display: none; }
+
+  .site-sub-message__text:last-child {
+    margin-top: 30px auto; }
+
+  .site-sub-message__title {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 25px; }
+    .site-sub-message__title br {
+      display: none; }
+    .site-sub-message__title span::before {
+      content: "\A";
+      white-space: pre; }
+
+  .site-sub-message__text {
+    font-size: 14px;
+    margin-top: 30px; }
+    .site-sub-message__text br {
+      display: none; }
+    .site-sub-message__text span {
+      font-family: hiraminpro;
+      font-size: 14px; }
+    .site-sub-message__text span::before {
+      content: "\A";
+      white-space: pre; }
+
+  .site-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 980px;
+    overflow: hidden;
+    margin: 0 auto 0 auto; }
+
+  .site-sub-brand__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  .site-sub-brand__title {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 30px;
+    position: relative; }
+    .site-sub-brand__title::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: -35px;
+      width: 10px;
+      height: 318px;
+      border-right: 2px solid #e6e6e6; }
+  .site-sub-brand__title--border-none::after {
+    content: "";
+    border-right: none; }
+  .site-sub-brand__list {
+    flex-direction: column; }
+  .site-sub-brand__item {
+    margin: 10px 50px;
+    line-height: normal; }
+    .site-sub-brand__item img {
+      width: 165px;
+      height: 70px; }
+
+  .site-handling-brand {
+    margin: 60px auto; }
+    .site-handling-brand__title {
+      font-size: 15px;
+      font-weight: bold; }
+    .site-handling-brand__list {
+      width: 980px;
+      flex-wrap: nowrap;
+      margin: 60px auto 40px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .site-handling-brand__item {
+      margin: auto 20px; }
+      .site-handling-brand__item img {
+        width: 165px;
+        height: 70px; }
+      .site-handling-brand__item:last-child {
+        margin: 0 20px; }
+    .site-handling-brand__caption {
+      margin: 0 auto;
+      font-size: 12px; }
+      .site-handling-brand__caption br {
+        display: none; }
+
+  .site-section__list {
+    width: 980px;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .site-section__list > item {
+    flex: 1 0 50%; }
+  .site-section__item {
+    color: #ffffff;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+  .site-section__item:nth-child(1) {
+    background: url(assets/css/img/shop-pc.png) no-repeat;
+    background-size: cover;
+    flex: 0 1 100%;
+    margin-bottom: 10px; }
+  .site-section__item:nth-child(2) {
+    background: url(assets/css/img/company-pc.png) no-repeat;
+    width: 485px;
+    position: relative; }
+  .site-section__item:nth-child(3) {
+    background: url(assets/css/img/recruit-pc.png) no-repeat;
+    width: 485px;
+    position: relative; }
+  .site-section__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .site-section__wrapper .category-subtitle {
+      height: 111px; }
+    .site-section__wrapper .category-subtitle__heading {
+      font-weight: normal;
+      margin-top: 0; }
+  .site-section__title::before {
+    width: 25px;
+    height: 14px;
+    border-bottom: 1px solid #c40909; }
+  .site-section__btn-shop {
+    position: relative;
+    top: 30px; }
+    .site-section__btn-shop a {
+      color: #ffffff;
+      font-size: 14px;
+      vertical-align: middle;
+      display: table-cell;
+      background-color: #c40909;
+      width: 300px;
+      height: 50px;
+      border-radius: 50px; }
+    .site-section__btn-shop::after {
+      content: "\f061";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+      font-size: 14px;
+      color: #ffffff;
+      position: absolute;
+      top: 18px;
+      right: 20px; }
+  .site-section__anchor {
+    background-color: #c40909;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    .site-section__anchor::before {
+      content: "\f061";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+      color: #ffffff;
+      font-size: 14px;
+      position: absolute;
+      top: 34%;
+      left: 40%; }
+    .site-section__anchor a {
+      display: block;
+      height: 100%; }
+
+  .site-service {
+    margin: 80px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px; }
+    .site-service__sub-title {
+      font-weight: 600; }
+    .site-service__btn-pointcard {
+      display: flex;
+      align-content: center;
+      border: 1px solid black;
+      width: 470px;
+      height: 60px;
+      margin: 20px auto; }
+      .site-service__btn-pointcard a {
+        margin: auto;
+        font-weight: 600;
+        color: black;
+        font-family: hiraminpro; } }
+@media screen and (max-width: 768px) {
+  .site__header {
+    flex-direction: column; }
+    .site__header__bg-container {
+      height: 96vw;
+      background-image: url("assets/css/img/colorstudio.jpg");
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .site__header__caption-wrapper {
+      margin: 75% auto auto 10%;
+      margin-left: 10%; }
+      .site__header__caption-wrapper h2, .site__header__caption-wrapper p {
+        font-size: 5vw; }
+
+  .site-header__title span:nth-child(2) {
+    display: inline-block; }
+  .site-header__title span:nth-child(1) {
+    display: none; }
+
+  .site-message__wrapper {
+    padding: 15% 0; }
+
+  .site-sub-message__text:last-child {
+    margin-top: 7%; }
+
+  .site-sub-message__title {
+    font-size: 6vw;
+    margin-top: 8%;
+    letter-spacing: 4px; }
+
+  .site-sub-message__text {
+    margin-top: 3%;
+    font-size: 3.5vw;
+    line-height: 2; }
+
+  .site-brand {
+    padding-top: 12%; }
+
+  .site-sub-brand__title {
+    font-size: 5.5vw;
+    margin: 8% auto 4% auto; }
+  .site-sub-brand__list {
+    justify-content: space-between;
+    margin: 0 4vw; }
+  .site-sub-brand__item {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .site-sub-brand__item img {
+      width: 25.7vw;
+      height: 11vw; }
+
+  .site-handling-brand {
+    margin: 12% auto; }
+    .site-handling-brand__title {
+      font-size: 3.5vw;
+      margin: 3% auto; }
+    .site-handling-brand__list {
+      width: auto;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 4vw; }
+    .site-handling-brand__item {
+      margin: 3% auto; }
+      .site-handling-brand__item img {
+        width: 25.7vw;
+        height: 11vw; }
+    .site-handling-brand__caption {
+      font-size: 2.6vw;
+      line-height: 1.7;
+      margin: 10%; }
+
+  .site-section {
+    margin-top: 20%; }
+    .site-section__item {
+      position: relative;
+      margin: 6% auto;
+      width: 87vw;
+      height: 87vw;
+      color: #ffffff;
+      text-align: center;
+      display: flex; }
+    .site-section__item:nth-child(1) {
+      background: url(assets/css/img/shop-bg.png) no-repeat; }
+    .site-section__item:nth-child(2) {
+      background: url(assets/css/img/company-bg.png) no-repeat; }
+    .site-section__item:nth-child(3) {
+      background: url(assets/css/img/recruit-bg.png) no-repeat; }
+    .site-section__wrapper {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      .site-section__wrapper .category-subtitle__heading {
+        font-weight: normal; }
+    .site-section__title {
+      letter-spacing: 4px; }
+    .site-section__btn-shop {
+      margin-top: 10%;
+      position: relative; }
+      .site-section__btn-shop a {
+        color: #ffffff;
+        font-size: 3.5vw;
+        vertical-align: middle;
+        display: table-cell;
+        background-color: #c40909;
+        width: 65vw;
+        height: 12vw;
+        border-radius: 50px; }
+      .site-section__btn-shop::after {
+        content: "\f061";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        font-size: 2.5vw;
+        color: #ffffff;
+        position: absolute;
+        top: 5vw;
+        right: 5vw; }
+    .site-section__anchor {
+      background-color: #c40909;
+      width: 15vw;
+      height: 15vw;
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+      .site-section__anchor::before {
+        content: "\f061";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        color: #ffffff;
+        font-size: 6vw;
+        position: absolute;
+        top: 30%;
+        left: 34%; }
+      .site-section__anchor a {
+        display: block;
+        height: 100%; }
+
+  .site-service {
+    margin-top: 20%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4vw; }
+    .site-service__btn-pointcard {
+      margin: 3% 7% 10% 7%; }
+      .site-service__btn-pointcard a {
+        border: 2px solid black;
+        width: 87vw;
+        height: 15vw;
+        display: table-cell;
+        vertical-align: middle;
+        color: black;
+        top: 30%;
+        font-family: hiraminpro; } }
+.site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  z-index: 100;
+  position: relative; }
+  .site-header__outer-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .site-header__outer-wrapper:nth-child(2) {
+      background-color: #f5f5ed; }
+  .site-header__navigation-heading, .site-header__breadcrumbs-heading {
+    display: none; }
+  .site-header__inner-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 980px; }
+  .site-header__container {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden; }
+  .site-header__heading, .site-header__heading-link, .site-header__lead-title {
+    display: flex;
+    align-items: center; }
+  .site-header__lead-title {
+    font-weight: bold; }
+  .site-header__breadcrumbs {
+    width: 980px; }
+    .site-header__breadcrumbs-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      height: 100%; }
+    .site-header__breadcrumbs-item {
+      display: flex;
+      align-items: center; }
+      .site-header__breadcrumbs-item:not(:first-child)::before {
+        content: "\f105";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 700; }
+    .site-header__breadcrumbs-link {
+      font-weight: bold;
+      color: #000000;
+      text-decoration: none;
+      color: #666666; }
+  .site-header__navigation-list {
+    z-index: 90;
+    list-style: none;
+    padding: 0; }
+  .site-header__navigation-item {
+    font-size: 14px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center; }
+    .site-header__navigation-item:first-child {
+      margin-left: 0; }
+    .site-header__navigation-item:last-child {
+      margin-right: 0; }
+  .site-header__navigation-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold; }
+
+@media only screen and (min-width: 769px) {
+  .site-header {
+    height: 131px; }
+    .site-header__inner-wrapper {
+      height: 81px;
+      width: 980px; }
+    .site-header__container {
+      min-width: 266px; }
+    .site-header__heading {
+      margin-top: 8px; }
+    .site-header__lead-title {
+      margin: 0 25px;
+      letter-spacing: 2px;
+      font-size: 24px;
+      transform: scale(0.8, 1); }
+    .site-header__breadcrumbs {
+      height: 50px; }
+      .site-header__breadcrumbs-item {
+        font-size: 13px; }
+        .site-header__breadcrumbs-item:first-child {
+          margin-right: 10px; }
+        .site-header__breadcrumbs-item:last-child {
+          margin-left: 10px; }
+        .site-header__breadcrumbs-item:not(:first-child)::before {
+          content: "\f105";
+          margin-right: 14px; }
+    .site-header__navigation-list {
+      height: 100%;
+      display: flex;
+      flex-direction: row; }
+    .site-header__navigation-item {
+      margin: 0 20px; }
+    .site-header__navigation-link {
+      padding: 6px 0;
+      border-bottom: solid 2px white; }
+      .site-header__navigation-link:hover {
+        border-bottom: solid 2px #c40909; }
+    .site-header__hamburger-btn {
+      display: none; } }
+@media only screen and (max-width: 768px) {
+  .site-header {
+    height: 18.5vw; }
+    .site-header__inner-wrapper {
+      height: 18.5vw;
+      width: 100%; }
+    .site-header__container {
+      padding-left: 5.5vw;
+      min-width: 1vw; }
+    .site-header__heading {
+      margin-top: 1vw; }
+    .site-header__logo {
+      width: 16vw; }
+    .site-header__lead-title {
+      margin: 0 3vw;
+      letter-spacing: .3vw;
+      font-size: 4vw;
+      transform: scale(0.9, 1); }
+    .site-header__breadcrumbs {
+      height: 7.5vw;
+      color: #666666;
+      background-color: #f5f5ed; }
+      .site-header__breadcrumbs-list {
+        padding-left: 5.5vw; }
+      .site-header__breadcrumbs-item {
+        font-size: 2.7vw;
+        letter-spacing: 0.5px; }
+        .site-header__breadcrumbs-item:not(:first-child)::before {
+          margin-right: 2.5vw; }
+        .site-header__breadcrumbs-item:first-child {
+          margin-right: .5vw; }
+        .site-header__breadcrumbs-item:last-child {
+          margin-left: 1.5vw; }
+    .site-header__navigation {
+      margin: 6.2vw 5vw; }
+      .site-header__navigation-list {
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: 18.5vw;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        display: none; }
+      .site-header__navigation-item {
+        margin: 0;
+        border-bottom: 2px solid #f5f5ed; }
+        .site-header__navigation-item:first-child {
+          border-top: 2px solid #f5f5ed; }
+        .site-header__navigation-item:hover {
+          border-bottom: 2px solid #c40909; }
+      .site-header__navigation-link {
+        width: 100%;
+        padding: 6vw 0;
+        font-size: 3.6vw;
+        text-align: center;
+        border-bottom: none; }
+        .site-header__navigation-link:hover {
+          border-bottom: none; }
+    .site-header__hamburger-btn {
+      position: relative;
+      display: block;
+      width: 7vw;
+      height: 5.5vw;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .site-header__hamburger-btn:active, .site-header__hamburger-btn:focus {
+        outline: none; }
+    .site-header__hamburger-line {
+      width: 7vw;
+      height: .3vw;
+      background-color: #c40909; }
+      .site-header__hamburger-line--collapsed {
+        position: absolute;
+        top: 50%; }
+        .site-header__hamburger-line--collapsed:first-child {
+          transform: rotate(45deg); }
+        .site-header__hamburger-line--collapsed:nth-child(2) {
+          display: none; }
+        .site-header__hamburger-line--collapsed:last-child {
+          transform: rotate(-45deg); } }
+.title--hidden {
+  display: none; }
+
+.site-footer {
+  background-color: #000000;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px; }
+
+@media screen and (min-width: 769px) {
+  .site-footer {
+    height: 365px;
+    padding-top: 100px; }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 980px;
+    color: #ffffff; }
+
+  .site-footer__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 125px; }
+
+  .site-footer__logo-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+
+  .site-footer__logo-img img:first-child {
+    width: 90px;
+    height: 48px;
+    margin-right: 20px; }
+
+  .site-footer__logo-img img:nth-child(2) {
+    width: 81px;
+    height: 17px;
+    margin-top: -5px; }
+
+  .site-footer__logo-address {
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif;
+    font-size: 12px;
+    line-height: 26px; }
+
+  .site-footer__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+
+  .site-footer__navigation-list {
+    margin-right: 108px; }
+
+  .site-footer__navigation-item, .site-footer__navigation-item2 {
+    margin-bottom: 25px;
+    font-size: 14px;
+    position: relative; }
+    .site-footer__navigation-item a, .site-footer__navigation-item2 a {
+      color: #ffffff; }
+
+  .site-footer__navigation-item2:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    font-weight: 600;
+    font-size: 3px;
+    padding: 0 8px 0 0;
+    vertical-align: 100%; }
+
+  .site-footer__navigation-item:before {
+    content: "-";
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0 8px 0 0; }
+
+  .site-footer__navigation-item2:nth-child(2) {
+    display: none; }
+
+  .site-footer__logo-credit {
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif;
+    font-size: 11px;
+    font-weight: 100;
+    line-height: 26px;
+    color: white;
+    width: 980px;
+    margin: auto;
+    margin-top: -45px; } }
+@media screen and (max-width: 768px) {
+  .site-footer {
+    height: 92.057vw;
+    padding-top: 19.531vw; }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 980px;
+    color: #ffffff; }
+
+  .site-footer__navigation-list {
+    display: none; }
+
+  .site-footer__navigation-list2 {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 12.370vw;
+    flex-wrap: wrap;
+    width: 72.917vw; }
+
+  .site-footer__navigation-item2:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    font-weight: 600;
+    font-size: 0.651vw;
+    padding: 0 1.302vw 0 0;
+    vertical-align: 15%; }
+
+  .site-footer__navigation-item2:first-child {
+    margin-left: 5.859vw;
+    margin-right: 0px; }
+
+  .site-footer__navigation-item2:nth-child(2) {
+    display: block; }
+
+  .site-footer__navigation-item2:nth-child(4) {
+    margin-right: 0; }
+
+  .site-footer__navigation-item2 {
+    font-size: 3.385vw;
+    line-height: 7.292vw;
+    margin-right: 8.854vw;
+    margin-bottom: 0; }
+    .site-footer__navigation-item2 a {
+      color: #ffffff; }
+
+  .site-footer__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 16.276vw; }
+
+  .site-footer__logo-address {
+    display: none; }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 89.583vw; }
+
+  .site-footer__logo-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+
+  .site-footer__logo-img img:first-child {
+    width: 26.432vw;
+    height: 13.932vw;
+    margin-right: 9.115vw; }
+
+  .site-footer__logo-img img:nth-child(2) {
+    width: 23.438vw;
+    height: 4.948vw;
+    margin-top: -1.563vw; }
+
+  .site-footer__logo-credit {
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif;
+    font-size: 2.865vw;
+    font-weight: 100;
+    color: white;
+    line-height: 3.385vw;
+    margin: auto;
+    margin-top: 12.370vw;
+    width: 89.583vw;
+    text-align: center; } }
+@media screen and (min-width: 769px) {
+  body {
+    margin: 0;
+    padding: 0;
+    min-width: 1000px; }
+
+  .site-recruit {
+    margin: 0;
+    padding: 0; }
+    .site-recruit .shop-overview {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      width: 980px;
+      padding-bottom: 40px; }
+      .site-recruit .shop-overview__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 40px auto; }
+      .site-recruit .shop-overview__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: 375px; }
+      .site-recruit .shop-overview .info-padding {
+        padding-top: 30px; }
+      .site-recruit .shop-overview__item:nth-child(1), .site-recruit .shop-overview__item:nth-child(3) {
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc; }
+      .site-recruit .shop-overview__item:nth-child(4) {
+        border-bottom: 1px solid #cccccc; }
+      .site-recruit .shop-overview .shop-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .site-recruit .shop-overview .shop-info__list {
+          margin-left: 60px; }
+        .site-recruit .shop-overview .shop-info__item {
+          margin: 5px 0;
+          font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+        .site-recruit .shop-overview .shop-info .shop-wrapper {
+          display: flex;
+          flex-direction: row; }
+          .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 640px; }
+            .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-info__title {
+              font-size: 20px;
+              line-height: 25px;
+              font-weight: 900;
+              margin-left: 60px;
+              font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif; }
+            .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact {
+              display: flex;
+              flex-direction: row;
+              align-items: center; }
+              .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact .text-bottom {
+                margin-top: 25px; }
+              .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact__heading--hidden {
+                display: none; }
+              .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact__title {
+                color: red;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 900;
+                width: 60px;
+                font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+              .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact__description {
+                font-size: 14px;
+                line-height: 27px;
+                font-weight: 900;
+                margin-left: 20px;
+                font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+            .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link {
+              margin: 10px 0 20px 60px; }
+              .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__title {
+                display: none; }
+              .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__list {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                margin: 0;
+                padding: 0; }
+              .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__item {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 90px;
+                height: 22px;
+                border: 1px solid #c40909;
+                margin-right: 10px;
+                border-radius: 2px;
+                font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: normal; }
+                .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__item a {
+                  color: red; }
+          .site-recruit .shop-overview .shop-info .shop-wrapper .info-link__figure {
+            width: 340px;
+            height: 215px; }
+            .site-recruit .shop-overview .shop-info .shop-wrapper .info-link__figure img {
+              width: 340px;
+              height: 215px; }
+      .site-recruit .shop-overview .info-link__store-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 35px;
+        width: 300px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #666666;
+        position: relative; }
+        .site-recruit .shop-overview .info-link__store-details a {
+          font-size: 14px;
+          line-height: 14px;
+          font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+          font-weight: normal;
+          color: #ffffff;
+          display: block;
+          height: 100%;
+          width: 100%;
+          text-align: center;
+          line-height: 38px; }
+          .site-recruit .shop-overview .info-link__store-details a::after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f061 ";
+            white-space: pre;
+            margin-right: 15px;
+            position: absolute;
+            right: 0; }
+    .site-recruit .underline {
+      height: 1px;
+      width: 20px;
+      background-color: red;
+      margin: 25px auto; }
+
+  .shop-detail .shop-overview {
+    padding-bottom: 0; }
+  .shop-detail .shop-overview__list {
+    margin-bottom: 0; }
+  .shop-detail .site-recruit {
+    background-color: #f5f5ed; }
+  .shop-detail .shop-overview__item:first-child {
+    border: none; } }
+@media screen and (max-width: 768px) {
+  .site-recruit {
+    margin: 0;
+    padding: 0;
+    min-width: 100vw; }
+    .site-recruit .shop-overview {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      width: 89.583vw;
+      padding-bottom: 10vw; }
+      .site-recruit .shop-overview__title {
+        font-weight: 600;
+        font-size: 5.729vw;
+        line-height: 4.823vw;
+        font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif; }
+      .site-recruit .shop-overview__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin: 5.208vw auto;
+        width: 89.583vw; }
+      .site-recruit .shop-overview__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: 89.583vw; }
+      .site-recruit .shop-overview__item:nth-child(1), .site-recruit .shop-overview__item:nth-child(3) {
+        border-bottom: 0.130vw solid #cccccc;
+        border-top: 0.130vw solid #cccccc; }
+      .site-recruit .shop-overview__item:nth-child(4) {
+        border-bottom: 0.130vw solid #cccccc; }
+      .site-recruit .shop-overview .shop-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6.510vw; }
+        .site-recruit .shop-overview .shop-info__list {
+          margin: 0; }
+        .site-recruit .shop-overview .shop-info__item {
+          margin: 5px 0;
+          font-family: Yu Gothic; }
+        .site-recruit .shop-overview .shop-info .shop-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start; }
+          .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: auto;
+            margin-top: 6.510vw; }
+            .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-info__title {
+              font-weight: 900;
+              font-size: 5.208vw;
+              line-height: 6.510vw;
+              margin: 3.906vw 0;
+              width: 89.583vw;
+              font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif; }
+            .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start; }
+              .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact br {
+                display: none; }
+              .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact__heading--hidden {
+                display: none; }
+              .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact__title {
+                color: red;
+                font-weight: normal;
+                font-weight: 900;
+                font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+                font-size: 3.646vw;
+                line-height: 1.823vw;
+                width: auto;
+                margin: 1.953vw 0; }
+              .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact__description {
+                font-weight: 900;
+                font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+                font-size: 3.646vw;
+                line-height: 5.469vw;
+                margin: 1.953vw 0;
+                width: 89.583vw; }
+            .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link {
+              margin: 1.953vw 0; }
+              .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__title {
+                display: none; }
+              .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__list {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                margin: 0;
+                padding: 0; }
+              .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__item {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+                font-weight: normal;
+                width: 28.125vw;
+                height: 5.208vw;
+                border: 0.26vw solid #c40909;
+                margin-right: 1.302vw;
+                font-size: 3.125vw;
+                line-height: 1.823vw;
+                border-radius: 0.521vw; }
+                .site-recruit .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__item a {
+                  color: red; }
+          .site-recruit .shop-overview .shop-info .shop-wrapper .info-link__figure {
+            width: 89.583vw;
+            height: 56.771vw; }
+            .site-recruit .shop-overview .shop-info .shop-wrapper .info-link__figure img {
+              width: 89.583vw;
+              height: 56.771vw; }
+      .site-recruit .shop-overview .info-link__store-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #666666;
+        position: relative;
+        margin: 4.557vw 0;
+        width: 89.583vw;
+        height: 13.021vw;
+        border-radius: 6.510vw; }
+        .site-recruit .shop-overview .info-link__store-details a {
+          font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+          font-weight: normal;
+          color: #ffffff;
+          font-size: 3.646vw;
+          display: block;
+          height: 100%;
+          width: 100%;
+          text-align: center;
+          line-height: 12.823vw; }
+          .site-recruit .shop-overview .info-link__store-details a::after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f061 ";
+            white-space: pre;
+            margin-right: 15px;
+            position: absolute;
+            right: 0; }
+    .site-recruit .underline {
+      height: 0.07524454477050413vh;
+      background-color: red;
+      width: 2.604vw;
+      margin: 3.255vw auto; }
+
+  .shop-detail .shop-overview__list {
+    margin-bottom: 0; }
+  .shop-detail .site-recruit {
+    background-color: #f5f5ed; }
+  .shop-detail .shop-overview__item:first-child {
+    border: none; } }
+@media screen and (min-width: 769px) {
+  body {
+    margin: 0;
+    padding: 0;
+    min-width: 1000px; }
+
+  .profile__heading > .category-subtitle {
+    height: 111px; }
+
+  .company-wrapper > .banner {
+    background-image: url("assets/css/img/company_kv.png"); }
+
+  .company-wrapper {
+    background-color: #f5f5ed; }
+    .company-wrapper .profile {
+      padding-top: 100px;
+      width: 980px;
+      margin: auto; }
+      .company-wrapper .profile__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        .company-wrapper .profile__heading .english-translation {
+          font-size: 30px;
+          letter-spacing: 6px; }
+        .company-wrapper .profile__heading .japanese-translation {
+          display: flex;
+          flex-direction: column-reverse;
+          font-size: 14px;
+          letter-spacing: 2px;
+          font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif; }
+      .company-wrapper .profile__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding: 100px 0; }
+      .company-wrapper .profile__item:nth-child(1), .company-wrapper .profile__item:nth-child(3), .company-wrapper .profile__item:nth-child(5), .company-wrapper .profile__item:nth-child(7) {
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc; }
+      .company-wrapper .profile__item .profile-information {
+        display: flex;
+        flex-direction: row;
+        margin: 16px 0; }
+        .company-wrapper .profile__item .profile-information__heading--hidden {
+          display: none; }
+        .company-wrapper .profile__item .profile-information__title {
+          margin: 0;
+          width: 130px;
+          color: #c40909;
+          font-size: 14px;
+          line-height: 27px;
+          font-weight: 900;
+          font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+        .company-wrapper .profile__item .profile-information__description {
+          margin: 0;
+          font-size: 14px;
+          line-height: 27px;
+          font-weight: 900;
+          font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+
+  .company__indicator {
+    height: 50px;
+    width: 980px;
+    margin: auto;
+    font-size: 14px;
+    display: flex;
+    align-items: center; }
+    .company__indicator .indicator__span {
+      margin: 0 14px; }
+
+  .company-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding: 0 0 100px 0;
+    overflow: hidden; }
+    .company-location .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      height: 298px;
+      width: 980px; }
+      .company-location .gmap_canvas .mapouter {
+        position: relative;
+        text-align: right;
+        height: 298px;
+        width: 980px; }
+    .company-location .gmap_canvas iframe {
+      height: 298px;
+      width: 980px; } }
+@media screen and (max-width: 768px) {
+  .company-wrapper > .banner {
+    background-image: url("assets/css/img/company_kv-mobile.png"); }
+
+  .company-wrapper {
+    background-color: #f5f5ed; }
+    .company-wrapper .profile {
+      margin: auto;
+      width: 100vw;
+      padding-top: 13.021vw; }
+      .company-wrapper .profile__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        .company-wrapper .profile__heading .english-translation {
+          font-size: 9.115vw;
+          line-height: 10.417vw;
+          letter-spacing: 0.781vw;
+          font-family: "Marcellus-v6-latin"; }
+        .company-wrapper .profile__heading .japanese-translation {
+          display: flex;
+          flex-direction: column-reverse;
+          font-size: 3.646vw;
+          line-height: 7.823vw;
+          font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif;
+          font-weight: 400;
+          letter-spacing: 0.260vw; }
+      .company-wrapper .profile__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 89.583vw;
+        margin: auto;
+        padding: 13.021vw 0; }
+      .company-wrapper .profile__item:nth-child(1), .company-wrapper .profile__item:nth-child(3), .company-wrapper .profile__item:nth-child(5), .company-wrapper .profile__item:nth-child(7) {
+        border-top: 0.130vw solid #cccccc;
+        border-bottom: 0.130vw solid #cccccc; }
+      .company-wrapper .profile__item .profile-information {
+        margin: 2.083vw;
+        display: flex;
+        flex-direction: column; }
+        .company-wrapper .profile__item .profile-information__heading--hidden {
+          display: none; }
+        .company-wrapper .profile__item .profile-information__title {
+          margin: 0;
+          color: #c40909;
+          font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+          width: auto;
+          font-size: 3.646vw;
+          line-height: 7.292vw;
+          font-weight: 600; }
+        .company-wrapper .profile__item .profile-information__description {
+          margin: 0;
+          font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+          width: auto;
+          font-size: 3.646vw;
+          line-height: 7.292vw;
+          font-weight: 600; }
+
+  .company__indicator {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 7.813vw;
+    font-size: 1.823vw;
+    width: 89.583vw; }
+    .company__indicator .indicator__span {
+      margin: 0 1.823vw; }
+
+  .company-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding: 0 0 13.021vw 0; }
+    .company-location .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      width: 100vw;
+      height: 62.500vw; }
+      .company-location .gmap_canvas .mapouter {
+        position: relative;
+        text-align: right;
+        width: 100vw;
+        height: 62.500vw; }
+    .company-location .gmap_canvas iframe {
+      width: 100vw;
+      height: 62.500vw; } }
+* {
+  box-sizing: border-box; }
+
+.recruit > .shop-overview {
+  padding-bottom: 0; }
+
+@media screen and (min-width: 769px) {
+  body {
+    margin: 0;
+    padding: 0;
+    min-width: 1000px; }
+
+  .recruit__wrapper > .banner {
+    background-image: url("assets/css/img/recruit_kv.png"); }
+
+  .shop-area > .category-subtitle {
+    height: 111px; }
+
+  .recruit__wrapper {
+    background-color: #f5f5ed; }
+    .recruit__wrapper .shop-area {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 0; }
+      .recruit__wrapper .shop-area__list {
+        display: flex;
+        flex-direction: row;
+        width: 980px;
+        flex-wrap: wrap;
+        margin: 60px auto 0px auto; }
+      .recruit__wrapper .shop-area__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 215px;
+        height: 50px;
+        border: 1px solid #cccccc;
+        margin: 20px 20px;
+        font-size: 16px;
+        line-height: 14px;
+        font-weight: 600;
+        font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif; }
+        .recruit__wrapper .shop-area__item:hover {
+          background-color: #c40909; }
+      .recruit__wrapper .shop-area__item:nth-child(1), .recruit__wrapper .shop-area__item:nth-child(5) {
+        margin-left: 0; }
+      .recruit__wrapper .shop-area__item:nth-child(4), .recruit__wrapper .shop-area__item:nth-child(8) {
+        margin-right: 0; }
+    .recruit__wrapper .recruit__indicator {
+      height: 50px;
+      width: 980px;
+      margin: auto;
+      font-size: 14px;
+      display: flex;
+      align-items: center; }
+      .recruit__wrapper .recruit__indicator .indicator__span {
+        margin: 0 14px; }
+
+  .shop-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 980px;
+    height: 210px;
+    margin: auto; }
+    .shop-link__title--hidden {
+      display: none; }
+    .shop-link__list {
+      display: flex;
+      flex-direction: row; }
+    .shop-link__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 320px;
+      margin: 10px;
+      border: 1px solid #cccccc;
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: normal;
+      color: gray;
+      font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif; }
+      .shop-link__item:hover {
+        background-color: #c40909; }
+    .shop-link__item:nth-child(1) {
+      margin-left: 0; }
+
+  .shop-overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 980px; }
+    .shop-overview__title {
+      font-size: 24px;
+      line-height: 14px;
+      font-weight: 600;
+      font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif; }
+    .shop-overview__list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto 40px auto; }
+    .shop-overview__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      height: 375px; }
+    .shop-overview .info-padding {
+      padding-top: 30px; }
+    .shop-overview__item:nth-child(1), .shop-overview__item:nth-child(3) {
+      border-top: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc; }
+    .shop-overview__item:nth-child(4) {
+      border-bottom: 1px solid #cccccc; }
+    .shop-overview .shop-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .shop-overview .shop-info__list {
+        margin-left: 60px; }
+      .shop-overview .shop-info__item {
+        margin: 5px 0;
+        font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+      .shop-overview .shop-info .shop-wrapper {
+        display: flex;
+        flex-direction: row; }
+        .shop-overview .shop-info .shop-wrapper .info-wrapper {
+          order: 2;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 640px; }
+          .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-info__title {
+            font-size: 20px;
+            line-height: 25px;
+            font-weight: 900;
+            margin-left: 60px;
+            font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif; }
+          .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact {
+            display: flex;
+            flex-direction: row;
+            align-items: center; }
+            .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact .text-bottom {
+              margin-top: 25px; }
+            .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact__heading--hidden {
+              display: none; }
+            .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact__title {
+              color: red;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 14px;
+              font-weight: 900;
+              width: 60px;
+              font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+            .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact__description {
+              font-size: 14px;
+              line-height: 27px;
+              font-weight: 900;
+              margin-left: 20px;
+              font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+          .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link {
+            margin: 10px 0 20px 60px; }
+            .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__title {
+              display: none; }
+            .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__list {
+              display: flex;
+              flex-direction: row;
+              list-style-type: none;
+              margin: 0;
+              padding: 0; }
+            .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__item {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              width: 90px;
+              height: 22px;
+              border: 1px solid #c40909;
+              margin-right: 10px;
+              border-radius: 2px;
+              font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+              font-size: 14px;
+              line-height: 14px;
+              font-weight: normal; }
+              .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__item a {
+                color: red; }
+        .shop-overview .shop-info .shop-wrapper .info-link__figure {
+          width: 340px;
+          height: 215px; }
+          .shop-overview .shop-info .shop-wrapper .info-link__figure img {
+            width: 340px;
+            height: 215px; }
+    .shop-overview .info-link__store-details {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 35px;
+      width: 300px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: #666666;
+      position: relative; }
+      .shop-overview .info-link__store-details a {
+        font-size: 14px;
+        line-height: 14px;
+        font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+        font-weight: normal;
+        color: #ffffff; }
+        .shop-overview .info-link__store-details a::after {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f061 ";
+          white-space: pre;
+          margin-right: 15px;
+          position: absolute;
+          right: 0; } }
+@media screen and (max-width: 768px) {
+  .recruit__wrapper > .banner {
+    background-image: url("assets/css/img/recruit_kv-mobile.png"); }
+
+  .recruit__wrapper {
+    background-color: #f5f5ed; }
+    .recruit__wrapper .shop-area {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 13.021vw 0; }
+      .recruit__wrapper .shop-area__list {
+        flex-wrap: wrap;
+        width: 89.583vw;
+        margin: 7.813vw auto 0px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+      .recruit__wrapper .shop-area__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        width: 42.188vw;
+        height: 13.021vw;
+        margin: 2.604vw 0px;
+        border: 0.13vw solid #cccccc;
+        font-size: 3.646vw;
+        line-height: 1.823vw;
+        position: relative;
+        font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif; }
+        .recruit__wrapper .shop-area__item:after {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 600;
+          content: "\f078 ";
+          white-space: pre;
+          position: absolute;
+          right: 0;
+          margin-right: 2.604vw; }
+        .recruit__wrapper .shop-area__item:hover {
+          background-color: #c40909; }
+      .recruit__wrapper .shop-area__item:nth-child(1), .recruit__wrapper .shop-area__item:nth-child(5) {
+        margin-left: 0; }
+      .recruit__wrapper .shop-area__item:nth-child(4), .recruit__wrapper .shop-area__item:nth-child(8) {
+        margin-right: 0; }
+    .recruit__wrapper .recruit__indicator {
+      margin: auto;
+      display: flex;
+      align-items: center;
+      height: 7.813vw;
+      font-size: 1.823vw;
+      width: 89.583vw; }
+      .recruit__wrapper .recruit__indicator .indicator__span {
+        margin: 0 1.823vw; }
+
+  .shop-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    width: 89.583vw;
+    height: 27.344vw; }
+    .shop-link__title--hidden {
+      display: none; }
+    .shop-link__list {
+      display: flex;
+      flex-direction: row; }
+    .shop-link__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-weight: normal;
+      color: gray;
+      height: 10.417vw;
+      width: 28.125vw;
+      margin: 2.604vw;
+      font-size: 4.167vw;
+      line-height: 1.823vw;
+      border: 0.13vw solid #cccccc;
+      font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif; }
+      .shop-link__item:hover {
+        background-color: #c40909; }
+    .shop-link__item:nth-child(1) {
+      margin-left: 0; }
+
+  .shop-overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 89.583vw; }
+    .shop-overview__title {
+      font-weight: 600;
+      font-size: 5.729vw;
+      line-height: 4.823vw;
+      font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif; }
+    .shop-overview__list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      margin: 5.208vw auto;
+      width: 89.583vw; }
+    .shop-overview__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      height: auto;
+      width: 89.583vw; }
+    .shop-overview__item:nth-child(1), .shop-overview__item:nth-child(3) {
+      border-bottom: 0.130vw solid #cccccc;
+      border-top: 0.130vw solid #cccccc; }
+    .shop-overview__item:nth-child(4) {
+      border-bottom: 0.130vw solid #cccccc; }
+    .shop-overview .shop-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 6.510vw; }
+      .shop-overview .shop-info__list {
+        margin: 0; }
+      .shop-overview .shop-info__item {
+        margin: 5px 0;
+        font-family: Yu Gothic; }
+      .shop-overview .shop-info .shop-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; }
+        .shop-overview .shop-info .shop-wrapper .info-wrapper {
+          order: 2;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: auto;
+          margin-top: 6.510vw; }
+          .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-info__title {
+            font-weight: 900;
+            font-size: 5.208vw;
+            line-height: 6.510vw;
+            margin: 3.906vw 0;
+            width: 89.583vw;
+            font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif; }
+          .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; }
+            .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact br {
+              display: none; }
+            .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact__heading--hidden {
+              display: none; }
+            .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact__title {
+              color: red;
+              font-weight: normal;
+              font-weight: 900;
+              font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+              font-size: 3.646vw;
+              line-height: 1.823vw;
+              width: auto;
+              margin: 1.953vw 0; }
+            .shop-overview .shop-info .shop-wrapper .info-wrapper .shop-contact__description {
+              font-weight: 900;
+              font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+              font-size: 3.646vw;
+              line-height: 5.469vw;
+              margin: 1.953vw 0;
+              width: 89.583vw; }
+          .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link {
+            margin: 1.953vw 0; }
+            .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__title {
+              display: none; }
+            .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__list {
+              display: flex;
+              flex-direction: row;
+              list-style-type: none;
+              margin: 0;
+              padding: 0; }
+            .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__item {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+              font-weight: normal;
+              width: 28.125vw;
+              height: 5.208vw;
+              border: 0.26vw solid #c40909;
+              margin-right: 1.302vw;
+              font-size: 3.125vw;
+              line-height: 1.823vw;
+              border-radius: 0.521vw; }
+              .shop-overview .shop-info .shop-wrapper .info-wrapper .info-link__item a {
+                color: red; }
+        .shop-overview .shop-info .shop-wrapper .info-link__figure {
+          width: 89.583vw;
+          height: 56.771vw; }
+          .shop-overview .shop-info .shop-wrapper .info-link__figure img {
+            width: 89.583vw;
+            height: 56.771vw; }
+    .shop-overview .info-link__store-details {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: #666666;
+      position: relative;
+      margin: 4.557vw 0;
+      width: 89.583vw;
+      height: 13.021vw;
+      border-radius: 6.510vw; }
+      .shop-overview .info-link__store-details a {
+        font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+        font-weight: normal;
+        color: #ffffff;
+        font-size: 3.646vw;
+        line-height: 1.823vw; }
+        .shop-overview .info-link__store-details a::after {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: "\f061 ";
+          white-space: pre;
+          margin-right: 15px;
+          position: absolute;
+          right: 0; } }
+@media screen and (min-width: 769px) {
+  body {
+    margin: 0;
+    padding: 0;
+    min-width: 1000px; }
+
+  .wrapper-point > .banner {
+    background-image: url("assets/css/img/point_kv.png"); }
+
+  .wrapper-point {
+    background-color: #f5f5ed; }
+    .wrapper-point .reward {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 350px;
+      width: 100%;
+      text-align: center; }
+      .wrapper-point .reward__title--hidden {
+        display: none; }
+      .wrapper-point .reward__item {
+        font-size: 16px;
+        line-height: 40px;
+        font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif;
+        font-weight: 600; }
+        .wrapper-point .reward__item br {
+          display: none; }
+      .wrapper-point .reward__item:nth-child(2) {
+        margin: 10px 0; }
+      .wrapper-point .reward__span {
+        color: #c40909;
+        font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif;
+        font-size: 26px;
+        line-height: 40px;
+        font-weight: 900; }
+      .wrapper-point .reward__big {
+        font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif;
+        font-size: 26px;
+        line-height: 40px;
+        font-weight: 900; }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center; }
+    .step__title--hidden {
+      display: none; }
+    .step__list {
+      padding: 100px 0; }
+    .step__item {
+      margin: 25px 0; }
+    .step-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .step-section__count {
+        font-size: 18px;
+        font-weight: 600; }
+      .step-section__number {
+        font-size: 22px;
+        font-weight: 900; }
+      .step-section__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 30px 0;
+        font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif;
+        font-size: 22px;
+        line-height: 27px;
+        font-weight: 900; }
+        .step-section__title img {
+          margin-right: 10px; }
+      .step-section__description {
+        font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px; }
+        .step-section__description br {
+          display: none; }
+      .step-section__list {
+        margin: 30px 0 0 0; }
+      .step-section__item {
+        font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 22px; }
+        .step-section__item::before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 600;
+          content: "\f111 ";
+          white-space: pre;
+          font-size: 12px; }
+
+  .point-card__indicator {
+    height: 50px;
+    width: 980px;
+    margin: auto;
+    font-size: 14px;
+    display: flex;
+    align-items: center; }
+    .point-card__indicator .point-card__span {
+      margin: 0 14px; }
+
+  .underline {
+    height: 1px;
+    width: 20px;
+    background-color: red;
+    margin: 25px auto; } }
+@media screen and (max-width: 768px) {
+  .wrapper-point > .banner {
+    background-image: url("assets/css/img/point_kv-mobile.png"); }
+
+  .wrapper-point {
+    background-color: #f5f5ed; }
+    .wrapper-point .reward {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+      height: 94.271vw; }
+      .wrapper-point .reward__title--hidden {
+        display: none; }
+      .wrapper-point .reward__item {
+        font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif;
+        font-weight: 600;
+        font-size: 4.167vw;
+        line-height: 7.292vw; }
+        .wrapper-point .reward__item br {
+          display: block; }
+      .wrapper-point .reward__item:nth-child(2) {
+        margin: 3.906vw 0; }
+      .wrapper-point .reward__span {
+        color: #c40909;
+        font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif;
+        font-weight: 900;
+        font-size: 5.859vw;
+        line-height: 7.292vw; }
+      .wrapper-point .reward__big {
+        font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif;
+        font-weight: 900;
+        font-size: 5.859vw;
+        line-height: 7.292vw; }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center; }
+    .step__title--hidden {
+      display: none; }
+    .step__list {
+      padding: 13.021vw 0; }
+    .step__item {
+      margin: 10.255vw 0; }
+    .step-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .step-section__count {
+        font-weight: 600;
+        font-size: 3.255vw; }
+      .step-section__number {
+        font-weight: 900;
+        font-size: 3.906vw; }
+      .step-section__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 3.906vw 0;
+        font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif;
+        font-weight: 900;
+        font-size: 5.729vw;
+        line-height: 7.031vw; }
+        .step-section__title img {
+          margin-right: 1.302vw;
+          height: 5.208vw;
+          width: 7.161vw; }
+      .step-section__description {
+        font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+        font-weight: 600;
+        font-size: 3.646vw;
+        line-height: 7.292vw; }
+        .step-section__description br {
+          display: block; }
+      .step-section__list {
+        margin: 3.906vw 0 0 0; }
+      .step-section__item {
+        font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+        font-weight: 600;
+        font-size: 3.125vw;
+        line-height: 5.208vw; }
+        .step-section__item::before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 600;
+          content: "\f111 ";
+          white-space: pre;
+          font-size: 3.125vw; }
+
+  .point-card__indicator {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 7.813vw;
+    font-size: 1.823vw;
+    width: 89.583vw; }
+    .point-card__indicator .point-card__span {
+      margin: 0 1.823vw; }
+
+  .underline {
+    background-color: red;
+    height: 0.07524454477050413vh;
+    width: 2.604vw;
+    margin: 3.255vw auto; } }
+.title--hidden {
+  display: none; }
+
+.site-map {
+  background-color: #f5f5ed; }
+
+@media (min-width: 769px) {
+  .site-map > .banner {
+    background-image: url("assets/css/img/sitemap_kv.png"); }
+
+  .site-map__header-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .site-map__page-list {
+    margin: auto;
+    max-width: 980px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 95px;
+    padding-bottom: 100px; }
+
+  .site-map__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 470px; }
+
+  .site-map__list2 {
+    display: flex;
+    flex-direction: column;
+    width: 470px; }
+
+  .site-map__item, .site-map__item2 {
+    margin-bottom: 48px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 20px; }
+
+  .site-map__item:first-child {
+    border-bottom: none;
+    padding-bottom: 0; }
+
+  .site-map__item span {
+    margin-left: 15px;
+    vertical-align: 0px; }
+
+  .site-map__item a, .site-map__item2 a {
+    color: #000000;
+    font-size: 18px;
+    line-height: 27px; }
+
+  .site-map__sub-list {
+    border-top: 1px solid #cccccc;
+    margin-top: 20px;
+    padding-top: 15px; }
+
+  .site-map__sub-item a {
+    font-size: 14px;
+    line-height: 27px;
+    border-bottom: none; }
+    .site-map__sub-item a:before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f105";
+      font-weight: 600;
+      font-size: 13px;
+      padding: 0 8px 0 0; } }
+@media (max-width: 768px) {
+  .site-map > .banner {
+    background-image: url("assets/css/img/sitemap_kv-mobile.png"); }
+
+  .site-map__header-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .site-map__page-list {
+    margin: auto;
+    max-width: 688px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 19.531vw;
+    padding-bottom: 19.531vw; }
+
+  .site-map__list {
+    width: 89.583vw;
+    margin: auto; }
+
+  .site-map__list2 {
+    display: flex;
+    flex-direction: column;
+    width: 89.583vw;
+    margin: auto; }
+
+  .site-map__item:first-child {
+    border-bottom: none; }
+  .site-map__item span {
+    vertical-align: 1px; }
+
+  .site-map__item a, .site-map__item2 a {
+    color: #000000;
+    font-size: 4.427vw;
+    line-height: 7.292vw; }
+
+  .site-map__item, .site-map__item2 {
+    margin-bottom: 13.021vw;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5.208vw; }
+
+  .site-map__sub-list {
+    border-top: 1px solid #cccccc;
+    margin-top: 5.208vw;
+    padding-top: 5.208vw; }
+
+  .site-map__sub-item a {
+    font-size: 3.646vw;
+    line-height: 7.292vw; }
+    .site-map__sub-item a:before {
+      font-family: "Font Awesome 5 Free";
+      content: "-";
+      font-weight: bold;
+      font-size: 3.646vw;
+      padding: 0 8px 0 0; } }
+.main-privacy {
+  font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+
+@media (min-width: 769px) {
+  .main-privacy {
+    margin: auto;
+    max-width: 980px;
+    padding-top: 98px;
+    padding-bottom: 100px; }
+
+  .main-privacy__title {
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 58px;
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+
+  .privacy-content__title {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+
+  .privacy-content__lead {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+    white-space: pre-line; }
+
+  .privacy-content__list {
+    margin-top: 50px; }
+
+  .privacy-content__item {
+    margin-bottom: 50px; }
+
+  .privacy-info__title,
+  .privacy-restrictions__title,
+  .privacy-infomanagement__title,
+  .privacy-provision__title,
+  .privacy-disclosure__title,
+  .privacy-age-info__title,
+  .privacy-revision__title,
+  .privacy-inquiry__title {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 28px;
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+
+  .privacy-info__lead,
+  .privacy-restrictions__lead,
+  .privacy-infomanagement__lead,
+  .privacy-provision__lead,
+  .privacy-disclosure__lead,
+  .privacy-age-info__lead,
+  .privacy-revision__lead,
+  .privacy-inquiry__lead,
+  .privacy-infomanagement__item,
+  .privacy-provision__item,
+  .privacy-disclosure__item,
+  .privacy-contact__address,
+  .privacy-contact__phone span {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+    white-space: pre-line; }
+
+  .privacy-info__list {
+    margin: 50px 0px;
+    padding: 38px;
+    background-color: #f2f2f2;
+    list-style-type: decimal;
+    padding-left: 56px; }
+
+  .privacy-info__item {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+    white-space: pre-line; }
+
+  .privacy-infomanagement__list,
+  .privacy-provision__list,
+  .privacy-disclosure__list {
+    margin: 45px 0px; }
+
+  .privacy-infomanagement__item:before,
+  .privacy-disclosure__item:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+    font-size: 3px;
+    padding: 0 8px 0 0;
+    vertical-align: 10%; }
+
+  .privacy-provision__list {
+    list-style-type: decimal;
+    margin-left: 18px; }
+
+  .privacy-contact {
+    margin-top: 50px;
+    padding: 38px;
+    background-color: #f2f2f2; }
+
+  .privacy-contact__site-name {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+    color: #000000; }
+
+  .privacy-contact__phone span {
+    margin-right: 30px; } }
+@media (max-width: 768px) {
+  .main-privacy {
+    margin: auto;
+    max-width: 688px;
+    padding-top: 18.880vw;
+    padding-bottom: 19.531vw;
+    margin-left: 5.208vw;
+    margin-right: 5.208vw; }
+
+  .main-privacy__title {
+    font-size: 5.208vw;
+    line-height: 3.906vw;
+    margin-bottom: 12.370vw;
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+
+  .privacy-content__title {
+    font-size: 4.427vw;
+    line-height: 3.906vw;
+    margin-bottom: 6.250vw;
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+
+  .privacy-content__lead {
+    font-size: 3.646vw;
+    line-height: 7.292vw;
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+
+  .privacy-content__list {
+    margin-top: 13.021vw; }
+
+  .privacy-content__item {
+    margin-bottom: 11.979vw; }
+
+  .privacy-info__title,
+  .privacy-restrictions__title,
+  .privacy-infomanagement__title,
+  .privacy-provision__title,
+  .privacy-disclosure__title,
+  .privacy-age-info__title,
+  .privacy-revision__title,
+  .privacy-inquiry__title {
+    font-size: 4.427vw;
+    line-height: 6.641vw;
+    margin-bottom: 6.510vw;
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+
+  .privacy-info__lead,
+  .privacy-restrictions__lead,
+  .privacy-infomanagement__lead,
+  .privacy-provision__lead,
+  .privacy-disclosure__lead,
+  .privacy-age-info__lead,
+  .privacy-revision__lead,
+  .privacy-inquiry__lead,
+  .privacy-infomanagement__item,
+  .privacy-provision__item,
+  .privacy-disclosure__item,
+  .privacy-contact__address,
+  .privacy-contact__phone span {
+    font-size: 3.646vw;
+    line-height: 7.292vw;
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+
+  .privacy-info__list {
+    margin: 6.510vw 0px;
+    padding: 6.510vw;
+    background-color: #f2f2f2;
+    list-style-type: decimal;
+    padding-left: 9.766vw; }
+
+  .privacy-info__item {
+    font-size: 3.646vw;
+    line-height: 7.292vw;
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif; }
+
+  .privacy-infomanagement__list,
+  .privacy-provision__list,
+  .privacy-disclosure__list {
+    margin: 5.859vw 0px; }
+
+  .privacy-infomanagement__item:before,
+  .privacy-disclosure__item:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+    font-size: 0.651vw;
+    padding: 0 1.042vw 0 0;
+    vertical-align: 10%; }
+
+  .privacy-provision__list {
+    list-style-type: decimal;
+    margin-left: 4.036vw; }
+
+  .privacy-contact {
+    margin-top: 6.510vw;
+    padding: 4.948vw;
+    background-color: #f2f2f2; }
+
+  .privacy-contact__site-name {
+    font-size: 2.344vw;
+    line-height: 3.906vw;
+    font-weight: 600;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+    color: #000000; }
+
+  .privacy-contact__phone span {
+    margin-right: 3.906vw;
+    display: block; } }
+@media screen and (min-width: 769px) {
+  .main-system {
+    padding-bottom: 86px; }
+
+  .system {
+    margin: auto;
+    max-width: 980px;
+    padding-top: 99px;
+    padding-bottom: 99px; }
+
+  .system__title {
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 30px; }
+
+  .system-pc {
+    margin-top: 60px; }
+
+  .system-pc__title {
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-left: -2px; }
+
+  .system-pc__item {
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px; }
+
+  .system-mobile {
+    margin-top: 50px; }
+
+  .system-mobile__title {
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-left: -2px; }
+
+  .system-mobile__item {
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px; }
+
+  .system__lead {
+    margin-top: 50px;
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px; } }
+@media screen and (max-width: 768px) {
+  .system {
+    margin: auto;
+    max-width: 688px;
+    margin-left: 5.208vw;
+    padding-top: 19.531vw;
+    padding-bottom: 99px; }
+
+  .system__title {
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif;
+    font-weight: 500;
+    font-size: 5.208vw;
+    line-height: 3.906vw; }
+
+  .system-pc {
+    margin-top: 12.109vw; }
+
+  .system-pc__title {
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif;
+    font-weight: 500;
+    font-size: 4.427vw;
+    line-height: 3.906vw;
+    margin-bottom: 6.510vw;
+    margin-left: -0.474vw; }
+
+  .system-pc__item {
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif;
+    font-weight: 500;
+    font-size: 3.646vw;
+    line-height: 7.292vw; }
+
+  .system-mobile {
+    margin-top: 13.021vw; }
+
+  .system-mobile__title {
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif;
+    font-weight: 500;
+    font-size: 4.427vw;
+    line-height: 6.641vw;
+    margin-bottom: 6.510vw;
+    margin-left: -0.474vw; }
+
+  .system-mobile__item {
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif;
+    font-weight: 500;
+    font-size: 3.646vw;
+    line-height: 7.292vw; }
+
+  .system__lead {
+    margin-top: 12.240vw;
+    font-family: Hiragino Kaku Gothic Pro, Meiryo, MS PGothic, sans-serif;
+    font-weight: 500;
+    font-size: 3.125vw;
+    line-height: 6.771vw;
+    letter-spacing: 1.5px; } }
+.banner {
+  background-color: #f5f5ed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .banner__lead-title {
+    letter-spacing: 4px;
+    font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif; }
+
+.category-subtitle {
+  max-width: 980px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .category-subtitle__heading {
+    font-weight: bold;
+    position: relative; }
+    .category-subtitle__heading::after {
+      content: "";
+      height: 1px;
+      background-color: #c40909;
+      position: absolute;
+      left: 42%; }
+  .category-subtitle__translation {
+    font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif;
+    font-weight: 700; }
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5ed;
+  padding: 0 5.5vw; }
+  .search__tab-heading, .search__subheading, .search__region-btn {
+    font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif;
+    font-weight: 700; }
+  .search__tab-wrapper {
+    max-width: 980px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative; }
+  .search__tab-item {
+    width: 50%; }
+  .search__tab-btn-wrapper {
+    width: 100%; }
+  .search__tab-btn {
+    width: 99%;
+    height: 100%;
+    border: 1px solid #cccccc;
+    border-bottom: none;
+    background: transparent;
+    cursor: pointer; }
+    .search__tab-btn--active {
+      background-color: #c40909;
+      border: 1px solid #c40909;
+      color: white; }
+    .search__tab-btn:active, .search__tab-btn:focus {
+      outline: none; }
+  .search__region-list {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .search__region-btn {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #cccccc; }
+    .search__region-btn:active, .search__region-btn:focus {
+      outline: none; }
+    .search__region-btn--active {
+      background-color: #c40909;
+      border: 1px solid #c40909;
+      color: white; }
+
+.shop-summary-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0 5.5vw; }
+  .shop-summary-info__heading-wrapper {
+    max-width: 980px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .shop-summary-info__heading {
+    font-weight: 500;
+    position: relative;
+    font-family: Meiryo, MS PGothic, sans-serif; }
+    .shop-summary-info__heading::after {
+      content: "";
+      height: 1px;
+      background-color: #c40909;
+      position: absolute;
+      left: 42%; }
+
+@media screen and (min-width: 769px) {
+  .banner {
+    height: 319px; }
+    .banner__heading {
+      font-size: 38px;
+      letter-spacing: 7px;
+      margin-bottom: 17px; }
+    .banner__lead-title {
+      letter-spacing: 4px; }
+
+  .shop-list > .banner {
+    background-image: url("assets/css/img/shoplist_kv.png"); }
+
+  .shop-summary-info__heading-wrapper {
+    height: 239px; }
+  .shop-summary-info__heading {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 37px; }
+    .shop-summary-info__heading::after {
+      width: 19px;
+      margin-top: 44px; }
+    .shop-summary-info__heading:first-child {
+      display: block; }
+    .shop-summary-info__heading:last-child {
+      display: none; }
+  .shop-summary-info__subheading {
+    margin-top: 35px; }
+
+  .category-subtitle {
+    height: 239px; }
+    .category-subtitle__heading {
+      font-size: 30px;
+      letter-spacing: 5px;
+      margin-top: 37px; }
+      .category-subtitle__heading::after {
+        width: 19px;
+        margin-top: 44px; }
+    .category-subtitle__translation {
+      margin-top: 35px; }
+
+  .search {
+    height: 612px; }
+    .search__tab-btn-wrapper {
+      height: 40px;
+      border-bottom: 2px solid #c40909; }
+    .search__tab-btn {
+      width: 99%; }
+    .search__region-list {
+      padding: 40px 0; }
+    .search__region-btn {
+      width: 88%;
+      height: 50px;
+      font-size: 15px; }
+    .search__region-item {
+      position: relative;
+      width: 25%;
+      flex: 1 0 25%;
+      height: 90px; }
+      .search__region-item:nth-child(4n) .search__region-btn {
+        position: absolute;
+        right: 0; }
+      .search__region-item:nth-child(2) .search__region-btn, .search__region-item:nth-child(6) .search__region-btn {
+        margin-left: 10px; }
+      .search__region-item:nth-child(3) .search__region-btn, .search__region-item:nth-child(7) .search__region-btn {
+        margin-left: 20px; }
+
+  #search-by-brand {
+    margin-left: 1%; } }
+@media screen and (max-width: 768px) {
+  .banner {
+    margin-top: 7.5vw;
+    height: 62.5vw; }
+    .banner__heading {
+      font-size: 9vw;
+      letter-spacing: 1.5vw;
+      margin-bottom: 3%;
+      text-align: center; }
+    .banner__lead-title {
+      font-size: 3vw; }
+
+  .shop-list > .banner {
+    background-image: url("assets/css/img/shoplist_kv_sp.png"); }
+
+  .shop-summary-info__heading-wrapper {
+    margin-bottom: 7vw;
+    margin-top: 10vw; }
+  .shop-summary-info__heading {
+    font-size: 4.2vw;
+    text-align: center;
+    letter-spacing: 0.5vw;
+    margin-top: 5.5vw; }
+    .shop-summary-info__heading:after {
+      margin-top: 8vw;
+      width: 5vw;
+      left: 48%; }
+    .shop-summary-info__heading:first-child {
+      display: none; }
+    .shop-summary-info__heading:last-child {
+      display: block;
+      line-height: 6vw; }
+
+  .category-subtitle {
+    height: 50.3vw; }
+    .category-subtitle__heading {
+      font-size: 9vw;
+      letter-spacing: 1.5vw;
+      margin-top: 5.5vw; }
+      .category-subtitle__heading:after {
+        margin-top: 11.7vw;
+        width: 5vw; }
+    .category-subtitle__translation {
+      margin-top: 7vw;
+      font-size: 3vw;
+      letter-spacing: 1vw; }
+
+  .search {
+    height: 163.5vw; }
+    .search__tab-btn-wrapper {
+      height: 13vw;
+      border-bottom: 0.4vw solid #c40909; }
+    .search__tab-btn {
+      width: 97%; }
+    .search__tab-heading {
+      font-size: 3vw;
+      letter-spacing: .6vw;
+      margin-top: 2%; }
+    .search__region-list {
+      padding: 13vw 0; }
+    .search__region-item {
+      position: relative;
+      width: 50%;
+      flex: 1 0 50%;
+      height: 18.3vw; }
+      .search__region-item:nth-child(odd) .search__region-btn {
+        margin-left: 0; }
+      .search__region-item:nth-child(even) .search__region-btn {
+        position: absolute;
+        right: 0; }
+    .search__region-btn {
+      width: 94%;
+      height: 13vw;
+      font-size: 3vw; }
+
+  #search-by-brand {
+    margin-left: 3%; } }
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5.5vw;
+  background-color: white; }
+  .brand__list {
+    display: flex;
+    flex-direction: row;
+    max-width: 980px;
+    width: 100%;
+    flex-wrap: wrap; }
+
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5.5vw;
+  background-color: white;
+  padding: 0 5.5vw 1.4vw 5.5vw; }
+  .map__map {
+    width: 100%;
+    max-width: 980px; }
+
+.shop-detail__entry-wrapper {
+  background-color: white;
+  display: flex;
+  justify-content: center; }
+.shop-detail__entry {
+  color: white;
+  text-align: center;
+  background-color: #c40909;
+  position: relative; }
+  .shop-detail__entry:after {
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    position: absolute; }
+.shop-detail__lead-title {
+  font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif; }
+
+.shop-recruit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5.5vw;
+  background-color: white;
+  padding: 0 5.5vw 1.4vw 5.5vw; }
+  .shop-recruit__list {
+    width: 100%;
+    height: 100%;
+    display: flex; }
+  .shop-recruit__outer-list {
+    width: 100%;
+    max-width: 980px; }
+  .shop-recruit__outer-item {
+    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc; }
+    .shop-recruit__outer-item:first-child {
+      border-top: 1px solid #cccccc; }
+  .shop-recruit__item-title {
+    display: inline-block;
+    height: 100%;
+    min-width: 132px;
+    color: #c40909;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+    font-weight: 600; }
+  .shop-recruit__item-data {
+    display: inline-block;
+    height: 100%;
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+    font-weight: 600; }
+
+@media screen and (min-width: 769px) {
+  .brand__item {
+    flex: 1 0 20%;
+    width: 20%;
+    margin-bottom: 36px; }
+    .brand__item:nth-child(4) .brand__img, .brand__item:nth-child(9) .brand__img, .brand__item:nth-child(14) .brand__img, .brand__item:nth-child(19) .brand__img {
+      margin-left: 12%; }
+    .brand__item:nth-child(2) .brand__img, .brand__item:nth-child(7) .brand__img, .brand__item:nth-child(12) .brand__img, .brand__item:nth-child(17) .brand__img {
+      margin-left: 4%; }
+    .brand__item:nth-child(3) .brand__img, .brand__item:nth-child(8) .brand__img, .brand__item:nth-child(13) .brand__img, .brand__item:nth-child(18) .brand__img {
+      margin: 0 auto;
+      display: block; }
+    .brand__item:nth-child(5n) .brand__img {
+      margin-left: 16.5%; }
+  .brand__img {
+    width: 84%; }
+
+  .map__map {
+    height: 298px; }
+
+  .shop-recruit__outer-item {
+    font-size: 14px;
+    padding: 1.3% 0; }
+  .shop-recruit__item-title {
+    line-height: 28px; }
+  .shop-recruit__item-data {
+    line-height: 28px; }
+
+  .shop-detail__entry-wrapper {
+    padding-bottom: 99px; }
+  .shop-detail__entry {
+    width: 300px;
+    margin-top: 9px;
+    border-radius: 25px;
+    padding: 17px 0; }
+    .shop-detail__entry:after {
+      font-size: 13px;
+      right: 21px; }
+
+  .shop-detail > .banner {
+    background-image: url("assets/css/img/shopdetail_kv_itibangai.png"); } }
+@media screen and (max-width: 768px) {
+  .brand__item {
+    flex: 1 0 33.33%;
+    width: 33.33%;
+    margin-bottom: 6.2vw; }
+    .brand__item:nth-child(2) .brand__img, .brand__item:nth-child(5) .brand__img, .brand__item:nth-child(8) .brand__img, .brand__item:nth-child(11) .brand__img, .brand__item:nth-child(14) .brand__img, .brand__item:nth-child(17) .brand__img {
+      display: block;
+      margin: 0 auto; }
+    .brand__item:nth-child(3n) .brand__img {
+      margin-left: 14%; }
+    .brand__item:last-child {
+      visibility: hidden; }
+  .brand__img {
+    height: 11vw;
+    width: 25.7vw; }
+
+  .map {
+    padding: 0 0 6.7vw 0; }
+    .map__map {
+      height: 62vw; }
+
+  .shop-recruit {
+    padding: 0 5.5vw; }
+    .shop-recruit__outer-item {
+      font-size: 3.5vw;
+      padding: 6.3% 0 5% 0; }
+    .shop-recruit__list {
+      flex-direction: column; }
+    .shop-recruit__item-title {
+      line-height: 5vw; }
+    .shop-recruit__item-data {
+      line-height: 8vw;
+      margin-top: 3vw; }
+
+  .shop-detail__entry-wrapper {
+    padding-bottom: 19.5vw; }
+  .shop-detail__entry {
+    width: 89.5vw;
+    margin-top: 13vw;
+    border-radius: 8vw;
+    padding: 4.6vw 0;
+    font-size: 4vw;
+    letter-spacing: .6vw; }
+    .shop-detail__entry:after {
+      font-size: 4vw;
+      right: 6vw; }
+
+  .shop-detail > .banner {
+    background-image: url("assets/css/img/shopdetail_kv_itibangai-sp.png"); } }
+.entry__form-wrapper {
+  display: flex;
+  justify-content: center; }
+
+.entry__form {
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  flex-direction: column; }
+.entry__label {
+  font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+  font-weight: 700; }
+  .entry__label-birthdate {
+    margin-top: 0; }
+.entry__require {
+  color: #e91f2d;
+  font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+  font-weight: 700;
+  vertical-align: -1px; }
+  .entry__require:before {
+    content: "\00203B";
+    font-family: "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Arial MT", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS Gothic", sans-serif;
+    font-weight: 700; }
+.entry__textfield--block {
+  width: 100%; }
+.entry__textfield:active, .entry__textfield:focus {
+  outline: none; }
+.entry__birthdate, .entry__phonenumber, .entry__postal-code {
+  display: flex;
+  flex-direction: row; }
+.entry__phonenumber-wrapper, .entry__postal-code-wrapper {
+  position: relative; }
+  .entry__phonenumber-wrapper:not(:first-child):before, .entry__postal-code-wrapper:not(:first-child):before {
+    content: '';
+    border-top: 1px solid black;
+    position: absolute;
+    font-weight: 100; }
+.entry__lead-title {
+  font-family: "YuMincho", "游明朝", "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", serif; }
+
+@media screen and (min-width: 769px) {
+  .entry > .banner {
+    background-image: url("assets/css/img/entry_kv.png"); }
+
+  .entry__form {
+    padding: 69px 85px 79px 85px; }
+  .entry__label {
+    line-height: 38px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-top: 20px; }
+    .entry__label-birthdate {
+      width: 171px; }
+  .entry__require:before {
+    font-size: 15px; }
+  .entry__textfield, .entry__textarea {
+    margin-top: 8px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc; }
+  .entry__textfield {
+    height: 50px;
+    padding: 0 21px; }
+    .entry__textfield--inline-with-label {
+      width: 76%;
+      margin-right: 11px; }
+    .entry__textfield--inline-without-label {
+      width: 77%;
+      margin-right: 11px; }
+  .entry__sex {
+    margin-top: 28px;
+    margin-bottom: 18px; }
+  .entry__radio {
+    margin-right: 9px; }
+    .entry__radio-label {
+      margin-right: 35px; }
+  .entry__phonenumber-wrapper, .entry__postal-code-wrapper {
+    width: 170px; }
+    .entry__phonenumber-wrapper:not(:first-child):before, .entry__postal-code-wrapper:not(:first-child):before {
+      top: 34px;
+      left: -25px;
+      height: 10px;
+      width: 12px; }
+  .entry__textarea {
+    height: 102px;
+    padding: 21px; }
+
+  #postal-code-label,
+  #address-label,
+  #email-confirm-label {
+    margin-top: 8px;
+    line-height: 19px; }
+
+  #postal-three-digits,
+  #postal-four-digits,
+  #email {
+    margin-bottom: 9px; } }
+@media screen and (max-width: 768px) {
+  .entry > .banner {
+    background-image: url("assets/css/img/entry_kv-sp.png"); }
+
+  .entry__form {
+    padding: 17vw 5.5vw 16vw 5.5vw; }
+  .entry__label {
+    font-size: 3.5vw;
+    line-height: 5vw;
+    letter-spacing: .3vw;
+    margin-top: 2.3vw; }
+    .entry__label-birthdate {
+      width: 26vw;
+      font-size: 3.5vw;
+      margin-right: 0; }
+      .entry__label-birthdate:last-child {
+        margin-right: 0; }
+  .entry__require:before {
+    font-size: 3.5vw; }
+  .entry__textfield, .entry__textarea {
+    margin-bottom: 3.6vw;
+    margin-top: 1.5vw;
+    font-size: 2.6vw;
+    letter-spacing: .8vw;
+    border-radius: .7vw;
+    border: 0.1vw solid #cccccc; }
+  .entry__textfield {
+    height: 13.5vw;
+    padding: 0 3vw; }
+    .entry__textfield--inline-with-label {
+      width: 18vw;
+      margin-right: 2vw; }
+    .entry__textfield--inline-without-label {
+      width: 24vw;
+      margin-right: 1vw; }
+  .entry__sex {
+    margin-top: 5.5vw;
+    margin-bottom: 3.5vw; }
+  .entry__radio {
+    margin-right: 2vw;
+    width: 3.5vw;
+    height: 3.5vw; }
+    .entry__radio-label {
+      margin-right: 11vw;
+      font-size: 3.5vw; }
+  .entry__phonenumber-wrapper, .entry__postal-code-wrapper {
+    width: 30vw;
+    margin-right: 4.5vw; }
+    .entry__phonenumber-wrapper:not(:first-child):before, .entry__postal-code-wrapper:not(:first-child):before {
+      top: 8.1vw;
+      left: -4vw;
+      height: 1vw;
+      width: 2.5vw; }
+    .entry__phonenumber-wrapper:last-child, .entry__postal-code-wrapper:last-child {
+      margin-right: 0; }
+  .entry__postal-code-wrapper {
+    width: 27vw; }
+  .entry__textarea {
+    height: 33vw;
+    padding: 3vw; }
+
+  #postal-code-label,
+  #address-label,
+  #email-confirm-label {
+    margin-top: 0;
+    line-height: 5vw; }
+
+  #postal-three-digits,
+  #postal-four-digits,
+  #email {
+    margin-bottom: 1vw; }
+
+  #birth-year {
+    width: 26vw; }
+    #birth-year-label {
+      width: 34vw; }
+
+  #phonenumber-first-digits {
+    width: 25.5vw; }
+    #phonenumber-first-digits-wrapper {
+      width: 31.5vw; } }
+
+/*# sourceMappingURL=style.css.map */

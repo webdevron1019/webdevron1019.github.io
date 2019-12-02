@@ -1,0 +1,74 @@
+@mixin display-flex($direction, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin fface($family, $path, $svg, $weight: normal, $style: normal) {
+    font-family: $family;
+    src: url('#{$path}.eot');
+    src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.woff2') format('woff2'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$svg}') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+}
+
+@font-face {
+    @include fface('Marcellus-v6-latin', '../font/marcellus-v6-latin-regular', 'Marcellus');
+}
+
+@mixin center{
+    margin: auto;
+    max-width: 980px;
+}
+
+@mixin center-mobile{
+    margin: auto;
+    max-width: 688px;
+}
+
+@function color($color-name) {
+    @return map-get($color, $color-name);
+}
+
+@mixin marginpadding() {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin background($imgurl){
+    background-image: url($imgurl);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: fixed;
+}
+
+@mixin listsetup(){
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin profileborder() {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+@font-face {
+    font-family: marcellus-v6-latin-regular;
+    src: url(../font/marcellus-v6-latin-regular.ttf)
+}
+
+* {
+    font-family: $primary-font-family;
+}
+
+#site-footer {
+    position: relative;
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        min-width: 1000px;
+    }
+}

@@ -1,0 +1,124 @@
+@mixin sitemap {
+    .title--hidden {
+        display: none;
+    }
+    .site-map {
+        background-color: $background-highlight-color;
+    }
+    @media (min-width: 769px) {
+        .site-map > .banner {
+            background-image: url("img/sitemap_kv.png");
+        }
+        .site-map__header-wrap{
+            @include display-flex(column,null,center);
+        } 
+        .site-map__page-list{
+            @include center;
+            @include display-flex(row,space-between,null);
+            padding-top: 95px;
+            padding-bottom: 100px;
+        }
+        .site-map__list{
+            @include display-flex(column,space-evenly,null);
+            width: 470px;
+        }
+        .site-map__list2{
+            @include display-flex(column,null,null);
+            width: 470px;
+        }
+        .site-map__item,.site-map__item2{
+            margin-bottom: 48px;
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 20px;
+        }
+        .site-map__item:first-child{
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .site-map__item span{
+            margin-left: 15px;
+            vertical-align: 0px;
+        }
+        .site-map__item a, .site-map__item2 a{
+        color: $primary-color;
+        font-size: 18px;
+        line-height: 27px;
+        }
+        .site-map__sub-list{
+            border-top: 1px solid #cccccc;
+            margin-top: 20px;
+            padding-top: 15px;
+        }
+        .site-map__sub-item a{
+            font-size: $fontsizelist;
+            line-height: 27px;
+            border-bottom: none; 
+            &:before {
+                font-family: "Font Awesome 5 Free";
+                content: "\f105";
+                font-weight: 600;
+                font-size: 13px;
+                padding: 0 8px 0 0;
+            }
+        }
+    }
+    
+    
+    @media (max-width: 768px) {
+        .site-map > .banner {
+            background-image: url("img/sitemap_kv-mobile.png");
+        }
+        .site-map__header-wrap{
+            @include display-flex(column,null,center);
+        }
+        .site-map__page-list{
+            @include center-mobile;
+            @include display-flex(column,space-evenly,null);
+            padding-top: 19.531vw;
+            padding-bottom: 19.531vw;
+        }
+        .site-map__list{
+            width: 89.583vw;
+            margin: auto;
+        }
+        .site-map__list2{
+            @include display-flex(column,null,null);
+            width: 89.583vw;
+            margin: auto;
+        }
+        .site-map__item {
+            &:first-child {
+                border-bottom: none;
+            }
+            span {
+                vertical-align: 1px;
+            }
+        }
+        .site-map__item a, .site-map__item2 a{
+            color: $primary-color;
+            font-size: 4.427vw;
+            line-height: 7.292vw;
+        }
+        .site-map__item,.site-map__item2{
+            margin-bottom: 13.021vw;
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 5.208vw;
+        }
+        .site-map__sub-list{
+            border-top: 1px solid #cccccc;
+            margin-top: 5.208vw;
+            padding-top: 5.208vw;
+        }
+        .site-map__sub-item a{
+            font-size: 3.646vw;
+            line-height: 7.292vw;
+            &:before {
+                font-family: "Font Awesome 5 Free";
+                content: "-";
+                font-weight: bold;
+                font-size: 3.646vw;
+                padding: 0 8px 0 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,232 @@
+@mixin company {
+    @media screen and (min-width: 769px) {
+        body {
+            @include marginpadding();
+            min-width: 1000px;
+        
+        }
+        .profile__heading > .category-subtitle {
+            height: 111px;
+        }
+        .company-wrapper > .banner {
+            background-image: url('img/company_kv.png');
+        }
+
+        .company-wrapper {
+            background-color: $background-highlight-color;
+
+            .profile {
+                padding-top: 100px;
+                width: 980px;
+                margin: auto;
+                &__heading {
+                    @include display-flex(column, center, center);
+                    text-align: center;
+                    .english-translation {
+                        font-size: 30px;
+                        letter-spacing: 6px;
+                    }
+                    .japanese-translation {
+                        @include display-flex(column-reverse, null, null);
+                        font-size: 14px;
+                        letter-spacing: 2px;
+                        font-family:$ff-YuMincho;
+                    }
+                }
+
+                &__list {
+                    @include listsetup();
+                    padding: 100px 0;
+                }
+                &__item {
+                    &:nth-child(1),
+                    &:nth-child(3),
+                    &:nth-child(5),
+                    &:nth-child(7) {
+                        @include profileborder();
+                    }
+                    .profile-information {
+                        @include display-flex(row, null, null);
+                        margin: 16px 0;
+                        &__heading--hidden {
+                            display: none;
+                        }
+                        &__title {
+                            margin: 0;
+                            width: 130px;
+                            color: $accent-color;
+                            font-size: 14px;
+                            line-height: 27px;
+                            font-weight: 900;
+                            font-family: $ff-YuGothic;
+                        }
+                        &__description {
+                            margin: 0;
+                            font-size: 14px;
+                            line-height: 27px;
+                            font-weight: 900;
+                            font-family: $ff-YuGothic;
+                        }
+                    }
+                }
+            }
+        }
+
+        .company__indicator {
+            height: 50px;
+            width: 980px;
+            margin: auto;
+            font-size: 14px;
+            @include display-flex(null, null, center);
+            .indicator__span {
+                margin: 0 14px;
+            }
+        }
+
+        .company-location {
+            @include display-flex(column, center, center);
+            @include marginpadding();
+            padding: 0 0 100px 0;
+            overflow: hidden;
+
+            .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 298px;
+                width: 980px;
+
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 298px;
+                    width: 980px;
+                }
+            }
+
+            .gmap_canvas iframe {
+                height: 298px;
+                width: 980px;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .company-wrapper > .banner {
+            background-image: url('img/company_kv-mobile.png');
+        }
+    
+        .company-wrapper {
+            background-color: $background-highlight-color;
+
+            .profile {
+                margin: auto;
+                    width: 100vw;
+                    padding-top: 13.021vw;
+
+                &__heading {
+                    @include display-flex(column, center, center);
+                    text-align: center;
+
+                    .english-translation {
+                            font-size: 9.115vw;
+                            line-height: 10.417vw;
+                            letter-spacing: 0.781vw;
+                            font-family: $primary-font-family;
+                    }
+
+                    .japanese-translation {
+                        @include display-flex(column-reverse, null, null);
+                        font-size: 3.646vw;
+                        line-height: 7.823vw;
+                        font-family:$ff-YuMincho;
+                        font-weight: 400;
+                        letter-spacing: 0.260vw;
+                    }
+                }
+
+                &__list {
+                    @include listsetup();
+                        width: 89.583vw;
+                        margin: auto;
+                        padding: 13.021vw 0;
+                }
+
+                &__item {
+                    &:nth-child(1),
+                    &:nth-child(3),
+                    &:nth-child(5),
+                    &:nth-child(7) {
+                        border-top: 0.130vw solid #cccccc;
+                        border-bottom: 0.130vw solid #cccccc;
+                    }
+
+                    .profile-information {
+                        margin: 2.083vw;
+                        @include display-flex(column, null, null);
+
+                        &__heading--hidden {
+                            display: none;
+                        }
+
+                        &__title {
+                            margin: 0;              
+                            color: $accent-color;                                           
+                            font-family: $ff-YuGothic;
+                                width: auto;
+                                font-size: 3.646vw;
+                                line-height: 7.292vw;
+                                font-weight: 600;
+                        }
+
+                        &__description {
+                            margin: 0;                
+                            font-family: $ff-YuGothic;
+                                width: auto;
+                                font-size: 3.646vw;
+                                line-height: 7.292vw;
+                                font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+
+        .company__indicator {
+            margin: auto;
+            @include display-flex(null, null, center);
+            height: 7.813vw;
+            font-size: 1.823vw;
+            width: 89.583vw;
+            .indicator__span {
+                    margin: 0 1.823vw;
+
+            }
+
+        }
+
+        .company-location {
+            @include display-flex(column, center, center);
+            @include marginpadding();
+            overflow: hidden;
+            padding: 0 0 13.021vw 0;
+
+            .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                    width: 100vw;
+                    height: 62.500vw;
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                        width: 100vw;
+                        height: 62.500vw;
+                }
+            }
+
+            .gmap_canvas iframe {
+                    width: 100vw;
+                    height: 62.500vw;
+            }
+        }
+    }
+}

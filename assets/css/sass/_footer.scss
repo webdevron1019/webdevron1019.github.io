@@ -1,0 +1,178 @@
+@mixin footer {
+    .title--hidden{
+        display: none;
+    }
+    .site-footer {
+        background-color: $primary-color;
+        // position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin-bottom: 0px;
+    }
+        
+    @media screen and (min-width: 769px) {
+        .site-footer{
+            height: 365px;
+            padding-top: 100px;
+        }
+        .footer-wrapper{
+            @include display-flex(row-reverse,space-between,null);
+            @include center;
+            color: $secondary-color;
+        }
+        .site-footer__logo{
+            @include display-flex(column,space-between,null);
+            height: 125px;
+        }
+        .site-footer__logo-img{
+            @include display-flex(row,space-between,null);
+            align-items: center;
+        }
+        .site-footer__logo-img img:first-child{
+            width: 90px;
+            height: 48px;
+            margin-right: 20px;
+        }
+        .site-footer__logo-img img:nth-child(2){
+            width: 81px;
+            height: 17px;
+            margin-top: -5px;
+        }
+        .site-footer__logo-address{
+            font-family: $ff-hiragino;
+            font-size: $fontsizeaddress;
+            line-height: 26px;
+        }
+        .site-footer__navigation{
+            @include display-flex(row,space-between,null);
+        }
+        .site-footer__navigation-list{
+            margin-right: 108px;
+        }
+        .site-footer__navigation-item, .site-footer__navigation-item2{
+            margin-bottom: 25px;
+            font-size: $fontsizelist;
+            position: relative;
+            a {
+                color: $secondary-color;
+            }
+        }
+        .site-footer__navigation-item2:before{
+            font-family: "Font Awesome 5 Free";
+            content: "\f111";
+            font-weight: 600;
+            font-size: 3px;
+            padding: 0 8px 0 0;
+            vertical-align: 100%;
+        }
+        .site-footer__navigation-item:before{
+            content: "-";
+            font-weight: bold;
+            font-size: 15px;
+            padding: 0 8px 0 0;
+        }
+        
+        .site-footer__navigation-item2:nth-child(2){
+            display: none;
+        }
+        .site-footer__logo-credit{
+            font-family: $ff-hiragino;
+            font-size: 11px;
+            font-weight: $fontweightlight;
+            line-height: 26px;
+            color: white;
+            width: 980px;
+            margin:auto;
+            margin-top: -45px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        
+        .site-footer{
+            height: 92.057vw;
+            padding-top: 19.531vw;
+        }
+        .footer-wrapper{
+            @include display-flex(row-reverse,space-between,null);
+            @include center;
+            color: $secondary-color;
+        }
+        .site-footer__navigation-list{
+            display: none;
+        }
+        .site-footer__navigation-list2{
+            @include display-flex(null,space-around,null);
+            margin: auto;
+            margin-top: 12.370vw;
+            flex-wrap: wrap;
+            width: 72.917vw;
+        }
+        .site-footer__navigation-item2:before{
+            font-family: "Font Awesome 5 Free";
+            content: "\f111";
+            font-weight: 600;
+            font-size: 0.651vw;
+            padding: 0 1.302vw 0 0;
+            vertical-align: 15%;
+        }
+        .site-footer__navigation-item2:first-child{
+            margin-left: 5.859vw;
+            margin-right: 0px;
+        }
+        .site-footer__navigation-item2:nth-child(2){
+            display: block;
+        }
+        .site-footer__navigation-item2:nth-child(4){
+            margin-right: 0;
+        }
+        .site-footer__navigation-item2{
+            font-size: $fontmedium;
+            line-height: 7.292vw;
+            margin-right: 8.854vw;
+            margin-bottom: 0;
+            a {
+                color: $secondary-color;
+            }
+        }
+        
+        .site-footer__logo{
+            @include display-flex(column,space-between,null);
+            height: 16.276vw;
+        }
+        .site-footer__logo-address{
+            display: none;
+        }
+        .footer-wrapper{
+            @include display-flex(column-reverse,space-between,null);
+            width: $mobilecontainerwidth;
+        }
+        .site-footer__logo-img{
+            @include display-flex(row,center,center);
+        }
+        .site-footer__logo-img img:first-child{
+            width: 26.432vw;
+            height: 13.932vw;
+            margin-right: 9.115vw;
+        }
+        .site-footer__logo-img img:nth-child(2){
+            width: 23.438vw;
+            height: 4.948vw;
+            margin-top: -1.563vw;
+        }
+        .site-footer__logo-credit{
+            font-family: $ff-hiragino;
+            font-size: 2.865vw;
+            font-weight: $fontweightlight;
+            color: white;
+            line-height: 3.385vw;
+            margin:auto;
+            margin-top: 12.370vw;
+            width: $mobilecontainerwidth;
+            text-align: center;
+        }
+
+    }
+}

@@ -1,0 +1,25 @@
+// *****************************
+//
+//	 _setting.scss
+//	 last-update : 2012.07.09
+//
+// *****************************
+
+// # Support
+$support-ie6: true !default;
+$support-ie7: true !default;
+$support-ie8: true !default;
+$support-ie9: true !default;
+$support-mozilla: true !default;
+$support-webkit: true !default; // Chrome, Safari
+$support-opera: true !default;
+
+// # Vendor-prefixed CSS Property
+$use-prefix-webkit: true !default;
+$use-prefix-moz: true !default;
+$use-prefix-ms: true !default;
+$use-prefix-o: true !default;
+
+// # IE
+$use-ie-filter: false !default;
+$use-ie-expression: false !default;
