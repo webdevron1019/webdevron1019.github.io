@@ -73,7 +73,88 @@
     }
 
     @media only screen and (max-width: 749px) {
+          //   .site-header{
+              
+          //       &__navigation {
+          //         margin: 6.2vw 5vw;
+
+          //         &-list  {
+          //             height: auto;
+          //             position: absolute;
+          //             left: 0;
+          //             top: 18.5vw;
+          //             width: 100%;
+          //             background-color: white;
+                      
+          //             display: flex;
+          //             flex-direction: column;
+          //             display: none;
+          //         }
+              
+          //         &-item {
+          //             margin: 0;
+          //             border-bottom: 2px solid #f5f5ed;
+          //             &:first-child {
+          //                 border-top: 2px solid #f5f5ed;
+          //             }
+          //             &:hover {
+          //                 border-bottom: 2px solid #c40909;
+          //             }
+          //         }
+              
+          //         &-link {
+          //             width: 100%;
+          //             padding: 6vw 0;
+          //             font-size: 3.6vw;
+          //             text-align: center;
+          //             border-bottom: none;
+          //             &:hover {
+          //                 border-bottom:  none;
+          //             }
+          //         }
+          //     }
+
+          //     &__hamburger-btn {
+          //         position: relative;
+          //         display: block;
+          //         width: 7vw;
+          //         height: 5.5vw;
+          //         padding: 0;
+          //         border: none;
+          //         background-color: transparent;
+          //         display: flex;
+          //         flex-direction: column;
+          //         justify-content: space-between;
+          //         &:active,
+          //         &:focus {
+          //             outline: none;
+          //         }
+          //     }
+
+          //     &__hamburger-line {
+          //         width: 7vw;
+          //         height: .3vw;
+          //         background-color: #f5f5ed;
+
+          //         &--collapsed {
+          //             position: absolute;
+          //             top: 50%;
+          //             &:first-child {
+          //                 transform: rotate(45deg);
+          //             }
+          //             &:nth-child(2) {
+          //                 display: none;
+          //             }
+          //             &:last-child {
+          //                 transform: rotate(-45deg);
+          //             }
+          //         }
+          //     }
+          // }
         
+
+
+
         #nav-toggle {
             position: fixed;
             top: 25px;
@@ -87,10 +168,10 @@
           }
           span {
             width: 100%;
-            height: 1px;
+            height: 5px;
             left: 0;
             display: block;
-            background: #333;
+            background: $primary-blue-light;
             position: absolute;
             transition: transform .6s ease-in-out, top .5s ease;
             
@@ -116,7 +197,7 @@
         
         .open {
           #nav-toggle span {
-            background: #fff;
+            background: $primary-blue-light;;
             
             &:nth-child(1) {
               top: 15px;
@@ -142,21 +223,16 @@
         }
         
         #gloval-nav {
-            background: #000;
-            color: #fff;
+            background: #fff;
+            height: 729px;
             position: fixed;
-            top: 0;
+            top: 100px;
             left: 0;
             right: 0;
             bottom: 0;
             z-index: 990;
-            text-align: center;
             display: flex;
             visibility: hidden;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-            font-size: 29px;
             opacity: 0;
             transition: opacity .6s ease, visibility .6s ease;
         }
@@ -164,15 +240,9 @@
         
         #gloval-nav {
           a {
-            display: block;
-            color: #fff;
             text-decoration: none;
             padding: 10px 0;
             transition: color .6s ease;
-            
-            &:hover {
-              color: #666;
-            }
           }
           
           ul {
@@ -183,23 +253,25 @@
               transform: translateX(200px);
               transition:  transform .6s ease, opacity .2s ease;
         
-              &:nth-child(2) {
+              &:nth-child(1) {
                 transition-delay: .15s;
+                border-top: solid #F5F5F5 1px;
+                border-bottom: solid #F5F5F5 1px;
+              }
+              &:nth-child(2) {
+                transition-delay: .3s;
+                border-bottom: solid #F5F5F5 1px;
               }
               &:nth-child(3) {
-                transition-delay: .3s;
+                transition-delay: .45s;
+                border-bottom: solid #F5F5F5 1px;
               }
               &:nth-child(4) {
-                transition-delay: .45s;
+                transition-delay: .6s;
+                border-bottom: solid #F5F5F5 1px;
               }
               &:nth-child(5) {
-                transition-delay: .6s;
-              }
-              &:nth-child(6) {
                 transition-delay: .75s;
-              }
-              &:nth-child(7) {
-                transition-delay: .9s;
               }
             }
           }
@@ -223,6 +295,9 @@
             height: 100px;
             align-items: center;
             margin: auto;
+            &__sub-nav{
+              width: 100%;
+            }
             &__wrapper{
                 height: 100px;
                 align-items: center;
@@ -231,23 +306,30 @@
              &__nav{
                  
                  &-list{
-                     @include display-flex(row,NULL,center,center);
+                     @include display-flex(column,NULL,null,null);
                  }
                  &-item{
-                     margin-right: 20px;
+                      display: flex;
+                      align-items: center;
+                      height: 120px;
                      & a{
                          font-family:Hiragino Kaku Gothic Std;
-                         font-size: 15px;
+                         font-size: 30px;
                          color:$primary-blue-light;
+                         margin-left: 60px;
                      }
                      &:nth-child(5){
                          @include display-flex(row,NULL,center,center);
-                         width: 166px;
-                         height: 40px;
-                         margin-right: 0;
-                         background-color:$primary-blue-dark;
+                         height: 240px;
                          & a{
-                             color: white;
+                            background-color:$primary-blue-dark;
+                            color: white;
+                            width: 630px;
+                            height: 120px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-left: 0px;
                          }
                      }
                  }
