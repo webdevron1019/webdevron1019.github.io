@@ -1,0 +1,190 @@
+@mixin display-flex ($direction, $wrap, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin footer {
+    .title--hidden{
+        display: none;
+    }
+    #site-footer{
+        position: relative;
+        top: 100px;
+    }
+    .contact-section1{
+        width: 50%;
+        height: 380px;
+        background-color:$primary-blue-light;
+        @include display-flex(column,null,center,center);
+        &__text1{
+             font-family:$hiragino;
+             font-size: 30px;
+             line-height: 48px;
+             color: white;
+             margin-bottom: 22px;
+        }
+        &__text2{
+             font-family:$hiragino;
+             font-size: 15px;
+             line-height: 27px;
+             color: white;
+         }
+         &__phone{
+             font-family:$hiragino;
+             font-size: 30px;
+             line-height: 48px;
+             color: white;
+             margin-top: 57px;
+             &:before{
+                content: url(img/phone_pc.png);
+                 width: 24px;
+                 height: 24px;
+                 margin-right:14px;
+             }
+         }
+         &__note{
+             font-family:$hiragino;
+             font-size: 13px;
+             line-height: 20px;
+             color: white;
+         }
+    }
+    .contact-section2{
+         width: 50%;
+         height: 380px;
+         background-color:$primary-blue-dark;
+         @include display-flex(column,null,center,center);
+
+         &__heading{
+             font-family:$hiragino;
+             font-size: 30px;
+             line-height: 48px;
+             color: white;
+         }
+         &__form-btn{
+             margin-top: 28px;
+             width: 264px;
+             height: 60px;
+             align-items: center;
+             font-size: 15px;
+             font-family: $hiragino;
+             color: white;
+             border: solid white 1px;
+             background-color:$primary-blue-dark;
+         }
+     }
+     .site-footer__copyright{
+        text-align: center;
+        padding: 58px 0px;
+        font-family:$hiragino;
+        font-size: 13px;
+        line-height: 48px;
+        color: #333333;
+    }
+    @media screen and (min-width: 750px) {
+      
+        body{
+            min-width: 1340px;
+        }
+        .contact{
+            width: 100%;
+            @include display-flex(row,null,center,center);
+           
+        }
+        .site-footer__links{
+            width: 1146px;
+            height: 75px;
+            border-bottom: solid $border-light 1px;
+            margin: auto;
+            @include display-flex(row,null,null,center);
+            & a{
+                font-family: $hiragino;
+                font-size: 13px;
+                line-height: 48px;
+                margin-right: 30px;
+                color: #333333;
+            }
+        }
+        
+
+    }
+
+    @media screen and (max-width: 749px) {
+        .contact{
+            width: 100%;
+            @include display-flex(column,null,center,center);
+        }
+        .contact-section1{
+            width: 100%;
+            height: 70.895vw;
+            text-align: center;
+            &__text1{
+                 font-size: 5.607vw;
+                 line-height: 8.812vw;
+                 margin-bottom: 3.738vw;
+            }
+            &__text2{
+                 font-size: 4.005vw;
+                 line-height: 6.008vw;
+             }
+             &__phone{
+                 font-size: 5.607vw;
+                 line-height: 8.812vw;
+                 margin-top: 6.542vw;
+                 &:before{
+                    // content: url(img/phone_sp.png);
+                    background-image: url(img/phone_sp.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                     width: 4.473vw;
+                     height: 4.473vw;
+                     margin-right:1.869vw;
+                 }
+             }
+             &__note{
+                 font-size: 4.005vw;
+                 line-height: 6.008vw;
+             }
+        }
+        .contact-section2{
+             width: 100%;
+             height: 51.535vw;
+             &__heading{
+                 font-size: 5.607vw;
+                 line-height: 8.812vw;
+             }
+             &__form-btn{
+                 margin-top: 7.744vw;
+                 width: 73.431vw;
+                 height: 12.016vw;
+                 font-size: 3.204vw;
+                 border: solid white 1px;
+             }
+         }
+         .site-footer__links{
+            width: 92.123vw;
+            height: 20.027vw;
+            border-bottom: solid $border-light 1px;
+            @include display-flex(row,null,space-evenly,center);
+            & a{
+                font-family: Hiragino Kaku Gothic ProN;
+                font-size: 3.204vw;
+                font-weight: normal;
+                line-height: 4.272vw;
+                color: #333333;
+            }
+        }
+        .site-footer__copyright{
+            text-align: center;
+            padding: 7.744vw 0px;
+            font-family:$hiragino;
+            font-size:3.204vw;
+            line-height: 4.272vw;
+            color: #333333;
+        }
+      
+    }
+}

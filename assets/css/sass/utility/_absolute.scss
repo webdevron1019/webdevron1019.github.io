@@ -1,0 +1,11 @@
+// *****************************
+//
+//	 _absolute.scss
+//
+// *****************************
+
+@mixin absolute($top: 0px, $left: 0px) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}

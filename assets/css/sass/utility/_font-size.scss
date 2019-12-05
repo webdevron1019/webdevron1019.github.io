@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+// *****************************
+//
+//	 _font-size.scss
+//
+// *****************************
+
+@mixin font-size($size) {
+    font-size: $size + px;
+    font-size: ($size / 10) * 1rem;
+}

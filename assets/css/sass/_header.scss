@@ -1,0 +1,263 @@
+
+
+@mixin display-flex ($direction, $wrap, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin header {
+
+    .site-header{
+        background-color: rgba(255, 255, 255, 0.8);
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 999;
+        &__wrapper{
+            width: 1340px;
+            @include display-flex(row,NULL,space-between,NULL);
+        }
+        &__logo{
+            font-family: Hiragino Kaku Gothic Std;
+            font-size: 30px;
+            font-weight: bold;
+            color:$primary-blue-light;
+            & span{
+                font-size: 15px;
+                font-weight: normal;
+                margin-left: 5px;
+                vertical-align: 5px;
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 750px) {
+       .site-header{
+           &__wrapper{
+            height: 100px;
+            align-items: center;
+            margin: auto;
+           }
+           
+            &__nav{
+                
+                &-list{
+                    @include display-flex(row,NULL,center,center);
+                }
+                &-item{
+                    margin-right: 20px;
+                    & a{
+                        font-family:Hiragino Kaku Gothic Std;
+                        font-size: 15px;
+                        color:$primary-blue-light;
+                    }
+                    &:nth-child(5){
+                        @include display-flex(row,NULL,center,center);
+                        width: 166px;
+                        height: 40px;
+                        margin-right: 0;
+                        background-color:$primary-blue-dark;
+                        & a{
+                            color: white;
+                        }
+                    }
+                }
+                &-btn{
+                    display:none;
+                }
+            }
+       }
+
+    }
+
+    @media only screen and (max-width: 749px) {
+        
+        #nav-toggle {
+            position: fixed;
+            top: 25px;
+            right: 25px;
+            height: 32px;
+            cursor: pointer;
+            
+          > div {
+            position: relative;
+            width: 36px;
+          }
+          span {
+            width: 100%;
+            height: 1px;
+            left: 0;
+            display: block;
+            background: #333;
+            position: absolute;
+            transition: transform .6s ease-in-out, top .5s ease;
+            
+            &:nth-child(1) {
+              top: 0;
+            }
+            &:nth-child(2) {
+              top: 14px;
+            }
+            &:nth-child(3) {
+              top: 28px;
+            }
+          }
+        
+          &:hover span:nth-child(1) {
+            top: 4px;
+          }
+          &:hover span:nth-child(3) {
+            top: 23px;
+          }
+        
+        }
+        
+        .open {
+          #nav-toggle span {
+            background: #fff;
+            
+            &:nth-child(1) {
+              top: 15px;
+              transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+              top: 15px;
+              width: 0;
+              left: 50%;
+            }
+            &:nth-child(3) {
+              top: 15px;
+              transform: rotate(-45deg);
+            }
+          }
+        }
+        
+        #nav-toggle {
+            z-index: 1000;
+        }
+        #container {
+            z-index: 900;
+        }
+        
+        #gloval-nav {
+            background: #000;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 990;
+            text-align: center;
+            display: flex;
+            visibility: hidden;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+            font-size: 29px;
+            opacity: 0;
+            transition: opacity .6s ease, visibility .6s ease;
+        }
+        
+        
+        #gloval-nav {
+          a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 0;
+            transition: color .6s ease;
+            
+            &:hover {
+              color: #666;
+            }
+          }
+          
+          ul {
+            list-style: none;
+            
+            li {
+              opacity: 0;
+              transform: translateX(200px);
+              transition:  transform .6s ease, opacity .2s ease;
+        
+              &:nth-child(2) {
+                transition-delay: .15s;
+              }
+              &:nth-child(3) {
+                transition-delay: .3s;
+              }
+              &:nth-child(4) {
+                transition-delay: .45s;
+              }
+              &:nth-child(5) {
+                transition-delay: .6s;
+              }
+              &:nth-child(6) {
+                transition-delay: .75s;
+              }
+              &:nth-child(7) {
+                transition-delay: .9s;
+              }
+            }
+          }
+        } 
+        
+        .open {
+            overflow: hidden;
+          
+          #gloval-nav {
+            visibility: visible;
+            opacity: 1;
+          }
+        
+          #gloval-nav li {
+            opacity: 1;
+            transform: translateX(0);
+            transition:  transform 1s ease, opacity .9s ease;
+          }
+        }
+        .site-header{
+            height: 100px;
+            align-items: center;
+            margin: auto;
+            &__wrapper{
+                height: 100px;
+                align-items: center;
+                margin-left: 30px;
+               }
+             &__nav{
+                 
+                 &-list{
+                     @include display-flex(row,NULL,center,center);
+                 }
+                 &-item{
+                     margin-right: 20px;
+                     & a{
+                         font-family:Hiragino Kaku Gothic Std;
+                         font-size: 15px;
+                         color:$primary-blue-light;
+                     }
+                     &:nth-child(5){
+                         @include display-flex(row,NULL,center,center);
+                         width: 166px;
+                         height: 40px;
+                         margin-right: 0;
+                         background-color:$primary-blue-dark;
+                         & a{
+                             color: white;
+                         }
+                     }
+                 }
+                 &-btn{
+                     display:none;
+                 }
+             }
+        }
+        
+    }
+}
+
+    

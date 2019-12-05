@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'utility/import';
+
+@import 'core/reset';
+@include reset-html5;
+
+@import 'top';
+@include top;
+
+@import 'header';
+@include header;
+
+@import 'footer';
+@include footer;
+
+@import 'shared';
+

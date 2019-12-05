@@ -9,11 +9,124 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="/assets/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/header.js"></script>
   </head>
 
 <body id="mainIndex">
 
-<h1>HELLO WORLD</h1>
+<header id="header" role="banner" class="site-header">
+    <div class="site-header__wrapper">
+    <h1 class="site-header__logo">EISHO<span>株式会社 栄商</span></h1>
+    <nav class="site-header__nav">
+        <h2 class="title--hidden">Navigation links</h2>
+        <button class="site-header__nav-btn"></button>
+            <div id="nav-toggle">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div id="gloval-nav">
+                <nav>
+                    <ul class="site-header__nav-list">
+                        <li class="site-header__nav-item"><a href="">強み・こだわり</a></li>
+                        <li class="site-header__nav-item"><a href="">取扱い商品</a></li>
+                        <li class="site-header__nav-item"><a href="">工場紹介</a></li>
+                        <li class="site-header__nav-item"><a href="">会社概要</a></li>
+                        <li class="site-header__nav-item"><a href="">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>   
+   
+        <!-- <ul class="site-header__nav-list">
+            <li class="site-header__nav-item"><a href="">強み・こだわり</a></li>
+            <li class="site-header__nav-item"><a href="">取扱い商品</a></li>
+            <li class="site-header__nav-item"><a href="">工場紹介</a></li>
+            <li class="site-header__nav-item"><a href="">会社概要</a></li>
+            <li class="site-header__nav-item"><a href="">お問い合わせ</a></li>
+        </ul> -->
+        
+    </nav>
+</div>
+</header>
+
+<div id="content">
+    <main class="site-main">
+    <section class="banner">
+        <h2 class="banner__title">小ロットのオーダーにも、<br>優れたコストパフォーマンスでお答えします。</h2>
+        <div class="banner__scroll"><a href="#"><figure><img src="./assets/img/scroll.png"></figure></a></div>
+    </section>
+    <section class="top-intro">
+        <div class="top-intro__wrapper">
+            <h2 class="top-intro__title">株式会社 栄商は、<br>誠実なモノづくりの総合商社です。</h2>
+            <ul class="top-intro__list">
+                <li class="top-intro__items">輸入業をメインとし、中国提携工場と定期便がございます。</li>
+                <li class="top-intro__items">小ロットでも優れたコストパフォーマンスを発揮します。</li>
+                <li class="top-intro__items">検品・検針体制に注力しており、確かな製品を確実にお届け致します。</li>
+            </ul>
+        </div>
+        <div class="services-wrapper">
+            <section class="commitment">
+                <figure class="commitment__figure"><img src="./assets/img/section_1.png"></figure>
+                <div class="commitment__box">
+                    <h3 class="commitment__title">強み・こだわり</h3>
+                    <p class="commitment__sub">中国提携工場との定期コンテナ便により輸送コストを<br>大幅に削減し、小ロットでも優れたコストパフォーマ<br>ンスを発揮します。</p>
+                    <div class="commitment__link">詳しく見る</div>
+                </div>
+            </section>
+            <section class="handling">
+                <figure class="handling__figure"><img src="./assets/img/section_3.png"></figure>
+                <div class="handling__box">
+                    <h3 class="handling__title">取扱い商品</h3>
+                    <p class="handling__sub">提携工場での検品・検針により厳しい品質基準を満た<br>し、日本の企業様に安心･満足頂ける製品をお届けい<br>たします。</p>
+                    <div class="handling__link">詳しく見る</div>
+                </div>
+            </section>
+            <section class="factory">
+                <figure class="factory__figure"><img src="./assets/img/section_2.png"></figure>
+                <div class="factory__box">
+                    <h3 class="factory__title">工場紹介</h3>
+                    <p class="factory__sub">商社機能を活用した協力工場及び提携縫製工場をご紹<br>介します。</p>
+                    <div class="factory__link">詳しく見る</div>
+                </div>
+            </section>
+        </div>
+    </section>
+</main>
+</div><!-- #content --> 
+
+
+<footer id="site-footer" role="contentinfo">
+    <section class="contact">
+        <h2 class="title--hidden">Footer</h2>
+        <section class="contact-section1">
+            <h3 class="title--hidden">Contact</h3>
+            <p class="contact-section1__text1">まずはお気軽にご相談ください</p>
+            <p class="contact-section1__text2">商品に関する質問やご相談など、まずはお気軽にご連絡ください。</p>
+            <div class="contact-section1__phone">0866-67-9801</div>
+            <span class="contact-section1__note">※受付 9:00～18:00 (土日祝は除く)</span>
+        </section>
+        <section class="contact-section2">
+            <h3 class="contact-section2__heading">Contact us</h3>
+            <button class="contact-section2__form-btn">お問い合わせフォーム</button>
+            
+        </section> 
+    </section>  
+    <div class="site-footer__links"> 
+        <a href="">プライバシーポリシー</a>
+        <a href="">会社概要</a>
+    </div>
+    <p class="site-footer__copyright"> &copy; Eisho, Ltd. All rights reserved.</p>
+    
+    
+
+</footer><!-- #footer -->
 
 </body>
 
