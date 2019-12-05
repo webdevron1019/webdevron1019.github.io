@@ -979,19 +979,19 @@ select {
     transition: transform .6s ease-in-out, top .5s ease, -webkit-transform .6s ease-in-out;
   }
   #nav-toggle span:nth-child(1) {
-    top: 0;
+    top: 12px;
   }
   #nav-toggle span:nth-child(2) {
-    top: 14px;
+    top: 26px;
   }
   #nav-toggle span:nth-child(3) {
-    top: 28px;
+    top: 40px;
   }
   #nav-toggle:hover span:nth-child(1) {
-    top: 4px;
+    top: 16px;
   }
   #nav-toggle:hover span:nth-child(3) {
-    top: 23px;
+    top: 35px;
   }
   .open #nav-toggle span {
     background: #003B71;

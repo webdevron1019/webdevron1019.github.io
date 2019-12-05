@@ -176,21 +176,21 @@
             transition: transform .6s ease-in-out, top .5s ease;
             
             &:nth-child(1) {
-              top: 0;
+              top: 12px;
             }
             &:nth-child(2) {
-              top: 14px;
+              top: 26px;
             }
             &:nth-child(3) {
-              top: 28px;
+              top: 40px;
             }
           }
         
           &:hover span:nth-child(1) {
-            top: 4px;
+            top: 16px;
           }
           &:hover span:nth-child(3) {
-            top: 23px;
+            top: 35px;
           }
         
         }
