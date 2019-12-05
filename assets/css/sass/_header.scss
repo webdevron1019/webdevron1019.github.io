@@ -8,7 +8,10 @@
     align-items: $align;
 }
 @mixin header {
-
+    .site-main{
+        position: relative;
+        top:100px;
+    }
     .site-header{
         background-color: rgba(255, 255, 255, 0.8);
         position: fixed;
@@ -153,22 +156,24 @@
           // }
         
 
-
+        .site-main{
+            top:13.351vw;
+        }
 
         #nav-toggle {
             position: fixed;
-            top: 25px;
-            right: 25px;
-            height: 32px;
+            top: 3.338vw;
+            right: 3.338vw;
+            height: 4.272vw;
             cursor: pointer;
             
           > div {
             position: relative;
-            width: 36px;
+            width: 4.806vw;
           }
           span {
             width: 100%;
-            height: 5px;
+            height: 0.668vw;
             left: 0;
             display: block;
             background: $primary-blue-light;
@@ -176,21 +181,21 @@
             transition: transform .6s ease-in-out, top .5s ease;
             
             &:nth-child(1) {
-              top: 12px;
+              top: 1.602vw;
             }
             &:nth-child(2) {
-              top: 26px;
+              top: 3.471vw;
             }
             &:nth-child(3) {
-              top: 40px;
+              top: 5.340vw;
             }
           }
         
           &:hover span:nth-child(1) {
-            top: 16px;
+            top: 2.136vw;
           }
           &:hover span:nth-child(3) {
-            top: 35px;
+            top: 4.673vw;
           }
         
         }
@@ -200,16 +205,16 @@
             background: $primary-blue-light;;
             
             &:nth-child(1) {
-              top: 15px;
+              top: 2.003vw;
               transform: rotate(45deg);
             }
             &:nth-child(2) {
-              top: 15px;
+              top: 2.003vw;
               width: 0;
               left: 50%;
             }
             &:nth-child(3) {
-              top: 15px;
+              top: 2.003vw;
               transform: rotate(-45deg);
             }
           }
@@ -224,9 +229,9 @@
         
         #gloval-nav {
             background: #fff;
-            height: 729px;
+            height: 97.330vw;
             position: fixed;
-            top: 100px;
+            top: 13.351vw;
             left: 0;
             right: 0;
             bottom: 0;
@@ -241,7 +246,7 @@
         #gloval-nav {
           a {
             text-decoration: none;
-            padding: 10px 0;
+            padding: 1.335vw 0;
             transition: color .6s ease;
           }
           
@@ -250,7 +255,7 @@
             
             li {
               opacity: 0;
-              transform: translateX(200px);
+              transform: translateX(26.702vw);
               transition:  transform .6s ease, opacity .2s ease;
         
               &:nth-child(1) {
@@ -292,16 +297,26 @@
           }
         }
         .site-header{
-            height: 100px;
+            height: 13.351vw;
             align-items: center;
             margin: auto;
             &__sub-nav{
               width: 100%;
             }
+            &__logo{
+              font-size:4.005vw;
+              & span{
+                font-size: 2.003vw;
+                font-weight: normal;
+                margin-left: 0.668vw;
+                vertical-align: 0.668vw;
+              }
+            }
             &__wrapper{
-                height: 100px;
+                height: 13.351vw;
+                width: 100%;
                 align-items: center;
-                margin-left: 30px;
+                margin-left: 4.005vw;
                }
              &__nav{
                  
@@ -311,21 +326,21 @@
                  &-item{
                       display: flex;
                       align-items: center;
-                      height: 120px;
+                      height: 16.021vw;
                      & a{
                          font-family:Hiragino Kaku Gothic Std;
-                         font-size: 30px;
+                         font-size: 4.005vw;
                          color:$primary-blue-light;
-                         margin-left: 60px;
+                         margin-left: 8.011vw;
                      }
                      &:nth-child(5){
                          @include display-flex(row,NULL,center,center);
-                         height: 240px;
+                         height: 32.043vw;
                          & a{
                             background-color:$primary-blue-dark;
                             color: white;
-                            width: 630px;
-                            height: 120px;
+                            width: 84.112vw;
+                            height: 16.021vw;
                             display: flex;
                             align-items: center;
                             justify-content: center;

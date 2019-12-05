@@ -38,10 +38,17 @@
              color: white;
              margin-top: 57px;
              &:before{
-                content: url(img/phone_pc.png);
-                 width: 24px;
-                 height: 24px;
-                 margin-right:14px;
+                // content: url(img/phone_pc.png);
+                // width: 24px;
+                // height: 24px;
+                // margin-right:14px;
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                margin-right: 5px;
+                content: "";
+                background: url(img/phone_pc.png) no-repeat 0 0;
+                background-size: 100%;
              }
          }
          &__note{
@@ -112,6 +119,9 @@
     }
 
     @media screen and (max-width: 749px) {
+        #site-footer{
+            top:13.351vw;
+        }
         .contact{
             width: 100%;
             @include display-flex(column,null,center,center);
@@ -128,6 +138,7 @@
             &__text2{
                  font-size: 4.005vw;
                  line-height: 6.008vw;
+                 width: 84%;
              }
              &__phone{
                  font-size: 5.607vw;
@@ -135,13 +146,13 @@
                  margin-top: 6.542vw;
                  &:before{
                     // content: url(img/phone_sp.png);
-                    background-image: url(img/phone_sp.png);
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                     width: 4.473vw;
-                     height: 4.473vw;
-                     margin-right:1.869vw;
+                    display: inline-block;
+                    width: 4.473vw;
+                    height: 4.473vw;
+                    margin-right: 0.668vw;
+                    content: "";
+                    background: url(img/phone_sp.png) no-repeat 0 0;
+                    background-size: 100%;
                  }
              }
              &__note{
@@ -167,6 +178,7 @@
          .site-footer__links{
             width: 92.123vw;
             height: 20.027vw;
+            margin:auto;
             border-bottom: solid $border-light 1px;
             @include display-flex(row,null,space-evenly,center);
             & a{

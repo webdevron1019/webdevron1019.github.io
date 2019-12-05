@@ -15,7 +15,9 @@
 
    
 @media screen and (min-width: 750px) {
-
+body,html{
+    min-width: 1340px;
+}
     
     .banner {
         width: 100%;
@@ -76,6 +78,7 @@
         margin: auto;
         margin-top: 90px;
         position: relative;
+        min-width: 1340px;
 
 
     }
@@ -256,7 +259,7 @@
         background-size: cover;
         @include display-flex(column, null, center, center);
         position: relative;
-        width: 100.134vw;
+        // width: 100.134vw;
         height: 44.192vw;
 
         &__title {
@@ -279,7 +282,7 @@
             background-color: #ffffff;
             text-align: center;
             @include display-flex(column, null, center, center);
-            width: 100.134vw;
+            // width: 100.134vw;
             height: 79.306vw;
         }
 
@@ -294,23 +297,23 @@
         }
 
         &__list {
-            margin-top: 1.45vw;
+            margin-top: 2.45vw;
             width: 84.112vw;
         }
 
         &__items {
-            @include custom-font(3.35vw, normal, 5.340vw, #333333);
+            @include custom-font(4.005vw, normal, 5.340vw, #333333);
             text-align: justify;
             letter-spacing: -1px;
-            font-family: $hiragino;
+            font-family: $hiraginopron;
         }
     }
 
     .services-wrapper {
         margin: auto;
         position: relative;
-        min-width: 100.134vw;
-        width: 100.134vw;
+        // min-width: 100.134vw;
+        // width: 100.134vw;
         margin-top: 12.016vw;
     }
 
