@@ -624,6 +624,7 @@ select {
       color: #003B71; }
     .site-header__logo span {
       font-size: 15px;
+      color: #333333;
       font-weight: normal;
       margin-left: 5px;
       vertical-align: 5px; }
@@ -823,7 +824,8 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  color: white; }
   .contact-section1__text1 {
     font-family: Hiragino Kaku Gothic Std;
     font-size: 30px;
@@ -965,13 +967,13 @@ select {
       border: solid white 1px; }
 
   .site-footer__links {
-    width: 92.123vw;
+    width: 72%;
     height: 20.027vw;
     margin: auto;
     border-bottom: solid #CCCCCC 1px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center; }
     .site-footer__links a {
       font-family: Hiragino Kaku Gothic ProN;
@@ -987,6 +989,12 @@ select {
     font-size: 3.204vw;
     line-height: 4.272vw;
     color: #333333; } }
+.title--hidden {
+  display: none; }
+
+.title--hidden {
+  display: none; }
+
 html,
 body,
 div,

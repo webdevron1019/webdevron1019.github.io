@@ -1,4 +1,7 @@
 
+.title--hidden{
+    display: none;
+}
 @mixin gradient-background {
     background-color: $gradient-color;
     background-image: linear-gradient(to right,$gradient-color, $primary-blue-light);

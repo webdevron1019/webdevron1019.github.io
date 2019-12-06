@@ -18,6 +18,7 @@
         height: 380px;
         background-color:$primary-blue-light;
         @include display-flex(column,null,center,center);
+        color: white;
         &__text1{
              font-family:$hiragino;
              font-size: 30px;
@@ -172,11 +173,11 @@
              }
          }
          .site-footer__links{
-            width: 92.123vw;
+            width: 72%;
             height: 20.027vw;
             margin:auto;
             border-bottom: solid $border-light 1px;
-            @include display-flex(row,null,space-evenly,center);
+            @include display-flex(row,null,space-around,center);
             & a{
                 font-family: Hiragino Kaku Gothic ProN;
                 font-size: 3.204vw;

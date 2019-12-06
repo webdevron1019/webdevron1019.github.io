@@ -12,8 +12,12 @@
     &__heading {
         @include custom-font(null, bold, null, white, Hiragino Kaku Gothic Std);
     }
-}
 
+}
+.inquiry{
+    @include display-flex(column,null,null,null);
+
+}
 @media screen and (min-width: 750px) {
     .site-contact {
 
