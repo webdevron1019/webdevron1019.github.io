@@ -149,7 +149,8 @@ select {
   vertical-align: middle; }
 
 @media screen and (min-width: 750px) {
-  body, html {
+  body,
+  html {
     min-width: 1340px; }
 
   .banner {
@@ -226,7 +227,7 @@ select {
       width: 460px;
       background-color: #ffffff;
       opacity: .9;
-      box-shadow: 5px 5px 5px #707070; }
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); }
     .commitment__title {
       font-size: 30px;
       font-weight: 900;
@@ -279,7 +280,7 @@ select {
       width: 460px;
       background-color: #ffffff;
       opacity: .9;
-      box-shadow: 0 5px 5px #707070; }
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); }
     .handling__title {
       font-size: 30px;
       font-weight: 900;
@@ -329,7 +330,7 @@ select {
       width: 460px;
       background-color: #ffffff;
       opacity: .9;
-      box-shadow: 5px 5px 5px #707070; }
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); }
     .factory__title {
       font-size: 30px;
       font-weight: 900;
@@ -423,7 +424,8 @@ select {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center; }
+    align-items: center;
+    width: 92%; }
     .commitment__figure {
       width: 92.123vw;
       height: 46.061vw; }
@@ -435,8 +437,8 @@ select {
       flex-direction: column;
       background-color: #ffffff;
       opacity: .9;
-      box-shadow: 0.668vw 0.668vw 0.668vw #707070;
-      width: 84.112vw;
+      box-shadow: 0.668vw 0.668vw 1.335vw rgba(0, 0, 0, 0.2);
+      width: 91.3%;
       height: 52.603vw;
       margin: -7.943vw auto auto auto; }
       .commitment__box br {
@@ -479,7 +481,8 @@ select {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center; }
+    align-items: center;
+    width: 92%; }
     .handling__figure {
       order: 1;
       width: 92.123vw;
@@ -493,8 +496,8 @@ select {
       order: 1;
       background-color: #ffffff;
       opacity: .9;
-      box-shadow: 0 0.668vw 0.668vw #707070;
-      width: 84.112vw;
+      box-shadow: 0.668vw 0.668vw 1.335vw rgba(0, 0, 0, 0.2);
+      width: 91.3%;
       height: 52.603vw;
       margin: -7.943vw auto auto auto; }
       .handling__box br {
@@ -541,7 +544,8 @@ select {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center; }
+    align-items: center;
+    width: 92%; }
     .factory br {
       display: none; }
     .factory__figure {
@@ -555,8 +559,8 @@ select {
       flex-direction: column;
       background-color: #ffffff;
       opacity: .9;
-      box-shadow: 0.668vw 0.668vw 0.668vw #707070;
-      width: 84.112vw;
+      box-shadow: 0.668vw 0.668vw 1.335vw rgba(0, 0, 0, 0.2);
+      width: 91.3%;
       height: 52.603vw;
       margin: -7.943vw auto auto auto; }
     .factory__title {
@@ -615,8 +619,9 @@ select {
   .site-header__logo {
     font-family: Hiragino Kaku Gothic Std;
     font-size: 30px;
-    font-weight: bold;
-    color: #003B71; }
+    font-weight: bold; }
+    .site-header__logo a {
+      color: #003B71; }
     .site-header__logo span {
       font-size: 15px;
       font-weight: normal;
@@ -982,5 +987,366 @@ select {
     font-size: 3.204vw;
     line-height: 4.272vw;
     color: #333333; } }
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: bottom; }
+
+body {
+  line-height: 1; }
+
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+ul,
+ol,
+dl {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #000;
+  text-decoration: none;
+  vertical-align: baseline;
+  background: transparent;
+  outline: none; }
+
+img {
+  vertical-align: bottom; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input,
+select {
+  vertical-align: middle; }
+
+.site-product {
+  width: 100%;
+  text-align: center; }
+  .site-product__header {
+    background-color: #0064BF;
+    background-image: linear-gradient(to right, #0064BF, #003B71);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .site-product__heading {
+    font-weight: bold;
+    color: white;
+    font-family: Hiragino Kaku Gothic Std; }
+  .site-product__content-heading {
+    margin-top: 90px; }
+  .site-product__content-intro {
+    font-family: Hiragino Kaku Gothic Pron; }
+    .site-product__content-intro:nth-child(3) {
+      margin-bottom: 90px; }
+  .site-product__content-title {
+    word-break: keep-all;
+    font-size: 30px;
+    font-weight: bold;
+    color: #003B71;
+    font-family: Hiragino Kaku Gothic Std; }
+  .site-product__list {
+    max-width: 1146px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .site-product__extra {
+    max-width: 1146px;
+    margin: 0 auto; }
+    .site-product__extra-list {
+      max-width: 756px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    .site-product__extra-item {
+      width: 31.7%;
+      flex: 0 48%; }
+    .site-product__extra-thumbnail {
+      width: 100%;
+      height: auto; }
+    .site-product__extra-title, .site-product__extra-desc {
+      text-align: left;
+      margin: auto;
+      font-family: Hiragino Kaku Gothic Pron;
+      color: #333333; }
+    .site-product__extra-btn {
+      border: 1px solid #002C55;
+      display: inline-block;
+      font-weight: bold;
+      color: #003B71;
+      font-family: Hiragino Kaku Gothic Std; }
+  .site-product__hr {
+    margin: 0 auto; }
+
+.product {
+  display: flex;
+  flex-direction: column;
+  text-align: left; }
+  .product__thumbnail {
+    order: 1;
+    min-height: 1px;
+    height: auto;
+    width: 100%; }
+  .product__name {
+    order: 2;
+    font-weight: bold;
+    color: #333333; }
+  .product__desc {
+    order: 3;
+    letter-spacing: -1px;
+    color: #333333; }
+
+@media screen and (min-width: 750px) {
+  .site-product__content-heading {
+    margin-bottom: 38px; }
+  .site-product__content-intro {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333; }
+  .site-product__header {
+    height: 280px; }
+  .site-product__heading {
+    font-size: 40px; }
+  .site-product__list {
+    margin-bottom: 69px; }
+  .site-product__item {
+    margin-bottom: 51px;
+    width: 31.5%; }
+    .site-product__item:first-child, .site-product__item:nth-child(2), .site-product__item:nth-child(3), .site-product__item:nth-child(4) {
+      flex: 0 48.7%; }
+    .site-product__item:last-child {
+      display: none; }
+  .site-product__hr {
+    max-width: 1146px; }
+  .site-product__extra-wrapper {
+    margin: 115px 0 119px 0; }
+  .site-product__extra-title {
+    margin: 18px auto 18px auto;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Hiragino Kaku Gothic Std; }
+  .site-product__extra-desc {
+    letter-spacing: 2.3px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 17px;
+    font-family: Hiragino Kaku Gothic Std; }
+  .site-product__extra-title, .site-product__extra-desc {
+    max-width: 756px; }
+  .site-product__extra-btn {
+    padding: 22px 76px;
+    margin-top: 34px;
+    font-size: 15px; }
+  .site-product__sp-break {
+    display: none; }
+
+  .product__name--big {
+    font-size: 24px;
+    margin: 35px 0 18px 0; }
+  .product__name--small {
+    font-size: 15px;
+    margin: 20px 0 16px 0; }
+  .product__desc {
+    font-weight: bold;
+    line-height: 28px;
+    font-family: Hiragino Kaku Gothic Std; }
+    .product__desc--big {
+      font-size: 17px; }
+    .product__desc--small {
+      font-size: 13px; } }
+@media screen and (max-width: 749px) {
+  .site-product__header {
+    height: 26.6vw; }
+  .site-product__heading {
+    font-size: 7.5vw; }
+  .site-product__content {
+    margin: 13.5vw 0; }
+    .site-product__content-title {
+      display: block;
+      font-size: 5.5vw;
+      word-break: keep-all;
+      line-height: 7.5vw; }
+    .site-product__content-intro {
+      margin-top: 0;
+      text-align: left;
+      padding: 0 8vw;
+      letter-spacing: -0.2vw;
+      font-size: 3.5vw;
+      line-height: 5.5vw;
+      color: #333333; }
+      .site-product__content-intro:nth-child(3) {
+        margin-bottom: 0; }
+    .site-product__content-heading {
+      margin: 0 0 4vw 0; }
+  .site-product__list {
+    margin-top: 13.5vw; }
+  .site-product__item {
+    width: 44%;
+    margin: 0 auto 12vw auto; }
+    .site-product__item:first-child, .site-product__item:nth-child(2), .site-product__item:nth-child(3), .site-product__item:nth-child(4) {
+      flex: 0 92%; }
+  .site-product__hr {
+    margin-top: 5vw; }
+  .site-product__hr, .site-product__extra-list, .site-product__extra-title, .site-product__extra-desc {
+    width: 92%; }
+  .site-product__extra-wrapper {
+    margin: 12vw 0 16vw 0; }
+  .site-product__extra-title {
+    margin: 8vw auto 3vw auto;
+    font-size: 3vw;
+    font-weight: normal; }
+  .site-product__extra-desc {
+    letter-spacing: 0.05vw;
+    font-size: 2.49vw;
+    font-weight: normal;
+    line-height: 6vw; }
+  .site-product__extra-btn {
+    padding: 4.2vw 30vw;
+    margin-top: 16.6vw;
+    font-size: 3.4vw; }
+  .site-product__sp-break {
+    display: block; }
+
+  .product__name {
+    font-weight: normal;
+    font-family: Hiragino Kaku Gothic Pron; }
+    .product__name--big {
+      margin: 7vw 0 3.5vw 0;
+      font-size: 3.8vw; }
+    .product__name--small {
+      margin: 5.5vw 0 5vw 0;
+      font-size: 3vw; }
+  .product__desc {
+    letter-spacing: -0.12vw;
+    font-weight: normal;
+    line-height: 6vw;
+    font-family: Hiragino Kaku Gothic Pron; }
+    .product__desc--big {
+      font-size: 2.2vw; }
+    .product__desc--small {
+      letter-spacing: -0.3vw;
+      font-size: 2.6vw; } }
 
 /*# sourceMappingURL=style.css.map */

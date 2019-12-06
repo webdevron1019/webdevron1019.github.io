@@ -5,494 +5,499 @@
     justify-content: $justify;
     align-items: $align;
 }
+
 @mixin custom-font ($size, $weight, $line-height, $color) {
     font-size: $size;
     font-weight: $weight;
     line-height: $line-height;
     color: $color;
 }
+
 @mixin top {
 
-   
-@media screen and (min-width: 750px) {
-body,html{
-    min-width: 1340px;
-}
-    
-    .banner {
-        width: 100%;
-        height: 580px;
-        background-image: url(img/banner2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        @include display-flex(column, null, center, center);
-        position: relative;
 
-        &__title {
-            @include custom-font(40px, 900, 48px, #ffffff);
-            text-align: center;
-            font-family: $hiragino;
+    @media screen and (min-width: 750px) {
+
+        body,
+        html {
+            min-width: 1340px;
         }
 
-        &__scroll {
-            position: absolute;
-            bottom: 30px;
-        }
-    }
-
-    .top-intro {
-        background-color: $accent-color;
-        padding-bottom: 120px;
-
-        &__wrapper {
-            background-color: #ffffff;
-            height: 323px;
-            text-align: center;
+        .banner {
+            width: 100%;
+            height: 580px;
+            background-image: url(img/banner2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
             @include display-flex(column, null, center, center);
-        }
+            position: relative;
 
-        &__title {
-            @include custom-font(30px, 900, 46px, $primary-blue-light);
-            font-family: $hiragino;
-
-            br {
-                display: none;
-
+            &__title {
+                @include custom-font(40px, 900, 48px, #ffffff);
+                text-align: center;
+                font-family: $hiragino;
             }
 
-        }
-
-        &__list {
-            margin-top: 26px;
-
-        }
-
-        &__items {
-            @include custom-font(15px, normal, 27px, #333333);
-            font-family: $hiragino;
-
-        }
-    }
-
-    .services-wrapper {
-        margin: auto;
-        margin-top: 90px;
-        position: relative;
-        min-width: 1340px;
-
-
-    }
-
-    .commitment {
-        @include display-flex(row, wrap, null, center);
-        margin: 0 auto 90px auto;
-
-        &__figure {
-            width: 59.5%;
-
-            img {
-                width: 100%;
+            &__scroll {
+                position: absolute;
+                bottom: 30px;
             }
         }
 
-        &__box {
-            @include display-flex(column, null, null, null);
-            margin: 22px 0 0 -69px;
-            height: 338px;
-            width: 460px;
-            background-color: #ffffff;
-            opacity: .9;
-            box-shadow: 5px 5px 5px #707070;
+        .top-intro {
+            background-color: $accent-color;
+            padding-bottom: 120px;
 
+            &__wrapper {
+                background-color: #ffffff;
+                height: 323px;
+                text-align: center;
+                @include display-flex(column, null, center, center);
+            }
 
+            &__title {
+                @include custom-font(30px, 900, 46px, $primary-blue-light);
+                font-family: $hiragino;
+
+                br {
+                    display: none;
+
+                }
+
+            }
+
+            &__list {
+                margin-top: 26px;
+
+            }
+
+            &__items {
+                @include custom-font(15px, normal, 27px, #333333);
+                font-family: $hiragino;
+
+            }
         }
 
-        &__title {
-            @include custom-font(30px, 900, 48px, $primary-blue-light);
-            font-family: $hiragino;
-            margin: 48px 0 0 50px;
-
-        }
-
-        &__sub {
-            margin-top: 28px;
-            @include custom-font(15px, normal, 27px, #333333);
-            font-family: $hiragino;
-            margin: 28px 0 30px 50px;
-
-        }
-
-        &__link {
+        .services-wrapper {
             margin: auto;
-            @include custom-font(15px, normal, 24px, $primary-blue-light);
-            @include display-flex(column, null, center, center);
-            height: 60px;
-            width: 264px;
-            border: 1px solid $primary-blue-light;
-            margin: 0 auto 50px auto;
-            text-align: center;
-            font-family: $hiragino;
+            margin-top: 90px;
+            position: relative;
+            min-width: 1340px;
+
 
         }
-    }
 
-    .handling {
-        @include display-flex(row, null, flex-end, center);
-        margin: 0 auto 90px auto;
+        .commitment {
+            @include display-flex(row, wrap, null, center);
+            margin: 0 auto 90px auto;
 
+            &__figure {
+                width: 59.5%;
 
+                img {
+                    width: 100%;
+                }
+            }
 
-        &__figure {
-            order: 2;
-            width: 59.5%;
+            &__box {
+                @include display-flex(column, null, null, null);
+                margin: 22px 0 0 -69px;
+                height: 338px;
+                width: 460px;
+                background-color: #ffffff;
+                opacity: .9;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 
-            img {
-                width: 100%;
+            }
+
+            &__title {
+                @include custom-font(30px, 900, 48px, $primary-blue-light);
+                font-family: $hiragino;
+                margin: 48px 0 0 50px;
+
+            }
+
+            &__sub {
+                margin-top: 28px;
+                @include custom-font(15px, normal, 27px, #333333);
+                font-family: $hiragino;
+                margin: 28px 0 30px 50px;
+
+            }
+
+            &__link {
+                margin: auto;
+                @include custom-font(15px, normal, 24px, $primary-blue-light);
+                @include display-flex(column, null, center, center);
+                height: 60px;
+                width: 264px;
+                border: 1px solid $primary-blue-light;
+                margin: 0 auto 50px auto;
+                text-align: center;
+                font-family: $hiragino;
+
             }
         }
 
-        &__box {
-            @include display-flex(column, null, null, null);
-            margin: 22px -69px 0 0;
-            order: 1;
-            height: 338px;
-            width: 460px;
-            background-color: #ffffff;
-            opacity: .9;
-            box-shadow: 0 5px 5px #707070;
-
-        }
+        .handling {
+            @include display-flex(row, null, flex-end, center);
+            margin: 0 auto 90px auto;
 
 
-        &__title {
-            @include custom-font(30px, 900, 48px, $primary-blue-light);
-            margin: 48px 0 0 50px;
-            font-family: $hiragino;
 
-        }
+            &__figure {
+                order: 2;
+                width: 59.5%;
 
-        &__sub {
-            margin-top: 28px;
-            @include custom-font(15px, normal, 27px, #333333);
-            margin: 28px 0 30px 50px;
-            font-family: $hiragino;
+                img {
+                    width: 100%;
+                }
+            }
 
-        }
+            &__box {
+                @include display-flex(column, null, null, null);
+                margin: 22px -69px 0 0;
+                order: 1;
+                height: 338px;
+                width: 460px;
+                background-color: #ffffff;
+                opacity: .9;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 
-        &__link {
-            margin: auto;
-            @include custom-font(15px, normal, 24px, $primary-blue-light);
-            @include display-flex(column, null, center, center);
-            height: 60px;
-            width: 264px;
-            border: 1px solid $primary-blue-light;
-            margin: 0 auto 50px auto;
-            text-align: center;
-            font-family: $hiragino;
+            }
 
-        }
-    }
 
-    .factory {
-        @include display-flex(row, null, null, center);
-        margin: 0 auto 0 auto;
+            &__title {
+                @include custom-font(30px, 900, 48px, $primary-blue-light);
+                margin: 48px 0 0 50px;
+                font-family: $hiragino;
 
-        &__figure {
-            width: 59.5%;
+            }
 
-            img {
-                width: 100%;
+            &__sub {
+                margin-top: 28px;
+                @include custom-font(15px, normal, 27px, #333333);
+                margin: 28px 0 30px 50px;
+                font-family: $hiragino;
+
+            }
+
+            &__link {
+                margin: auto;
+                @include custom-font(15px, normal, 24px, $primary-blue-light);
+                @include display-flex(column, null, center, center);
+                height: 60px;
+                width: 264px;
+                border: 1px solid $primary-blue-light;
+                margin: 0 auto 50px auto;
+                text-align: center;
+                font-family: $hiragino;
+
             }
         }
 
-        &__box {
-            @include display-flex(column, null, null, null);
-            margin: 22px 0 0 -69px;
-            height: 338px;
-            width: 460px;
-            background-color: #ffffff;
-            opacity: .9;
-            box-shadow: 5px 5px 5px #707070;
+        .factory {
+            @include display-flex(row, null, null, center);
+            margin: 0 auto 0 auto;
 
+            &__figure {
+                width: 59.5%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &__box {
+                @include display-flex(column, null, null, null);
+                margin: 22px 0 0 -69px;
+                height: 338px;
+                width: 460px;
+                background-color: #ffffff;
+                opacity: .9;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+            }
+
+
+            &__title {
+                @include custom-font(30px, 900, 48px, $primary-blue-light);
+                margin: 48px 0 0 50px;
+                font-family: $hiragino;
+
+            }
+
+            &__sub {
+                margin-top: 28px;
+                @include custom-font(15px, normal, 27px, #333333);
+                margin: 28px 0 30px 50px;
+                font-family: $hiragino;
+
+            }
+
+            &__link {
+                margin: auto;
+                @include custom-font(15px, normal, 24px, $primary-blue-light);
+                @include display-flex(column, null, center, center);
+                height: 60px;
+                width: 264px;
+                border: 1px solid $primary-blue-light;
+                margin: 0 auto 50px auto;
+                text-align: center;
+                font-family: $hiragino;
+
+            }
         }
 
 
-        &__title {
-            @include custom-font(30px, 900, 48px, $primary-blue-light);
-            margin: 48px 0 0 50px;
-            font-family: $hiragino;
-
-        }
-
-        &__sub {
-            margin-top: 28px;
-            @include custom-font(15px, normal, 27px, #333333);
-            margin: 28px 0 30px 50px;
-            font-family: $hiragino;
-
-        }
-
-        &__link {
-            margin: auto;
-            @include custom-font(15px, normal, 24px, $primary-blue-light);
-            @include display-flex(column, null, center, center);
-            height: 60px;
-            width: 264px;
-            border: 1px solid $primary-blue-light;
-            margin: 0 auto 50px auto;
-            text-align: center;
-            font-family: $hiragino;
-
-        }
     }
 
-
-}
-
-@media screen and (max-width: 749px) {
-
-   
-
-    .banner {
-        background-image: url(img/banner2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        @include display-flex(column, null, center, center);
-        position: relative;
-        // width: 100.134vw;
-        height: 44.192vw;
-
-        &__title {
-            @include custom-font(2.804vw, 900, 3.338vw, #ffffff);
-            text-align: center;
-            font-family: $hiragino;
-        }
-
-        &__scroll {
-            display: none;
-        }
-    }
-
-    .top-intro{
-        background-color: $accent-color;
-        padding-bottom: 16.021vw;
+    @media screen and (max-width: 749px) {
 
 
-        &__wrapper {
-            background-color: #ffffff;
-            text-align: center;
+
+        .banner {
+            background-image: url(img/banner2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
             @include display-flex(column, null, center, center);
+            position: relative;
             // width: 100.134vw;
-            height: 79.306vw;
-        }
+            height: 44.192vw;
 
-        &__title {
-            @include custom-font(5.607vw, 900, 8.812vw, $primary-blue-light);
-            font-family: $hiragino;
-
-            br {
-                display: block;
+            &__title {
+                @include custom-font(2.804vw, 900, 3.338vw, #ffffff);
+                text-align: center;
+                font-family: $hiragino;
             }
 
+            &__scroll {
+                display: none;
+            }
         }
 
-        &__list {
-            margin-top: 2.45vw;
-            width: 84.112vw;
+        .top-intro {
+            background-color: $accent-color;
+            padding-bottom: 16.021vw;
+
+
+            &__wrapper {
+                background-color: #ffffff;
+                text-align: center;
+                @include display-flex(column, null, center, center);
+                // width: 100.134vw;
+                height: 79.306vw;
+            }
+
+            &__title {
+                @include custom-font(5.607vw, 900, 8.812vw, $primary-blue-light);
+                font-family: $hiragino;
+
+                br {
+                    display: block;
+                }
+
+            }
+
+            &__list {
+                margin-top: 2.45vw;
+                width: 84.112vw;
+            }
+
+            &__items {
+                @include custom-font(4.005vw, normal, 5.340vw, #333333);
+                text-align: justify;
+                letter-spacing: -1px;
+                font-family: $hiraginopron;
+            }
         }
 
-        &__items {
-            @include custom-font(4.005vw, normal, 5.340vw, #333333);
-            text-align: justify;
-            letter-spacing: -1px;
-            font-family: $hiraginopron;
+        .services-wrapper {
+            margin: auto;
+            position: relative;
+            // min-width: 100.134vw;
+            // width: 100.134vw;
+            margin-top: 12.016vw;
         }
-    }
 
-    .services-wrapper {
-        margin: auto;
-        position: relative;
-        // min-width: 100.134vw;
-        // width: 100.134vw;
-        margin-top: 12.016vw;
-    }
+        .commitment {
+            margin: 0 auto 12.016vw auto;
+            @include display-flex(column, wrap, null, center);
+            width: 92%;
 
-    .commitment {
-        margin: 0 auto 12.016vw auto;
-        @include display-flex(column, wrap, null, center);
-
-        &__figure {
-            width: 92.123vw;
-            height: 46.061vw;
-
-            img {
+            &__figure {
                 width: 92.123vw;
                 height: 46.061vw;
+
+                img {
+                    width: 92.123vw;
+                    height: 46.061vw;
+                }
+            }
+
+            &__box {
+                @include display-flex(column, null, null, null);
+                background-color: #ffffff;
+                opacity: .9;
+                box-shadow: 0.668vw 0.668vw 1.335vw rgba(0, 0, 0, 0.2);
+                width: 91.3%;
+                height: 52.603vw;
+                margin: -7.943vw auto auto auto;
+
+                br {
+                    display: none;
+                }
+
+            }
+
+            &__title {
+                @include custom-font(4.806vw, 900, 7.210vw, $primary-blue-light);
+                margin: 6.409vw auto 0 auto;
+                width: 73.431vw;
+                font-family: $hiragino;
+            }
+
+            &__sub {
+                @include custom-font(3.204vw, normal, 5.741vw, #333333);
+                margin: auto;
+                width: 73.431vw;
+                font-family: $hiragino;
+            }
+
+            &__link {
+                margin: auto;
+                @include display-flex(column, null, center, center);
+                text-align: center;
+                @include custom-font(3.204vw, normal, 4.806vw, $primary-blue-light);
+                height: 12.016vw;
+                width: 73.431vw;
+                border: 0.134vw solid $primary-blue-light;
+                margin: 0 auto 6.676vw auto;
+                font-family: $hiragino;
+
             }
         }
 
-        &__box {
-            @include display-flex(column, null, null, null);
-            background-color: #ffffff;
-            opacity: .9;
-            box-shadow: 0.668vw 0.668vw 0.668vw #707070;
-            width: 84.112vw;
-            height: 52.603vw;
-            margin: -7.943vw auto auto auto;
+        .handling {
+            margin: 0 auto 12.016vw auto;
+            @include display-flex(column, wrap, null, center);
+            width: 92%;
+
+            &__figure {
+                order: 1;
+                width: 92.123vw;
+                height: 46.061vw;
+
+                img {
+                    width: 92.123vw;
+                    height: 46.061vw;
+                }
+            }
+
+            &__box {
+                @include display-flex(column, null, null, null);
+                order: 1;
+                background-color: #ffffff;
+                opacity: .9;
+                box-shadow: 0.668vw 0.668vw 1.335vw rgba(0, 0, 0, 0.2);
+                width: 91.3%;
+                height: 52.603vw;
+                margin: -7.943vw auto auto auto;
+
+                br {
+                    display: none;
+                }
+            }
+
+
+            &__title {
+                @include custom-font(4.806vw, 900, 7.210vw, $primary-blue-light);
+                margin: 6.409vw auto 0 auto;
+                width: 73.431vw;
+                font-family: $hiragino;
+            }
+
+            &__sub {
+                @include custom-font(3.204vw, normal, 5.741vw, #333333);
+                margin: auto;
+                width: 73.431vw;
+                font-family: $hiragino;
+            }
+
+            &__link {
+                margin: auto;
+                @include custom-font(15px, normal, 24px, $primary-blue-light);
+                @include display-flex(column, null, center, center);
+                text-align: center;
+                @include custom-font(3.204vw, 900, 4.806vw, $primary-blue-light);
+                height: 12.016vw;
+                width: 73.431vw;
+                border: 0.134vw solid $primary-blue-light;
+                margin: 0 auto 6.676vw auto;
+                font-family: $hiragino;
+            }
+        }
+
+        .factory {
+            margin: 0 auto 0 auto;
+            @include display-flex(column, wrap, null, center);
+            width: 92%;
 
             br {
                 display: none;
             }
 
-        }
 
-        &__title {
-            @include custom-font(4.806vw, 900, 7.210vw, $primary-blue-light);
-            margin: 6.409vw auto 0 auto;
-            width: 73.431vw;
-            font-family: $hiragino;
-        }
-
-        &__sub {
-            @include custom-font(3.204vw, normal, 5.741vw, #333333);
-            margin: auto;
-            width: 73.431vw;
-            font-family: $hiragino;
-        }
-
-        &__link {
-            margin: auto;
-            @include display-flex(column, null, center, center);
-            text-align: center;
-            @include custom-font(3.204vw, normal, 4.806vw, $primary-blue-light);
-            height: 12.016vw;
-            width: 73.431vw;
-            border: 0.134vw solid $primary-blue-light;
-            margin: 0 auto 6.676vw auto;
-            font-family: $hiragino;
-
-        }
-    }
-
-    .handling {
-        margin: 0 auto 12.016vw auto;
-        @include display-flex(column, wrap, null, center);
-
-        &__figure {
-            order: 1;
-            width: 92.123vw;
-            height: 46.061vw;
-
-            img {
+            &__figure {
                 width: 92.123vw;
                 height: 46.061vw;
+
+                img {
+                    width: 92.123vw;
+                    height: 46.061vw;
+                }
+            }
+
+
+            &__box {
+                @include display-flex(column, null, null, null);
+                background-color: #ffffff;
+                opacity: .9;
+                box-shadow: 0.668vw 0.668vw 1.335vw rgba(0, 0, 0, 0.2);
+                width: 91.3%;
+                height: 52.603vw;
+                margin: -7.943vw auto auto auto;
+            }
+
+
+            &__title {
+                @include custom-font(4.806vw, 900, 7.210vw, $primary-blue-light);
+                margin: 6.409vw auto 0 auto;
+                width: 73.431vw;
+                font-family: $hiragino;
+            }
+
+            &__sub {
+                @include custom-font(3.204vw, normal, 5.741vw, #333333);
+                margin: auto;
+                width: 73.431vw;
+                font-family: $hiragino;
+            }
+
+            &__link {
+                margin: auto;
+                @include custom-font(15px, normal, 24px, $primary-blue-light);
+                @include display-flex(column, null, center, center);
+                text-align: center;
+                @include custom-font(3.204vw, 900, 4.806vw, $primary-blue-light);
+                height: 12.016vw;
+                width: 73.431vw;
+                border: 0.134vw solid $primary-blue-light;
+                margin: 0 auto 6.676vw auto;
+                font-family: $hiragino;
             }
         }
 
-        &__box {
-            @include display-flex(column, null, null, null);
-            order: 1;
-            background-color: #ffffff;
-            opacity: .9;
-            box-shadow: 0 0.668vw 0.668vw #707070;
-            width: 84.112vw;
-            height: 52.603vw;
-            margin: -7.943vw auto auto auto;
-
-            br {
-                display: none;
-            }
-        }
-
-
-        &__title {
-            @include custom-font(4.806vw, 900, 7.210vw, $primary-blue-light);
-            margin: 6.409vw auto 0 auto;
-            width: 73.431vw;
-            font-family: $hiragino;
-        }
-
-        &__sub {
-            @include custom-font(3.204vw, normal, 5.741vw, #333333);
-            margin: auto;
-            width: 73.431vw;
-            font-family: $hiragino;
-        }
-
-        &__link {
-            margin: auto;
-            @include custom-font(15px, normal, 24px, $primary-blue-light);
-            @include display-flex(column, null, center, center);
-            text-align: center;
-            @include custom-font(3.204vw, 900, 4.806vw, $primary-blue-light);
-            height: 12.016vw;
-            width: 73.431vw;
-            border: 0.134vw solid $primary-blue-light;
-            margin: 0 auto 6.676vw auto;
-            font-family: $hiragino;
-        }
-    }
-
-    .factory {
-        margin: 0 auto 0 auto;
-        @include display-flex(column, wrap, null, center);
-
-        br {
-            display: none;
-        }
-
-
-        &__figure {
-            width: 92.123vw;
-            height: 46.061vw;
-
-            img {
-                width: 92.123vw;
-                height: 46.061vw;
-            }
-        }
-
-
-        &__box {
-            @include display-flex(column, null, null, null);
-            background-color: #ffffff;
-            opacity: .9;
-            box-shadow: 0.668vw 0.668vw 0.668vw #707070;
-            width: 84.112vw;
-            height: 52.603vw;
-            margin: -7.943vw auto auto auto;
-        }
-
-
-        &__title {
-            @include custom-font(4.806vw, 900, 7.210vw, $primary-blue-light);
-            margin: 6.409vw auto 0 auto;
-            width: 73.431vw;
-            font-family: $hiragino;
-        }
-
-        &__sub {
-            @include custom-font(3.204vw, normal, 5.741vw, #333333);
-            margin: auto;
-            width: 73.431vw;
-            font-family: $hiragino;
-        }
-
-        &__link {
-            margin: auto;
-            @include custom-font(15px, normal, 24px, $primary-blue-light);
-            @include display-flex(column, null, center, center);
-            text-align: center;
-            @include custom-font(3.204vw, 900, 4.806vw, $primary-blue-light);
-            height: 12.016vw;
-            width: 73.431vw;
-            border: 0.134vw solid $primary-blue-light;
-            margin: 0 auto 6.676vw auto;
-            font-family: $hiragino;
-        }
     }
 
 }
-
-}
-

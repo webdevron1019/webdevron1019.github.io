@@ -13,9 +13,10 @@
     align-items: $align;
 }
 
-@mixin custom-font ($size, $weight, $line-height, $color) {
+@mixin custom-font ($size, $weight, $line-height, $color, $family) {
     font-size: $size;
     font-weight: $weight;
     line-height: $line-height;
     color: $color;
+    font-family: $family;
 }

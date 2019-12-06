@@ -26,7 +26,10 @@
             font-family: Hiragino Kaku Gothic Std;
             font-size: 30px;
             font-weight: bold;
-            color:$primary-blue-light;
+            
+            & a{
+              color:$primary-blue-light;
+            }
             & span{
                 font-size: 15px;
                 font-weight: normal;
