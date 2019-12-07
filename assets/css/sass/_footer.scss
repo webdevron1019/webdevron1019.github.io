@@ -68,6 +68,7 @@
              color: white;
          }
          &__form-btn{
+            @include display-flex(null,null,center,center);
              margin-top: 28px;
              width: 264px;
              height: 60px;

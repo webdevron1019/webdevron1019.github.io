@@ -36,41 +36,20 @@
                 <div id="gloval-nav">
                     <nav class="site-header__sub-nav">
                         <ul class="site-header__nav-list">
-                            <li class="site-header__nav-item"><a href="">強み・こだわり</a></li>
-                            <li class="site-header__nav-item"><a href="">取扱い商品</a></li>
-                            <li class="site-header__nav-item"><a href="product.html">工場紹介</a></li>
-                            <li class="site-header__nav-item"><a href="">会社概要</a></li>
-                            <li class="site-header__nav-item"><a href="contact.php">お問い合わせ</a></li>
+                            <li class="site-header__nav-item"><a href="advantage.html">強み・こだわり</a></li>
+                            <li class="site-header__nav-item"><a href="product.html">取扱い商品</a></li>
+                            <li class="site-header__nav-item"><a href="factory.html">工場紹介</a></li>
+                            <li class="site-header__nav-item"><a href="outline.html">会社概要</a></li>
+                            <li class="site-header__nav-item"><a href="contact.html">お問い合わせ</a></li>
                         </ul>
                     </nav>
                 </div>   
         </nav> 
-        <!-- <nav class="site-header__navigation">
-            <h2 class="site-header__navigation-heading">SITE NAVIGATION</h2>
-            <button class="site-header__hamburger-btn" id="hamburger-btn">
-                <span class="site-header__hamburger-line"></span>
-                <span class="site-header__hamburger-line"></span>
-                <span class="site-header__hamburger-line"></span>
-            </button>
-            <ul class="site-header__navigation-list" id="dropdown">
-                <li class="site-header__navigation-item">
-                    <a class="site-header__navigation-link" id="menu-home" href="index.html">HOME</a>
-                </li>
-                <li class="site-header__navigation-item">
-                    <a class="site-header__navigation-link" id="menu-shop-list" href="shop-list.html">SHOP LIST</a>
-                </li>
-                <li class="site-header__navigation-item">
-                    <a class="site-header__navigation-link" id="menu-company" href="company.html">COMPANY</a>
-                </li>
-                <li class="site-header__navigation-item">
-                    <a class="site-header__navigation-link" id="menu-recruit" href="recruit.html">RECRUIT</a>
-                </li>
-            </ul>
-        </nav> -->
+        
     </div>
     </header>
 
-<main id="site-content">
+<main id="site-content" class="site-main">
 <section class="site-contact">
         <header class="site-contact__header">
             <h2 class="site-contact__heading">取扱い商品</h2>
@@ -85,12 +64,81 @@
                 <h4 class="inquiry__nav-title">お問い合わせの前に</h4>
                 <p class="inquiry__nav-note">お問い合わせの前に、まずはこちらをご確認ください。
                     よくお問い合わせいただくご質問を、まとめて掲載しています。</p>
-                <a href="faq.html" class="inquiry__nav-btn">よくあるご質問</a>
+                <div class="inquiry__nav-btn"><a href="faq.html" >よくあるご質問</a></div>
             </section>
             <section class="inquiry__form">
-                <h4></h4>
+                <h4>お問い合わせフォーム</h4>
+                <p>※<span>必須</span>必須と書かれた項目は入力必須項目です。必ずご記入ください。</p>
+                <form name="inquiryform" method="post" action="#" onsubmit="return formCheck()">
+                    <ul class="inquiry__form-list">
+                        <li class="inquiry__form-item">
+                            <p>お問い合わせ内容<span>（必須）</span></p>
+                            <p><textarea name="" rows="5" cols="40"></textarea></p>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p>貴社名</p>
+                            <p><input type="text"></p>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p>部署名</p>
+                            <p><input type="text"></p>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p>氏名<span>（必須）</span></p>
+                            <p>
+                             <label>姓</label>
+                             <input type="text">
+                             <label>名</label>
+                             <input type="text">
+                             <span>※全角でご記入ください。</span>
+                            </p>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p>フリガナ<span>（必須）</span></p>
+                            <p>
+                             <label>セイ</label>
+                             <input type="text">
+                             <label>メイ</label>
+                             <input type="text">
+                             <span>※全角カタカナでご記入ください。</span>
+                            </p>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p>メールアドレス<span>（必須）</span></p>
+                            <p><input type="text"></p>
+                            <span>※半角数字でご記入ください。</span>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p>電話番号</p>
+                            <p><input type="text"></p>
+                            <span>※半角数字でご記入ください。</span>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p>郵便番号</p>
+                            <p><input type="text"></p>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p>都道府県</p>
+                            <p><input type="text"></p>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p>市区郡</p>
+                            <p><input type="text"></p>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p>町名・番地</p>
+                            <p><input type="text"></p>
+                        </li>
+                    </ul>
+                </form>     
             </section>
         </section>
+
+
+
+
+
+
         <!-- <section>
             <form name="Form1" method="post" action="#" onsubmit="return formCheck()">
                 <p>名前（必須）</p>
@@ -146,13 +194,13 @@
             </section>
             <section class="contact-section2">
                 <h3 class="contact-section2__heading">Contact us</h3>
-                <button class="contact-section2__form-btn">お問い合わせフォーム</button>
+                <a class="contact-section2__form-btn" href="contact.html">お問い合わせフォーム</a>
                 
             </section> 
         </section>  
         <div class="site-footer__links"> 
-            <a href="">プライバシーポリシー</a>
-            <a href="">会社概要</a>
+            <a href="policy.html">プライバシーポリシー</a>
+            <a href="outline.html">会社概要</a>
         </div>
         <p class="site-footer__copyright"> &copy; Eisho, Ltd. All rights reserved.</p>
         

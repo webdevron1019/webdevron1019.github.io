@@ -1,7 +1,5 @@
 @import "shared";
 @import "utility/import";
-@import 'core/reset';
-@include reset-html5;
 
 .site-product {
     width: 100%;
@@ -318,7 +316,7 @@
         }
 
         &__desc {
-            letter-spacing: -0.12vw;
+            letter-spacing: -0.9px;
             @include custom-font(null, normal, 6vw, null, $hiraginopron);
 
             &--big {

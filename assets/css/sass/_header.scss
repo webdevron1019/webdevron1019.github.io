@@ -80,86 +80,7 @@
     }
 
     @media only screen and (max-width: 749px) {
-          //   .site-header{
-              
-          //       &__navigation {
-          //         margin: 6.2vw 5vw;
-
-          //         &-list  {
-          //             height: auto;
-          //             position: absolute;
-          //             left: 0;
-          //             top: 18.5vw;
-          //             width: 100%;
-          //             background-color: white;
-                      
-          //             display: flex;
-          //             flex-direction: column;
-          //             display: none;
-          //         }
-              
-          //         &-item {
-          //             margin: 0;
-          //             border-bottom: 2px solid #f5f5ed;
-          //             &:first-child {
-          //                 border-top: 2px solid #f5f5ed;
-          //             }
-          //             &:hover {
-          //                 border-bottom: 2px solid #c40909;
-          //             }
-          //         }
-              
-          //         &-link {
-          //             width: 100%;
-          //             padding: 6vw 0;
-          //             font-size: 3.6vw;
-          //             text-align: center;
-          //             border-bottom: none;
-          //             &:hover {
-          //                 border-bottom:  none;
-          //             }
-          //         }
-          //     }
-
-          //     &__hamburger-btn {
-          //         position: relative;
-          //         display: block;
-          //         width: 7vw;
-          //         height: 5.5vw;
-          //         padding: 0;
-          //         border: none;
-          //         background-color: transparent;
-          //         display: flex;
-          //         flex-direction: column;
-          //         justify-content: space-between;
-          //         &:active,
-          //         &:focus {
-          //             outline: none;
-          //         }
-          //     }
-
-          //     &__hamburger-line {
-          //         width: 7vw;
-          //         height: .3vw;
-          //         background-color: #f5f5ed;
-
-          //         &--collapsed {
-          //             position: absolute;
-          //             top: 50%;
-          //             &:first-child {
-          //                 transform: rotate(45deg);
-          //             }
-          //             &:nth-child(2) {
-          //                 display: none;
-          //             }
-          //             &:last-child {
-          //                 transform: rotate(-45deg);
-          //             }
-          //         }
-          //     }
-          // }
         
-
         .site-main{
             top:13.351vw;
         }
@@ -243,7 +164,6 @@
             display: flex;
             visibility: hidden;
             opacity: 0;
-            transition: opacity .6s ease, visibility .6s ease;
         }
         
         

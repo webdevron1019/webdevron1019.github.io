@@ -23,3 +23,9 @@
     color: $color;
     font-family: $family;
 }
+@mixin custom-font2 ($size, $weight, $line-height, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+    color: $color;
+}
