@@ -1,0 +1,227 @@
+@import "shared";
+@import "utility/import";
+@import 'core/reset';
+@include reset-html5;
+
+.site-question {
+    width: 100%;
+    text-align: center;
+
+    &__content {
+        text-align: justify;
+        margin:auto;
+        margin-bottom: 60px;
+        &-title{
+            @include custom-font(30px, bold, null, $primary-blue-dark, $hiragino);
+            display:none;
+        }
+
+        &-intro{
+            @include custom-font(16px, bold, null, #333333, $hiragino);
+        }
+    }
+
+    &__inquiry{
+
+        &-wrapper{
+            padding: 0;
+            list-style: none;
+            @include display-flex (row, wrap, null, null);
+        }
+        
+        &-A{
+            border:1px solid #003B71;
+            background-color:#003B71;
+            margin:0;
+            text-align: center;
+            @include custom-font(null, bold, 2, #FFFFFF, $hiragino);
+
+        }
+
+        &-Q{
+            border:1px solid #003B71;
+            text-align: center;
+            @include custom-font(null, bold, 2, $primary-blue-light, $hiragino);
+        }
+    }
+
+    &__text-Q,
+    &__text-A{
+        @include custom-font(16px, bold, 2, $primary-blue-light, $hiragino);
+    }
+
+    &__text-A{
+        @include custom-font(null, null, null, $secondary-dark-gray, null); 
+    }
+}
+
+.question-header {
+    @include display-flex(row, null, center, center);
+    @include gradient-background;
+
+    &__heading {
+        @include custom-font(40px, bold, null, white, $hiragino);
+    }
+}
+
+@media screen and (min-width: 750px){
+    .site-question{
+
+        &__content{
+            width:950px;
+
+            &-title{
+                margin-bottom: 38px;
+            }
+
+            &-intro{
+                margin-top: 90px;
+            }
+        }
+
+        &__inquiry{
+            width: 90%;
+            margin-top:20px;
+        
+            &-wrapper{
+                margin-top: 65px;
+            }
+
+            &-A{
+                width:46px;
+                height:46px;
+                padding:10px; 
+                margin-bottom:60px;
+                @include custom-font(24px, null, null, null, null);
+            }
+
+            &-Q{
+                width:46px;
+                height:46px;
+                padding:10px;
+                margin-bottom: 30px;
+                @include custom-font(24px, null, null, null, null);
+            }
+        }
+
+        &__text-Q,
+        &__text-A{
+            margin-left: 30px;
+        }
+    
+        &__text-Q7,
+        &__text-Q8{
+            margin-top:-19px;
+        }
+    
+        &__text-A3,
+        &__text-A4,
+        &__text-A5,
+        &__text-A6,
+        &__text-A8{
+            margin-top: -16px;
+        }
+
+        &__text-A-1{
+            margin: 0 30px;
+        }
+    }
+
+    .question-header{
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 749px){
+
+    .site-question {
+        &__content{
+            width:92%;
+
+            &-intro{
+                margin-top: 17vw;
+                font-size: 2.14vw;
+            }
+        }
+
+        &__inquiry{
+            width: 84%;
+        
+            &-wrapper{
+                margin-top: 14vw;
+            }
+
+            &-A{
+                width: 7vw;
+                height: 7vw;
+                padding:1.5vw;
+                // margin-top: 5vw;
+                margin-bottom: 8.01vw;
+                @include custom-font(3.5vw, null, null, null, null);
+            }
+
+            &-Q{
+                width:7vw;
+                height:7vw;
+                padding:1.5vw;
+                margin-bottom: 4.01vw;
+                @include custom-font(3.5vw, null, null, null, null);
+            }
+        }
+
+        &__text-Q,
+        &__text-A{
+            margin-left: 5vw;
+            font-size: 2.17vw
+        }
+
+        &__text-Q{
+            margin-top:3vw;
+        }
+
+        &__text-Q2,
+        &__text-Q3,
+        &__text-Q5,
+        &__text-Q6{
+            margin-top: 3vw;
+        }
+
+        &__text-Q3,
+        &__text-Q4,
+        &__text-Q8,
+        &__text-A3,
+        &__text-A4,
+        &__text-A5,
+        &__text-A6,
+        &__text-A8{
+            margin-top:1vw;
+        }
+
+        &__text-Q7-1,
+        &__text-Q8-1,
+        &__text-A-1{
+            margin: 0vw 5vw;
+        }
+
+        &__text-A1,
+        &__text-A2{
+            margin-top:3vw;
+        }
+    
+        &__text-A7{
+            margin-top: 3vw;
+        }
+
+        &__text-Q7{
+            margin-top:-1vw;
+        }
+    }
+
+    .question-header {
+        height: 26.6vw;
+
+        &__heading{
+            font-size: 7.5vw;
+        }
+    }
+}

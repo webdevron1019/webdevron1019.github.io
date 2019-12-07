@@ -1,0 +1,28 @@
+// *****************************
+//
+//	 _text-link.scss
+//
+// *****************************
+
+@mixin text-link($type) {
+    @if $type == line-to-none {
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    } @else if $type == line {
+        text-decoration: underline;
+    } @else if $type == none-to-line {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    } @else if $type == none {
+        text-decoration: none;
+    }
+}
+
+// @include text-link(line-to-none);
+// @include text-link(line);
+// @include text-link(none-to-line);
+// @include text-link(none);

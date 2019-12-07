@@ -1,0 +1,31 @@
+
+.title--hidden{
+    display: none;
+}
+@mixin gradient-background {
+    background-color: $gradient-color;
+    background-image: linear-gradient(to right,$gradient-color, $primary-blue-light);
+    @include display-flex(row, null, center, center);
+}
+
+@mixin display-flex ($direction, $wrap, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin custom-font ($size, $weight, $line-height, $color, $family) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+    color: $color;
+    font-family: $family;
+}
+@mixin custom-font2 ($size, $weight, $line-height, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+    color: $color;
+}

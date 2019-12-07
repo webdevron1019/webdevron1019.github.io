@@ -1,0 +1,98 @@
+@import "shared";
+
+
+.site-contact {
+    width: 100%;
+    text-align: center;
+    &__header {
+        @include gradient-background;
+    }
+
+    &__heading {
+        @include custom-font(null, bold, null, white, Hiragino Kaku Gothic Std);
+    }
+
+}
+.inquiry{
+    @include display-flex(column,null,null,null);
+    width: 950px;
+    margin:auto;
+    margin-top: 90px;
+    text-align: left;
+    &__intro{
+        font-family: $hiragino;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 29px;
+        color:$secondary-dark-gray;
+    }
+    &__nav{
+        padding-bottom: 120px;
+        border-bottom: solid #999999 1px;
+        &-title{
+            margin-top:70px;
+            font-family: $hiragino;
+            font-size: 30px;
+            font-weight: normal;
+            line-height: 48px;
+            color:$primary-blue-light;
+        }
+        &-note{
+            margin-top:28px;
+            margin-bottom:57px;
+            font-family: $hiragino;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 29px;
+            color:$secondary-dark-gray;
+        }
+        &-btn{
+            @include display-flex(null,null,center,center);
+            border: solid $primary-blue-light 1px;
+            width: 264px;
+            height: 60px;
+            & a{
+                color:$primary-blue-light;
+                font-family: $hiragino;
+                font-size: 15px;
+            }
+        }
+    }
+    &__form-list{
+        @include display-flex(column,null,null,null);
+        
+    }
+    &__form-item{
+        & p{
+            color:$secondary-dark-gray;
+            font-family: $hiragino;
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (min-width: 750px) {
+    .site-contact {
+
+        &__header {
+            height: 280px;
+        }
+
+        &__heading {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 749px){
+    .site-product {
+
+        &__header {
+            height: 26.6vw;
+        }
+
+        &__heading {
+            font-size: 7.5vw;
+        }
+    }
+
+}
