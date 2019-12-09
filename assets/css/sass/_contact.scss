@@ -58,15 +58,18 @@
             }
         }
     }
-    &__form-list{
-        @include display-flex(column,null,null,null);
-        
-    }
-    &__form-item{
-        & p{
-            color:$secondary-dark-gray;
-            font-family: $hiragino;
-            font-size: 16px;
+    &__form{
+        width: 754px;
+        margin: auto;
+        &-list{
+            @include display-flex(column,null,null,null);
+        }
+        &-item{
+            & p{
+                color:$secondary-dark-gray;
+                font-family: $hiragino;
+                font-size: 16px;
+            }
         }
     }
 }

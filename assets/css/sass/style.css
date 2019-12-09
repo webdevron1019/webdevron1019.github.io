@@ -2293,6 +2293,11 @@ select {
   font-size: 15px;
 }
 
+.inquiry__form {
+  width: 754px;
+  margin: auto;
+}
+
 .inquiry__form-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3769,6 +3774,10 @@ select {
   padding-top: 7px;
 }
 
+.site-outline__term:nth-child(5) {
+  padding-top: 7px;
+}
+
 .site-outline__term:nth-child(11) {
   padding-top: 6px;
 }
@@ -3779,8 +3788,7 @@ select {
 }
 
 .site-outline__term span {
-  position: absolute;
-  margin: 17px 0;
+  margin: 18px 0;
   font-size: 13px;
   font-weight: bold;
   color: #333333;
@@ -3853,12 +3861,14 @@ select {
   line-height: 2.5;
   font-size: 20px;
   font-weight: bold;
+  color: #333333;
   font-family: Hiragino Kaku Gothic Std;
 }
 
 .site-outline__excerpt {
   font-size: 14px;
   font-weight: bold;
+  color: #333333;
   font-family: Hiragino Kaku Gothic Std;
 }
 
@@ -3888,32 +3898,46 @@ select {
     width: 950px;
   }
   .site-outline__term {
+    padding: 10px 0 16px 28px;
     font-size: 16px;
     font-weight: bold;
     color: #333333;
     font-family: Hiragino Kaku Gothic Std;
   }
+  .site-outline__term:nth-child(17) {
+    padding: 8px 0 40px 28px;
+  }
   .site-outline__term span {
-    position: absolute;
-    margin: 17px 0;
+    vertical-align: 0px;
+    margin: 18px 0;
     font-size: 13px;
     font-weight: bold;
     color: #333333;
     font-family: Hiragino Kaku Gothic Std;
   }
   .site-outline__name {
+    padding: 10px 0 16px 28px;
     font-size: 16px;
     font-weight: bold;
     color: #333333;
     font-family: Hiragino Kaku Gothic Std;
   }
+  .site-outline__name:nth-child(4) {
+    padding-top: 15px;
+  }
+  .site-outline__name:nth-child(6) {
+    padding: 20px 0 20px 28px;
+  }
   .site-outline__name:nth-child(14) {
     letter-spacing: normal;
+  }
+  .site-outline__name:nth-child(18) {
+    padding-top: 19px;
   }
   .site-outline__name a {
     font-size: 16px;
     font-weight: bold;
-    color: #333333;
+    color: #003B71;
     font-family: Hiragino Kaku Gothic Std;
   }
   .site-outline__bottom-wrapper {
@@ -3935,6 +3959,10 @@ select {
 @media screen and (max-width: 749px) {
   .site-outline {
     max-width: 100%;
+  }
+  .site-outline__lead-title {
+    font-size: 4.005vw;
+    margin-bottom: 5.073vw;
   }
   .site-outline__header {
     height: 26.6vw;
@@ -3958,31 +3986,46 @@ select {
   }
   .site-outline__list {
     width: 100%;
+    min-width: 92%;
   }
   .site-outline__term {
     -webkit-box-flex: 0;
-        -ms-flex: 0 23%;
-            flex: 0 23%;
+        -ms-flex: 0 22%;
+            flex: 0 22%;
+    padding: 0 2vw;
     font-size: 2vw;
   }
   .site-outline__term:nth-child(15) {
     margin-bottom: 1.8vw;
   }
+  .site-outline__term:nth-child(17) {
+    padding: 2vw 2vw;
+  }
   .site-outline__term span {
     position: relative;
     margin: 0 -8vw;
     line-height: 0;
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     font-weight: normal;
   }
   .site-outline__name {
     -webkit-box-flex: 0;
-        -ms-flex: 0 64%;
-            flex: 0 64%;
+        -ms-flex: 0 62%;
+            flex: 0 62%;
+    padding: 0 2vw;
     font-size: 2vw;
+  }
+  .site-outline__name:nth-child(4) {
+    padding: 2vw 2vw;
+  }
+  .site-outline__name:nth-child(6) {
+    padding: 2vw 2vw;
   }
   .site-outline__name:nth-child(16) {
     margin-bottom: 1.8vw;
+  }
+  .site-outline__name:nth-child(18) {
+    padding: 2vw 2vw;
   }
   .site-outline__name a {
     font-size: 2vw;
@@ -4019,6 +4062,7 @@ select {
 .site-content {
   width: 100%;
   text-align: center;
+  font-family: Hiragino Kaku Gothic Std;
 }
 
 .site-content__header {
@@ -4053,7 +4097,6 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #333333;
   font-family: Hiragino Kaku Gothic Std;
 }
 
@@ -4070,6 +4113,7 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: #333333;
 }
 
 .operation__text-wrapper {
@@ -4090,6 +4134,10 @@ select {
           transform: translate(-50%, -50%);
 }
 
+.building-site__list {
+  color: #333333;
+}
+
 @media screen and (min-width: 750px) {
   .site-content {
     text-align: center;
@@ -4099,6 +4147,9 @@ select {
   }
   .site-content__heading {
     font-size: 40px;
+  }
+  .site-factory {
+    font-family: Hiragino Kaku Gothic Std;
   }
   .site-factory__title {
     font-family: Hiragino Kaku Gothic Std;
@@ -4214,12 +4265,12 @@ select {
   .site-factory__title {
     margin-top: 15%;
     margin-bottom: 3%;
-    font-size: 5vw;
+    font-size: 5.1vw;
     text-align: center;
     line-height: 1.4;
   }
   .site-factory__text {
-    font-size: 2.7vw;
+    font-size: 3.7vw;
     font-weight: normal;
     text-align: left;
     line-height: 1.3;
@@ -4255,13 +4306,13 @@ select {
             transform: translate(-50%, 85%);
   }
   .operation__title {
-    font-size: 4vw;
+    font-size: 4.4vw;
     text-align: justify;
     margin: 5%;
     color: #002C55;
   }
   .operation__text {
-    font-size: 2.5vw;
+    font-size: 2.9vw;
     line-height: 1.5;
     text-align: justify;
     margin: 0 7% 0 5%;

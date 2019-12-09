@@ -11,12 +11,10 @@ $text-color: #333333;
     font-weight: normal;
     
 }
-
-// common content heading
 .site-content {
     width: 100%;
     text-align: center;
-
+    font-family: $hiragino;
     &__header {
         @include gradient-background;
     }
@@ -25,12 +23,10 @@ $text-color: #333333;
         @include custom-font2(null, bold, null, white);
     }
 }
-
-// factory 
+// common content heading
 .site-factory {
     display: flex;
     flex-direction: column;
-    color: $text-color;
     font-family: $hiragino;
     &__title {
         color: $primary-blue-light;
@@ -41,6 +37,7 @@ $text-color: #333333;
     margin: auto;
     display: flex;
     flex-direction: column;
+    color: $secondary-dark-gray;
 }
 
 .operation__text-wrapper {
@@ -58,12 +55,14 @@ $text-color: #333333;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+.building-site__list {
+    color: $secondary-dark-gray;
+}
 @media screen and (min-width: 750px) {
     // common content heading
     .site-content {
         text-align: center;
-
+        
         &__header {
             height: 280px;
         }
@@ -75,7 +74,7 @@ $text-color: #333333;
 
     // factory 
     .site-factory {
-
+        font-family: $hiragino;
         &__title {
             font-family: $hiragino;
             margin-top: $content-margin;
@@ -209,13 +208,13 @@ $text-color: #333333;
         &__title {
             margin-top: 15%;
             margin-bottom: 3%;
-            font-size: 5vw;
+            font-size: 5.1vw;
             text-align: center;
             line-height: 1.4;
         }
 
         &__text {
-            font-size: 2.7vw;
+            font-size: 3.7vw;
             font-weight: normal;
             text-align: left;
             line-height: 1.3;
@@ -259,14 +258,14 @@ $text-color: #333333;
     }
 
     .operation__title {
-        font-size: 4vw;
+        font-size: 4.4vw;
         text-align: justify;
         margin: 5%;
         color: $primary-blue-dark;
     }
 
     .operation__text {
-        font-size: 2.5vw;
+        font-size: 2.9vw;
         line-height: 1.5;
         text-align: justify;
         margin: 0 7% 0 5%;
@@ -324,7 +323,6 @@ $text-color: #333333;
         font-size: 4vw;
     }
 }
-
 
 
 

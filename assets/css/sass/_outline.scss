@@ -63,6 +63,10 @@
             padding-top: 7px;
         }
 
+        &:nth-child(5) {
+            padding-top: 7px;
+        }
+
         &:nth-child(11) {
             padding-top: 6px;
         }
@@ -73,8 +77,7 @@
         }
 
         & span {
-            position: absolute;
-            margin: 17px 0;
+            margin: 18px 0;
             @include custom-font(13px, bold, null, $secondary-dark-gray, $hiragino);
         }
     }
@@ -135,11 +138,11 @@
 
     &__excerpt-heading {
         line-height: 2.5;
-        @include custom-font(20px, bold, null, null, $hiragino);
+        @include custom-font(20px, bold, null, $secondary-dark-gray, $hiragino);
     }
 
     &__excerpt {
-        @include custom-font(14px, bold, null, null, $hiragino);
+        @include custom-font(14px, bold, null, $secondary-dark-gray, $hiragino);
     }
 }
 
@@ -173,25 +176,43 @@
         }
 
         &__term {
+            padding: 10px 0 16px 28px;
             @include custom-font(16px, bold, null, $secondary-dark-gray, $hiragino);
 
-            
+
+            &:nth-child(17) {
+                padding: 8px 0 40px 28px;
+            }
+
             & span {
-                position: absolute;
-                margin: 17px 0;
+                vertical-align: 0px;
+                margin: 18px 0;
                 @include custom-font(13px, bold, null, $secondary-dark-gray, $hiragino);
             }
         }
 
         &__name {
+            padding: 10px 0 16px 28px;
             @include custom-font(16px, bold, null, $secondary-dark-gray, $hiragino);
+
+            &:nth-child(4) {
+                padding-top: 15px;
+            }
+
+            &:nth-child(6) {
+                padding: 20px 0 20px 28px;
+            }
 
             &:nth-child(14) {
                 letter-spacing: normal;
             }
 
+            &:nth-child(18) {
+                padding-top: 19px;
+            }
+
             & a {
-                @include custom-font(16px, bold, null, $secondary-dark-gray, $hiragino);
+                @include custom-font(16px, bold, null, $primary-blue-light, $hiragino);
             }
         }
 
@@ -218,7 +239,10 @@
     
     .site-outline {
         max-width: 100%;
-
+        &__lead-title{
+            font-size: 4.005vw;
+            margin-bottom: 5.073vw;
+        }
         &__header {
             height: 26.6vw;
         }
@@ -247,30 +271,50 @@
 
         &__list {
             width: 100%;
+            min-width: 92%;
         }
 
         &__term {
-            flex: 0 23%;
+            flex: 0 22%;
+            padding: 0 2vw;
             @include custom-font(2vw, null, null, null, null);
+
 
             &:nth-child(15) {
                 margin-bottom: 1.8vw;
+            }
+
+            &:nth-child(17) {
+                padding: 2vw 2vw;
             }
 
             & span {
                 position: relative;
                 margin: 0 -8vw;
                 line-height: 0;
-                @include custom-font(1.6vw, normal, null, null, null);
+                @include custom-font(1.4vw, normal, null, null, null);
             }
         }
 
         &__name {
-            flex: 0 64%;
+            flex: 0 62%;
+            padding: 0 2vw;
             @include custom-font(2vw, null, null, null, null);
+
+            &:nth-child(4) {
+                padding: 2vw 2vw;
+            }
+            
+            &:nth-child(6) {
+                padding: 2vw 2vw;
+            }
 
             &:nth-child(16) {
                 margin-bottom: 1.8vw;
+            }
+
+            &:nth-child(18) {
+                padding: 2vw 2vw;
             }
 
             & a {

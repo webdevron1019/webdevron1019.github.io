@@ -40,7 +40,7 @@
                             <li class="site-header__nav-item"><a href="product.html">取扱い商品</a></li>
                             <li class="site-header__nav-item"><a href="factory.html">工場紹介</a></li>
                             <li class="site-header__nav-item"><a href="outline.html">会社概要</a></li>
-                            <li class="site-header__nav-item"><a href="contact.html">お問い合わせ</a></li>
+                            <li class="site-header__nav-item"><a href="contact.php">お問い合わせ</a></li>
                         </ul>
                     </nav>
                 </div>   
@@ -72,20 +72,20 @@
                 <form name="inquiryform" method="post" action="#" onsubmit="return formCheck()">
                     <ul class="inquiry__form-list">
                         <li class="inquiry__form-item">
-                            <p>お問い合わせ内容<span>（必須）</span></p>
-                            <p><textarea name="" rows="5" cols="40"></textarea></p>
+                            <p class="inquiry__form-text">お問い合わせ内容<span>（必須）</span></p>
+                            <p class="inquiry__form-input text-area"><textarea name="" rows="5" cols="40"></textarea></p>
                         </li>
                         <li class="inquiry__form-item">
-                            <p>貴社名</p>
-                            <p><input type="text"></p>
+                            <p class="inquiry__form-text">貴社名</p>
+                            <p class="inquiry__form-input"><input type="text"></p>
                         </li>
                         <li class="inquiry__form-item">
-                            <p>部署名</p>
-                            <p><input type="text"></p>
+                            <p class="inquiry__form-text">部署名</p>
+                            <p class="inquiry__form-input"><input type="text"></p>
                         </li>
                         <li class="inquiry__form-item">
-                            <p>氏名<span>（必須）</span></p>
-                            <p>
+                            <p class="inquiry__form-text">氏名<span>（必須）</span></p>
+                            <p class="inquiry__form-input">
                              <label>姓</label>
                              <input type="text">
                              <label>名</label>
@@ -94,7 +94,7 @@
                             </p>
                         </li>
                         <li class="inquiry__form-item">
-                            <p>フリガナ<span>（必須）</span></p>
+                            <p class="inquiry__form-text">フリガナ<span>（必須）</span></p>
                             <p>
                              <label>セイ</label>
                              <input type="text">
@@ -104,17 +104,17 @@
                             </p>
                         </li>
                         <li class="inquiry__form-item">
-                            <p>メールアドレス<span>（必須）</span></p>
+                            <p class="inquiry__form-text">メールアドレス<span>（必須）</span></p>
                             <p><input type="text"></p>
                             <span>※半角数字でご記入ください。</span>
                         </li>
                         <li class="inquiry__form-item">
-                            <p>電話番号</p>
+                            <p class="inquiry__form-text">電話番号</p>
                             <p><input type="text"></p>
                             <span>※半角数字でご記入ください。</span>
                         </li>
                         <li class="inquiry__form-item">
-                            <p>郵便番号</p>
+                            <p class="inquiry__form-text">郵便番号</p>
                             <p><input type="text"></p>
                         </li>
                         <li class="inquiry__form-item">
