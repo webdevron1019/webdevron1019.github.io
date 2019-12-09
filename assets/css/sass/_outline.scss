@@ -17,10 +17,10 @@
     &__top-wrapper {
         width: 950px;
         margin: auto;
+        margin: 87px auto 0 auto;
     }
 
     &__intro {
-        margin: 87px auto 0 auto;
         line-height: 2;
         text-align: justify;
         @include custom-font(15px, bold, null, $secondary-dark-gray, $hiragino);
@@ -253,6 +253,7 @@
 
         &__top-wrapper {
             width: 92%;
+            margin: 11.615vw auto;
         }
 
         &__intro {
@@ -267,6 +268,7 @@
 
         &__inner-wrapper {
             width: 92%;
+            margin: 12.016vw auto;
         }
 
         &__list {
@@ -324,6 +326,7 @@
 
         &__bottom-wrapper {
             width: 92%;
+            margin: 15.888vw auto;
         }
 
         &__image-wrapper {
@@ -344,6 +347,12 @@
         &__excerpt-wrapper {
             margin: 0vw 20vw;
             width: 80%;
+        }
+        &__excerpt-heading{
+            font-size:2.670vw;
+        }
+        &__excerpt{
+            font-size: 1.869vw;
         }
     }
 }

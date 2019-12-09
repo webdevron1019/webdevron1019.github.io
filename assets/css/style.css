@@ -1747,19 +1747,17 @@ select {
   width: 100%;
   background-color: #F5F5F5; }
 
-.site-banner {
+.policy-header {
   width: 100%;
   height: 280px;
-  display: flex;
   margin: auto;
   margin-bottom: 88px;
   background-color: #0064BF;
   background-image: linear-gradient(to right, #0064BF, #003B71);
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center; }
-  .site-banner__title {
+  .policy-header__title {
     font-family: Hiragino Kaku Gothic Std;
     font-size: 40px;
     color: #ffffff;
@@ -1769,14 +1767,6 @@ select {
     text-align: center;
     left: 500px;
     z-index: 2; }
-  .site-banner__credit-title {
-    color: #003b71;
-    font-size: 30px;
-    margin-bottom: 26px; }
-  .site-banner__credit-sub {
-    color: #333333;
-    line-height: 2;
-    margin-bottom: 89px; }
 
 .site-policy {
   margin: auto;
@@ -1927,35 +1917,13 @@ select {
       color: #333333; }
 
 @media screen and (max-width: 749px) {
-  .site-banner {
-    width: 100%;
+  .policy-header {
     height: 37.383vw;
-    display: flex;
-    margin: auto;
-    margin-bottom: 11.749vw;
-    background-color: #0064BF;
-    background-image: linear-gradient(to right, #0064BF, #003B71);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .site-banner__title {
+    text-align: center;
+    margin-bottom: 11.749vw; }
+    .policy-header__title {
       font-size: 5.340vw;
-      color: #ffffff;
-      display: flex;
-      line-height: 1.2;
-      margin: auto;
-      text-align: center;
-      left: 66.756vw;
-      z-index: 2; }
-    .site-banner__credit-title {
-      color: #003b71;
-      font-size: 4.005vw;
-      margin-bottom: 3.471vw; }
-    .site-banner__credit-sub {
-      color: #333333;
-      line-height: 2;
-      margin-bottom: 11.883vw; }
+      left: 66.756vw; }
 
   .site-policy {
     margin: auto;
@@ -2570,9 +2538,9 @@ select {
     font-family: Hiragino Kaku Gothic Std; }
   .site-outline__top-wrapper {
     width: 950px;
-    margin: auto; }
+    margin: auto;
+    margin: 87px auto 0 auto; }
   .site-outline__intro {
-    margin: 87px auto 0 auto;
     line-height: 2;
     text-align: justify;
     font-size: 15px;
@@ -2744,7 +2712,8 @@ select {
     .site-outline__heading {
       font-size: 7.5vw; }
     .site-outline__top-wrapper {
-      width: 92%; }
+      width: 92%;
+      margin: 11.615vw auto; }
     .site-outline__intro {
       text-align: left;
       letter-spacing: 0.1vw;
@@ -2752,7 +2721,8 @@ select {
       .site-outline__intro br {
         display: none; }
     .site-outline__inner-wrapper {
-      width: 92%; }
+      width: 92%;
+      margin: 12.016vw auto; }
     .site-outline__list {
       width: 100%;
       min-width: 92%; }
@@ -2785,7 +2755,8 @@ select {
       .site-outline__name a {
         font-size: 2vw; }
     .site-outline__bottom-wrapper {
-      width: 92%; }
+      width: 92%;
+      margin: 15.888vw auto; }
     .site-outline__image-wrapper {
       display: block;
       margin: auto; }
@@ -2797,7 +2768,11 @@ select {
         margin: auto; }
     .site-outline__excerpt-wrapper {
       margin: 0vw 20vw;
-      width: 80%; } }
+      width: 80%; }
+    .site-outline__excerpt-heading {
+      font-size: 2.670vw; }
+    .site-outline__excerpt {
+      font-size: 1.869vw; } }
 .title--hidden {
   display: none; }
 
@@ -2825,6 +2800,8 @@ select {
   font-family: Hiragino Kaku Gothic Std; }
   .site-factory__title {
     color: #003B71; }
+  .site-factory__text {
+    color: #333333; }
 
 .operation__wrapper {
   margin: auto;
@@ -2839,12 +2816,13 @@ select {
   box-shadow: 6px 5px 10px rgba(112, 112, 112, 0.3); }
 
 .banner__caption {
-  color: white;
   position: absolute;
   z-index: 10;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+  .banner__caption a {
+    color: white; }
 
 .building-site__list {
   color: #333333; }

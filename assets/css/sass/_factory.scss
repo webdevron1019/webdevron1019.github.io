@@ -31,6 +31,9 @@ $text-color: #333333;
     &__title {
         color: $primary-blue-light;
     }
+    &__text{
+        color: $secondary-dark-gray;
+    }
 }
 
 .operation__wrapper {
@@ -48,12 +51,14 @@ $text-color: #333333;
 }
 
 .banner__caption {
-    color: white;
     position: absolute;
     z-index: 10;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    & a{
+        color: white;
+    }
 }
 .building-site__list {
     color: $secondary-dark-gray;
