@@ -2296,6 +2296,46 @@ select {
 .inquiry__form {
   width: 754px;
   margin: auto;
+  margin-top: 120px;
+}
+
+.inquiry__form-heading {
+  font-size: 30px;
+  color: #003B71;
+  font-family: Hiragino Kaku Gothic Std;
+  margin-bottom: 28px;
+}
+
+.inquiry__form-lead {
+  font-size: 16px;
+  color: #333333;
+  font-family: Hiragino Kaku Gothic Std;
+  margin-bottom: 28px;
+}
+
+.inquiry__form-submit {
+  font-size: 15px;
+  font-family: Hiragino Kaku Gothic Std;
+  color: #003B71;
+  width: 264px;
+  height: 60px;
+  background-color: white;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 120px;
+  margin-top: 60px;
+  border-width: 1px;
+  border-color: #003B71;
+  border-style: solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .inquiry__form-list {
@@ -2308,10 +2348,231 @@ select {
           flex-direction: column;
 }
 
+.inquiry__form-input input {
+  width: 750px;
+  height: 40px;
+  color: #666666;
+  font-family: Hiragino Kaku Gothic Std;
+  font-size: 13px;
+}
+
+.inquiry__form-text {
+  font-size: 16px;
+  font-family: Hiragino Kaku Gothic Std;
+  color: #333333;
+}
+
+.inquiry__form-text span {
+  color: #FF0000 !important;
+  font-size: 13px;
+  font-family: Hiragino Kaku Gothic Std;
+}
+
+.inquiry__form-text {
+  margin-bottom: 10px;
+}
+
+.inquiry__form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .inquiry__form-item p {
   color: #333333;
   font-family: Hiragino Kaku Gothic Std;
   font-size: 16px;
+}
+
+.inquiry__form-item span {
+  color: #666666;
+  font-family: Hiragino Kaku Gothic Std;
+  font-size: 13px;
+}
+
+.inquiry__form-item:nth-child(1) {
+  height: 199px;
+  border-top: solid #999999 1px;
+  border-bottom: solid #999999 1px;
+}
+
+.inquiry__form-item:nth-child(1) textarea {
+  padding: 0;
+  height: 120px;
+  width: 750px;
+}
+
+.inquiry__form-item:nth-child(2) {
+  height: 119px;
+  border-bottom: solid #999999 1px;
+}
+
+.inquiry__form-item:nth-child(3) {
+  height: 119px;
+  border-bottom: solid #999999 1px;
+}
+
+.inquiry__form-item:nth-child(4) {
+  height: 220px;
+  border-bottom: solid #999999 1px;
+}
+
+.inquiry__form-item:nth-child(4) .inquiry__form-text {
+  margin-bottom: 9px;
+}
+
+.inquiry__form-item:nth-child(4) .inquiry__form-text span {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.inquiry__form-item:nth-child(4) .inquiry__form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inquiry__form-item:nth-child(4) .inquiry__form-input:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.inquiry__form-item:nth-child(4) .inquiry__form-input label {
+  margin-right: 24px;
+  margin-left: 48px;
+}
+
+.inquiry__form-item:nth-child(4) .inquiry__form-input input {
+  width: 656px;
+}
+
+.inquiry__form-item:nth-child(4) span {
+  margin-left: 93px;
+  margin-top: 13px;
+}
+
+.inquiry__form-item:nth-child(5) {
+  height: 220px;
+  border-bottom: solid #999999 1px;
+}
+
+.inquiry__form-item:nth-child(5) .inquiry__form-text {
+  margin-bottom: 9px;
+}
+
+.inquiry__form-item:nth-child(5) .inquiry__form-text span {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.inquiry__form-item:nth-child(5) .inquiry__form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inquiry__form-item:nth-child(5) .inquiry__form-input:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.inquiry__form-item:nth-child(5) .inquiry__form-input label {
+  margin-left: 36px;
+  margin-right: 20px;
+}
+
+.inquiry__form-item:nth-child(5) .inquiry__form-input input {
+  width: 656px;
+}
+
+.inquiry__form-item:nth-child(5) span {
+  margin-left: 93px;
+  margin-top: 13px;
+}
+
+.inquiry__form-item:nth-child(6) {
+  height: 150px;
+  border-bottom: solid #999999 1px;
+}
+
+.inquiry__form-item:nth-child(6) .inquiry__form-input {
+  margin-bottom: 13px;
+}
+
+.inquiry__form-item:nth-child(7) {
+  height: 150px;
+  border-bottom: solid #999999 1px;
+}
+
+.inquiry__form-item:nth-child(7) .inquiry__form-input {
+  margin-bottom: 13px;
+}
+
+.inquiry__form-item:nth-child(8) {
+  height: 119px;
+  border-bottom: solid #999999 1px;
+}
+
+.inquiry__form-item:nth-child(9) {
+  height: 119px;
+  border-bottom: solid #999999 1px;
+}
+
+.inquiry__form-item:nth-child(9)::-webkit-input-placeholder {
+  color: #666666;
+  font-size: 16px;
+  font-family: Hiragino Kaku Gothic Std;
+}
+
+.inquiry__form-item:nth-child(9):-ms-input-placeholder {
+  color: #666666;
+  font-size: 16px;
+  font-family: Hiragino Kaku Gothic Std;
+}
+
+.inquiry__form-item:nth-child(9)::-ms-input-placeholder {
+  color: #666666;
+  font-size: 16px;
+  font-family: Hiragino Kaku Gothic Std;
+}
+
+.inquiry__form-item:nth-child(9)::placeholder {
+  color: #666666;
+  font-size: 16px;
+  font-family: Hiragino Kaku Gothic Std;
+}
+
+.inquiry__form-item:nth-child(10) {
+  height: 119px;
+  border-bottom: solid #999999 1px;
+}
+
+.inquiry__form-item:nth-child(11) {
+  height: 119px;
+  border-bottom: solid #999999 1px;
 }
 
 @media screen and (min-width: 750px) {
@@ -2324,11 +2585,73 @@ select {
 }
 
 @media screen and (max-width: 749px) {
-  .site-product__header {
+  .site-contact__header {
     height: 26.6vw;
   }
-  .site-product__heading {
+  .site-contact__heading {
     font-size: 7.5vw;
+  }
+  .inquiry {
+    width: 92%;
+  }
+  .inquiry__form-input input {
+    width: 99%;
+  }
+  .inquiry__form {
+    width: 100%;
+  }
+  .inquiry__form-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .inquiry__form-item:nth-child(1) textarea {
+    width: 99%;
+  }
+  .inquiry__form-item:nth-child(4) {
+    height: 220px;
+    border-bottom: solid #999999 1px;
+  }
+  .inquiry__form-item:nth-child(4) .inquiry__form-input label {
+    margin-right: 3.204vw;
+    margin-left: 6.409vw;
+  }
+  .inquiry__form-item:nth-child(4) .inquiry__form-input input {
+    width: 80%;
+  }
+  .inquiry__form-item:nth-child(4) span {
+    margin-left: 12.417vw;
+  }
+  .inquiry__form-item:nth-child(5) .inquiry__form-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inquiry__form-item:nth-child(5) .inquiry__form-input label {
+    margin-left: 4.806vw;
+    margin-right: 2.670vw;
+  }
+  .inquiry__form-item:nth-child(5) .inquiry__form-input input {
+    width: 80%;
+  }
+  .inquiry__form-item:nth-child(5) span {
+    margin-left: 12.417vw;
   }
 }
 

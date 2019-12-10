@@ -40,7 +40,7 @@
                             <li class="site-header__nav-item"><a href="product.html">取扱い商品</a></li>
                             <li class="site-header__nav-item"><a href="factory.html">工場紹介</a></li>
                             <li class="site-header__nav-item"><a href="outline.html">会社概要</a></li>
-                            <li class="site-header__nav-item"><a href="contact.php">お問い合わせ</a></li>
+                            <li class="site-header__nav-item"><a href="contact.html">お問い合わせ</a></li>
                         </ul>
                     </nav>
                 </div>   
@@ -64,52 +64,113 @@
                 <h4 class="inquiry__nav-title">お問い合わせの前に</h4>
                 <p class="inquiry__nav-note">お問い合わせの前に、まずはこちらをご確認ください。
                     よくお問い合わせいただくご質問を、まとめて掲載しています。</p>
-                <a href="faq.html" class="inquiry__nav-btn">よくあるご質問</a>
+                <div class="inquiry__nav-btn"><a href="faq.html" >よくあるご質問</a></div>
             </section>
             <section class="inquiry__form">
-                <h4></h4>
-            </section>
-        </section>
-        <!-- <section>
-            <form name="Form1" method="post" action="#" onsubmit="return formCheck()">
-                <p>名前（必須）</p>
-                <p id="notice-input-text-1" style="display: none; color: red;"> 【名前を入力して下さい】</p>
-                <p><input type="text" name="InputText1"></p>
-                <p>コメント（必須）</p>
-                <p id="notice-textarea-1" style="display: none; color: red;"> 【コメントを入力して下さい】</p>
-                <p><textarea name="Textarea1" rows="5" cols="40"></textarea></p>
-                <p><input type="submit" value="送信"></p>
-            </form>
-        </section>
-        <script type="text/javascript">
+                <h4 class="inquiry__form-heading">お問い合わせフォーム</h4>
+                <p class="inquiry__form-lead">※<span>必須</span>必須と書かれた項目は入力必須項目です。必ずご記入ください。</p>
+                <form name="inquiryform" method="post" action="#" onsubmit="return formCheck()">
+                    <ul class="inquiry__form-list" >
+                        <li class="inquiry__form-item" id="form-list">
+                            <p class="inquiry__form-text">お問い合わせ内容<span>（必須）</span></p>
+                            <p id="text1" style="display: none; color: red;"> 【必須項目は全て入力して下さい。】</p>
+                            <p class="inquiry__form-input text-area"><textarea  rows="5" cols="40" name="inputText"></textarea></p>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p class="inquiry__form-text">貴社名</p>
+                            <p id="text2" style="display: none; color: red;"> 【必須項目は全て入力して下さい。】</p>
+                            <p class="inquiry__form-input"><input type="text" name="inputText2"></p>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p class="inquiry__form-text">部署名</p>
+                            <p id="text3" style="display: none; color: red;"> 【必須項目は全て入力して下さい。】</p>
+                            <p class="inquiry__form-input"><input type="text" name="inputText3"></p>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p class="inquiry__form-text">氏名<span>（必須）</span></p>
+                            <p class="inquiry__form-input">
+                             <label>姓</label>
+                             <input type="text">
+                            </p>
+                            <p class="inquiry__form-input">
+                             <label>名</label>
+                             <input type="text">
+                            </p>
+                            <span>※全角でご記入ください。</span>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p class="inquiry__form-text">フリガナ<span>（必須）</span></p>
+                            <p class="inquiry__form-input">
+                             <label>セイ</label>
+                             <input type="text">
+                            </p>
+                            <p class="inquiry__form-input">
+                             <label>メイ</label>
+                             <input type="text">
+                            </p>
+                            <span>※全角カタカナでご記入ください。</span>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p class="inquiry__form-text">メールアドレス<span>（必須）</span></p>
+                            <p class="inquiry__form-input"><input type="text"></p>
+                            <span>※半角数字でご記入ください。</span>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p class="inquiry__form-text">電話番号</p>
+                            <p class="inquiry__form-input"><input type="text"></p>
+                            <span>※半角数字でご記入ください。</span>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p class="inquiry__form-text">郵便番号</p>
+                            <p class="inquiry__form-input"><input type="text"></p>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p class="inquiry__form-text">都道府県</p>
+                            <p class="inquiry__form-input"><input type="text" placeholder="都道府県を選択してください。"></p>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p class="inquiry__form-text">市区郡</p>
+                            <p class="inquiry__form-input"><input type="text"></p>
+                        </li>
+                        <li class="inquiry__form-item">
+                            <p class="inquiry__form-text">町名・番地</p>
+                            <p class="inquiry__form-input"><input type="text"></p>
+                        </li>
+                    </ul>
+                    <input type="submit" value="確認画面へ進む" class="inquiry__form-submit">
+                </form>   
+                <!-- <script type="text/javascript">
           
-            function formCheck(){
-                var flag = 0;
-
-                // 入力必須項目が入力されているかチェック
-                if( document . Form1 . InputText1 . value == "" ){ // 名前が未入力の場合
-                    flag = 1;
-                    document . getElementById( 'notice-input-text-1' ) . style . display = "block"; // 【名前を入力して下さい】を表示
-                }else{ // 名前が入力済みの場合
-                    document . getElementById( 'notice-input-text-1' ) . style . display = "none"; // 【名前を入力して下さい】を非表示
-                }
-                if( document . Form1 . Textarea1 . value == "" ){ // コメントが未入力の場合
-                    flag = 1;
-                    document . getElementById( 'notice-textarea-1' ) . style . display = "block"; // 【コメントを入力して下さい】を表示
-                }else{ // コメントが入力済みの場合
-                    document . getElementById( 'notice-textarea-1' ) . style . display = "none"; // 【コメントを入力して下さい】を非表示
-                }
-
-                if( flag ){ // 入力必須項目に未入力があった場合
-                    window . alert( '必須項目は全て入力して下さい。' ); // アラートを表示
-                    return false; // 送信中止
-                }else{ // 入力必須項目が全て入力済みだった場合
-                    return true; // 送信実行
-                }
-
-            }
-            // 
-            </script> -->
+                    function formCheck(){
+                        var flag = 0;
+                        if( document.inquiryform.inputText.value == "" ){ 
+                            flag = 1;
+                            document.getElementById( 'text1' ).style.display = "block";
+                        }else{ 
+                            document.getElementById( 'text1' ).style.display = "none"; 
+                        }
+                        if( document.inquiryform.inputText2.value == "" ){ 
+                            flag = 1;
+                            document.getElementById( 'text2' ).style.display = "block"; 
+                        }else{ 
+                            document.getElementById( 'text2' ).style.display = "none"; 
+                        }
+                        if( document.inquiryform.inputText3.value == "" ){ 
+                            flag = 1;
+                            document.getElementById( 'text3' ).style.display = "block";
+                        }else{ 
+                            document.getElementById( 'text3' ).style.display = "none"; 
+                        }
+                        if( flag ){ 
+                            window.alert( '必須項目は全て入力して下さい。' );
+                            return false;
+                        }else{ 
+                            return true; 
+                        }
+                    }                  
+                </script>    -->
+            </section>    
+        </section>
     </section>
 </main>
 
